@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Penn State and U.S Air Force researchers have engineered a novel material that can now ‘think’"
-categories: misc
+categories: news
 ---
 
-![mic_image](/static/posts/mechanical_ic/Harne-PSN-3.jpg)
+![mic_image](https://psu-gatsby-files-prod.s3.amazonaws.com/s3fs-public/styles/4_3_1000w/public/2022/08/Harne-PSN-3%20copy.jpg?h=707772c7&itok=eBSKBuvi)
 *Credit: Kelby Hochreither/Penn State*
 
 Unlike native integrated circuits, these mechanical integrated circuits act like their own integrated circuit that can sense, think, and act on what’s happening around them.

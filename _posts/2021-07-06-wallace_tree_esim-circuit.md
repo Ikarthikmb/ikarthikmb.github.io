@@ -4,8 +4,6 @@ title: "Implementation of a CMOS 3-bit Wallace Tree Multiplier using SKY130 PDK 
 categories: project
 ---
 
-# 
-
 A Wallace multiplier is a digital circuit which multiplies two
 integers in binary format. It uses half and full adders to sum 
 partial products in stages until two numbers are left. In this

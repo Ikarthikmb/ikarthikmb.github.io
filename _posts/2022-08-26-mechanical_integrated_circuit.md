@@ -4,7 +4,7 @@ title: "Penn State and U.S Air Force researchers have engineered a novel materia
 categories: misc
 ---
 
-![mic_image](static/posts/mechanical_ic/Harne-PSN-3.jpg)
+![mic_image](/static/posts/mechanical_ic/Harne-PSN-3.jpg)
 *Credit: Kelby Hochreither/Penn State*
 
 Unlike native integrated circuits, these mechanical integrated circuits act like their own integrated circuit that can sense, think, and act on what’s happening around them.

@@ -51,7 +51,8 @@ minima:
 # - about.md
 
 # Build settings
-theme: minima
+# theme: minima
+remote-theme: benbalter/retlab
 
 plugins:
  - jekyll-feed

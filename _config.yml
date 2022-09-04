@@ -52,7 +52,7 @@ minima:
 
 # Build settings
 # theme: minima
-remote-theme: benbalter/retlab
+remote-theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 
 plugins:
  - jekyll-feed

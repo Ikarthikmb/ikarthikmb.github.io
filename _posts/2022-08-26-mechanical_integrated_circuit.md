@@ -2,7 +2,9 @@
 layout: post
 title: "Penn State and U.S Air Force researchers have engineered a novel material that can now ‘think’"
 categories: article
+
 ---
+
 
 ![mic_image](https://psu-gatsby-files-prod.s3.amazonaws.com/s3fs-public/styles/4_3_1000w/public/2022/08/Harne-PSN-3%20copy.jpg?h=707772c7&itok=eBSKBuvi)
 *Credit: Kelby Hochreither/Penn State*

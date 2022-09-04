@@ -15,7 +15,7 @@ nolastmod: true
 draft: false
 ---
 
-<!-- ![](/posts/rpi_ethernet/rpi_thumb01.jpg) -->
+<!-- ![](/static/posts/rpi_ethernet/rpi_thumb01.jpg) -->
 
 **Contents**
 
@@ -71,7 +71,7 @@ Also download the **Raspberry Pi Imager**[^2] from the same website, this is for
 
 [^2]: [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
 
-![Raspberry pi OS selection](/posts/rpi_ethernet/pios_site.png)
+![Raspberry pi OS selection](/static/posts/rpi_ethernet/pios_site.png)
 
 ### Step-3: SSH Client Download
 

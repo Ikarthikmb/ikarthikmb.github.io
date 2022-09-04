@@ -18,3 +18,9 @@ It is interesting how they successfully managed to grasp the external stimuli, p
 They discovered a method to use mathematics and kinematics to realise a fundamental form of intelligence in engineering materials by utilising fully scalable information processing intrinsic to soft material systems.
 
 Their goal is to develop a material that demonstrates autonomous navigation through an environment by seeing signs, following them, and manoeuvring out of the way of adverse mechanical force, such as something stepping on it.
+
+---
+
+## References:
+
+[Researchers engineer novel material capable of ‘thinking’](https://www.psu.edu/news/engineering/story/researchers-engineer-novel-material-capable-thinking/)

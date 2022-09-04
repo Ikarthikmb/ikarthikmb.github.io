@@ -162,3 +162,7 @@ Enter the username and password on the authentication prompt.
 - This article was originally published in instructables website[^5].
 
 [^5]: [Set Up Raspberry Pi 4 Through Laptop/pc Using Ethernet Cable(No Monitor, No Wi-Fi)](https://www.instructables.com/Set-Up-Raspberry-Pi-4-Through-Laptoppc-Using-Ether/)
+
+---
+
+## References:

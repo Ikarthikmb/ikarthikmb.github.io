@@ -39,7 +39,8 @@ A router is a networking device that forwards data packets between computer netw
 | full      | output  | High when data is written into FIFO register
 | empty     | output  | High when FIFO register is empty
 | data_out  | output  | 8-bit output data
-: List of ports for Router FIFO
+
+ List of ports for Router FIFO
 
 
 ### Block Diagram for FIFO
@@ -82,6 +83,7 @@ A router is a networking device that forwards data packets between computer netw
 | soft_reset_1    | input     | for FIFO 1. HIGH if re_2 is not asserted in 30 clock cycles of vld_out_1 being asserted.    |
 | soft_reset_2    | input     | for FIFO 2. HIGH if re_2 is not asserted in 30 clock cycles of vld_out_2 being asserted.    |
 | write_enb       | output    | write enable signal for writing into FIFO   |
+
 : List of ports for the Router Synchronizer
 
 **Description:**
@@ -129,6 +131,7 @@ The FSM module is the controller circuit for the ROUTER. This module generates a
 | ld_state          | output    |
 | laf_state         | output    |
 | reg rst_int_reg   | output    |
+
 : List of ports for Router FSM
 
 
@@ -162,7 +165,8 @@ parity_done   |output
 low_pkt_valid |output
 err           |output 
 dout          |output 
-: List of ports for Router Register
+
+List of ports for Router Register
 
 ### Block Diagram for Register 
 
@@ -193,6 +197,7 @@ err       | output    | error signal
 vld_out_0 | output    | valid out for FIFO-1
 vld_out_1 | output    | valid out for FIFO-2
 vld_out_2 | output    | valid out for FIFO-3
+
 : List of ports for Router Top
 
 ### Block Diagram for Router Top

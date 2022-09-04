@@ -27,7 +27,7 @@ In this project lets try to build a circuit which can measure the water content 
 
 ## Circuit Connection:
  
- {{< figure src="/projects/soil_moisture_rpi_fig/soil-moisture-circuit.jpg" title="Circuit connections(figure) " >}}
+ {{< figure src="/static/projects/soil_moisture_rpi_fig/soil-moisture-circuit.jpg" title="Circuit connections(figure) " >}}
 
 
 1. MCP3008 GND to GND
@@ -49,21 +49,21 @@ Make all the connections and power up the Raspberry Pi. If you want to learn how
 ### Essential Packages
 Before you run the code you have to install few libraries, move on with the following steps.
 
-{{< highlight bash >}}
+```
 sudo apt-get update
 sudo apt-get install build-essential python-dev python-smbus git
 cd ~
 git clone https://github.com/adafruit/Adafruit_Python_MCP3008.git
 cd Adafruit_Python_MCP3008
-sudo python setup.py install
-{{< /highlight >}}
+[sudo](sudo) python setup.py install
+```
 
 ## The Code
 Once the library has been installed it's time to execute the code. You can use the below code or download it from [here](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/RaspberryPi/moist-soil.py)[^2].
 
 [^2]: https://github.com/Ikarthikmb/Hardware-Codes/blob/master/RaspberryPi/moist-soil.py
 
-{{< highlight py >}}
+```
 import RPi.GPIO as GPIO
 from time import sleep
 
@@ -83,13 +83,13 @@ while True:
     print(" Stop drowning me!")
   sleep(1.5)
 
-{{< /highlight >}}
+```
 
 ## Youtube Video Tutorial:
 
 {{< youtube ahQhEWf1PRI >}}
 
-<!-- [![](/projects/soil_moisture_rpi_fig/soilmoisture_youtubethumb.png)](https://youtu.be/ahQhEWf1PRI "Click to play")[^3] -->
+<!-- [![](/static/projects/soil_moisture_rpi_fig/soilmoisture_youtubethumb.png)](https://youtu.be/ahQhEWf1PRI "Click to play")[^3] -->
 
 
 

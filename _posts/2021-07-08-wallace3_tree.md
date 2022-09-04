@@ -92,7 +92,7 @@ Open eSim application and select **open project** then navigate to folder `walla
 
 ### Step-3: AND gate
 
-![AND gate Truth table](/projects/wtree/and_tt.jpeg)
+![AND gate Truth table](/static/projects/wtree/and_tt.jpeg)
 
 **AND gate schematic**
 

@@ -4,7 +4,7 @@ title: "The genius behind the buried glory of MOS Transistor"
 categories: article
 ---
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/495295fb-b732-4779-8011-355995594b7f/Untitled.png)
+![Poster](/static/posts/lilienfeld/Julius_Edgar_Lilienfeld_poster.png)
 
 Julius Edgar Lilienfeld was born in Poland in 1881. In 1910, he received his Ph.D. from the University of Berlin and then become a physics professor at the University of Leipzig. His early interests were seen in cryogenics (production and behaviour of materials at very low temperatures).
 

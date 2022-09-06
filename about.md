@@ -6,6 +6,5 @@ permalink: /about/
 
 Hi there!
 
-Electronic circuit designer, curious of smart technology, wanderlust, intrigued with life-hacking.
-
-Karthik is a self-learner, learn through practical experiences, enjoys the process underwent with overwhelming challenges. Spends spare time on capturing shots, enhancing them, also an amateur video editor.
+Electronic designer engineer, curious of smart technology, verilog design, verification, historical milestones and
+electronic circuits. You can find all my work in these fields that include designing, researching, and how to articles in this website.

@@ -33,7 +33,7 @@ sky130pdk in this folder and change the current path in
 
 ## Ports of CMOS 3-bit Wallace Multiplier
 
-![](/static/projects/c/wtree/wallace_multiplier_draw.jpeg)
+![](/static/projects/wtree/wallace_multiplier_draw.jpeg)
 
 Port | Type | Description
 --- | --- | ---
@@ -60,7 +60,7 @@ Full Adders | 3 nos
 
 ## Wallace Tree Algorithm
 
-![](/static/projects/c/wtree/stages.jpeg)
+![](/static/projects/wtree/stages.jpeg)
 
 It has three steps:
 
@@ -70,7 +70,7 @@ It has three steps:
 
 ### 3 bit Reduction algorithm
 
-![](/static/projects/c/wtree/stages_gif.gif)
+![](static/projects/wtree/stages_gif.gif)
 
 
 ## Schematics
@@ -95,45 +95,45 @@ Open eSim application and select **open project** then navigate to folder `walla
 
 ### Step-3: AND gate
 
-![AND gate Truth table](/static/projects/c/wtree/and_tt.jpeg)
+![AND gate Truth table](/static/projects/wtree/and_tt.jpeg)
 
 **AND gate schematic**
 
-![AND gate schematic](/static/projects/c/wtree/and_sch_gif.gif)
+![AND gate schematic](/static/projects/wtree/and_sch_gif.gif)
 
 Draw a schematic with eSim Schematic editor for an **AND gate** logic circuit with cmos logic, 
 perform CRC error check and export the **ngspice netlist**.
 
 ### Step-4: XOR gate
 
-![XOR gate Truth table](/static/projects/c/wtree/xor_tt.jpeg)
+![XOR gate Truth table](/static/projects/wtree/xor_tt.jpeg)
 
-![XOR gate schematic](/static/projects/c/wtree/xor_sch_gif.gif)
+![XOR gate schematic](/static/projects/wtree/xor_sch_gif.gif)
 
 Draw a schematic with eSim Schematic editor for an **XOR gate** logic circuit with cmos logic, 
 perform CRC error check and export the **ngspice netlist**.
 
 ### Step-5: Half Adder
 
-![Half Adder Truth table](/static/projects/c/wtree/ha_tt.jpeg)
+![Half Adder Truth table](/static/projects/wtree/ha_tt.jpeg)
 
-![Half Adder schematic](/static/projects/c/wtree/ha_sch_gif.gif)
+![Half Adder schematic](/static/projects/wtree/ha_sch_gif.gif)
 
 Draw a schematic with eSim Schematic editor for an **Half Adder** circuit with AND and XOR gates, 
 then perform CRC error check and export the **ngspice netlist**.
 
 ### Step-6: Full Adder
 
-![Full Adder Truth table](/static/projects/c/wtree/fa_tt.jpeg)
+![Full Adder Truth table](/static/projects/wtree/fa_tt.jpeg)
 
-![Full Adder schematic](/static/projects/c/wtree/fa_sch_gif.gif)
+![Full Adder schematic](/static/projects/wtree/fa_sch_gif.gif)
 
 Draw a schematic with eSim Schematic editor for a **Full Adder** circuit with AND and XOR gates, 
 then perform CRC error check and export the **ngspice netlist**.
 
 ### Step-7: 3-bit Wallace tree Multiplier
 
-![ 3-bit Wallace Tree Multiplier schematic](/static/projects/c/wtree/wallace_sch_gif.gif)
+![ 3-bit Wallace Tree Multiplier schematic](/static/projects/wtree/wallace_sch_gif.gif)
 
 Draw a schematic with eSim Schematic editor for a **3-bit Wallace Multiplier** logic circuit 
 with AND gates, half adders and full adders. Then perform CRC error check and export the **ngspice netlist**.
@@ -155,7 +155,7 @@ Now, lets simulate the circuit with ngspice.
 
 ### Step-10: NGSpice Simulation
 
-![](/static/projects/c/wtree/IMG_2989.gif)
+![](/static/projects/wtree/IMG_2989.gif)
 
 Lets assign the inputs `a` and `b` with the pulse signals and try to observe the output.
 

@@ -15,7 +15,7 @@ nolastmod: true
 draft: false
 ---
 
-<!-- ![](/posts/rpi_ethernet/rpi_thumb02.jpg) -->
+![](/posts/rpi_ethernet/rpi_thumb02.jpg)
 
 **Contents**
 

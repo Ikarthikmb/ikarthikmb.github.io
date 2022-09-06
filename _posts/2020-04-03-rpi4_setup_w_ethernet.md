@@ -79,7 +79,7 @@ If you are using windows you probably have to download the ssh client, I prefer 
 
 [^3]: [PuTTY](https://putty.org/)
 
-![PuTTY](/posts/rpi_ethernet/putty.png)
+![PuTTY](/static/posts/rpi_ethernet/putty.png)
 
 ### Step-4: Real VNC Viewer
 
@@ -87,18 +87,18 @@ To access the desktop of the pi, you can either connect a micro to HDMI connecto
 
 [^4]: [real vnc-viever website](https://www.realvnc.com/en/connect/download/viewer/)
 
-![vnc viewer website](/posts/rpi_ethernet/vnc_site.png)
+![vnc viewer website](/static/posts/rpi_ethernet/vnc_site.png)
 
 ### Step-5: Image Burning
 
 Open the Raspberry Pi Imager and select the custom setup then select the OS from the Downloaded folder and carefully set the target as USB drive. Wait for the image to be written on the drive.
 
-![](/posts/rpi_ethernet/imager1.png)| ![](/posts/rpi_ethernet/imager2.png)  | ![](/posts/rpi_ethernet/imager3.png)  
+![](/static/posts/rpi_ethernet/imager1.png)| ![](/posts/rpi_ethernet/imager2.png)  | ![](/posts/rpi_ethernet/imager3.png)  
 --- | --- | ---
 1 | 2  | 3
 
 
-![](/posts/rpi_ethernet/imager4.png)| ![](/posts/rpi_ethernet/imager5.png)
+![](/static/posts/rpi_ethernet/imager4.png)| ![](/posts/rpi_ethernet/imager5.png)
 --- | --- 
 4 | 5  
 
@@ -106,20 +106,20 @@ Open the Raspberry Pi Imager and select the custom setup then select the OS from
 
 After done, open the boot folder, create a new document named `ssh` without any extensions, save and then *unmount* the drive.
 
-![save as 'ssh' file](/posts/rpi_ethernet/ssh.png)
+![save as 'ssh' file](/static/posts/rpi_ethernet/ssh.png)
 
 ### Step-7: Power 
 
 Now connect the Ethernet cable to your PC/lap and power up the pi with the type-C cable.
 
-![](/posts/rpi_ethernet/cable1.png)| ![](/posts/rpi_ethernet/cable2.png) | ![](/posts/rpi_ethernet/cable3.png)
+![](/static/posts/rpi_ethernet/cable1.png)| ![](/posts/rpi_ethernet/cable2.png) | ![](/posts/rpi_ethernet/cable3.png)
 --- | --- | ---
 
 ### Step-8: Network Connections
 
 If you are using Windows 10 go to **Control Panel --> Network** and **Internet --> Network Connections**, right-click on Wi-Fi select **properties**, go to **sharing** section and check on “Allow other network users to connect through this computer’s Internet connection”. Make sure that Home network connection is **Ethernet**. Save and close the window.
 
-![](/posts/rpi_ethernet/network1.png) | ![](/posts/rpi_ethernet/network2.png)
+![](/static/posts/rpi_ethernet/network1.png) | ![](/posts/rpi_ethernet/network2.png)
 --- | ---
 
 ### Step-9: SSH Configuration
@@ -131,16 +131,16 @@ Open the Bitvise SSH Client, enter `raspberrypi.local` or the IP address(from pr
 
 Click Log in and enter username as pi and the default password as **raspberry**. A terminal pops up and you are now into the Raspberry Pi.
 
-![](/posts/rpi_ethernet/pilocal1.png) | ![](/posts/rpi_ethernet/pilocal2.png)
+![](/static/posts/rpi_ethernet/pilocal1.png) | ![](/posts/rpi_ethernet/pilocal2.png)
 --- | ---
 
 ### Step-11: Pi Terminal
 
 If this is your first time logging into pi make sure to update your pi by issuing the command `sudo apt-get update` and then `sudo apt-get upgrade` to upgrade.
 
-![](/posts/rpi_ethernet/terminal1.png)
+![](/static/posts/rpi_ethernet/terminal1.png)
 
-![](/posts/rpi_ethernet/terminal2.png)
+![](/static/posts/rpi_ethernet/terminal2.png)
 
 > **Quick tip:** Don’t forget to change your password once you are log in.
 
@@ -148,16 +148,16 @@ If this is your first time logging into pi make sure to update your pi by issuin
 
 - Go to terminal and type `vncserver`, notedown the generated ip address. Now open VNC-Viewer on your desktop and enter the **ip address**or paste it, after few seconds a window pops sharing the screen of raspberry pi.
 
-![](/posts/rpi_ethernet/terminal3.png)
+![](/static/posts/rpi_ethernet/terminal3.png)
 
 - Enter the ip address given by `vncserver` from the raspberry pi to vncviewer application on your pc. 
-![VNC viewer screen](/posts/rpi_ethernet/vncviewer1.png)
+![VNC viewer screen](/static/posts/rpi_ethernet/vncviewer1.png)
 
 Enter the username and password on the authentication prompt. 
-![Enter the server password](/posts/rpi_ethernet/vncviewer2.png)
+![Enter the server password](/static/posts/rpi_ethernet/vncviewer2.png)
 
 - Welcome! to Pi's desktop.
-![Raspberry pi desktop](/posts/rpi_ethernet/pidesktop.png)
+![Raspberry pi desktop](/static/posts/rpi_ethernet/pidesktop.png)
 
 - This article was originally published in instructables website[^5].
 

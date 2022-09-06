@@ -15,6 +15,8 @@ nolastmod: true
 draft: false
 ---
 
+![soil-moisture-circuit](/static/projects/soil_moisture_rpi_fig/soil-moisture-circuit.jpg)
+
 Do you know how often to water plants? Or outpoured plants and lost them. To solve this I thought it would be more circumstantial if we can get the value of water content inside the soil in order to make a decision for watering the plants appropriately.
 
 In this project lets try to build a circuit which can measure the water content value of the soil eventually control the flow using Raspberry Pi.
@@ -27,7 +29,7 @@ In this project lets try to build a circuit which can measure the water content 
 
 ## Circuit Connection:
  
- {{< figure src="/static/projects/soil_moisture_rpi_fig/soil-moisture-circuit.jpg" title="Circuit connections(figure) " >}}
+![Circuit connections](/static/projects/soil_moisture_rpi_fig/soil-moisture-circuit.jpg)
 
 
 1. MCP3008 GND to GND
@@ -87,10 +89,9 @@ while True:
 
 ## Youtube Video Tutorial:
 
-{{< youtube ahQhEWf1PRI >}}
+youtube ahQhEWf1PRI
 
-<!-- [![](/static/projects/soil_moisture_rpi_fig/soilmoisture_youtubethumb.png)](https://youtu.be/ahQhEWf1PRI "Click to play")[^3] -->
-
+[![](/static/projects/soil_moisture_rpi_fig/soilmoisture_youtubethumb.png)](https://youtu.be/ahQhEWf1PRI "Click to play")
 
 
 You can rewrite the code and change the parameters for your requirements. If you have suggestions or any trouble with the project, feel free to comment below. Happy Circuiting!

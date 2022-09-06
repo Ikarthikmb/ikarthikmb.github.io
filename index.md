@@ -8,4 +8,4 @@
 layout: home
 ---
 
-Welcome home,
+Welcome home!

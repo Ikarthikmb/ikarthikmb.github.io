@@ -13,6 +13,7 @@ tags:
   - circuits
 nolastmod: true
 draft: false
+permalink: https://github.com/Ikarthikmb/wallace-tree
 ---
 
 ![static projects wtree wallacetree_thumb](/static/projects/wtree/wallacetree_thumb.JPEG)

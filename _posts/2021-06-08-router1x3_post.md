@@ -47,11 +47,11 @@ A router is a networking device that forwards data packets between computer netw
 
 ### Block Diagram for FIFO
 
-![Block Diagram diagram for Router FIFO](/projects/router_fig/fifo/router_fifo_block_t6.png)
+![Block Diagram diagram for Router FIFO](/static/projects//router_fig/fifo/router_fifo_block_t6.png)
 
 ### Timing Analysis for FIFO
 
-![Timing wave diagram for Router FIFO](/projects/router_fig/top/top_fifo1_wave.png)
+![Timing wave diagram for Router FIFO](/static/projects//router_fig/top/top_fifo1_wave.png)
 
 --- 
 
@@ -94,11 +94,11 @@ This module provides synchronization between router FSM and router FIFO modules.
 
 ### Block Diagram for Synchronizer
 
-![Block diagram for router synchronizer](/projects/router_fig/sync/sync_block01.png)
+![Block diagram for router synchronizer](/static/projects//router_fig/sync/sync_block01.png)
 
 ### Timing Analysis for Synchronizer
 
-![Wave diagram for router synchronizer](/projects/router_fig/top/top_sync_wave.png)
+![Wave diagram for router synchronizer](/static/projects//router_fig/top/top_sync_wave.png)
 
 
 ## Finite State Machine (FSM)
@@ -139,12 +139,12 @@ The FSM module is the controller circuit for the ROUTER. This module generates a
 
 ### Block Diagram for Router FSM
 
-![Block diagram for FSM](/projects/router_fig/fsm/fsm_block02.png) 
+![Block diagram for FSM](/static/projects//router_fig/fsm/fsm_block02.png) 
 
 
 ### Timing Analysis for Router FSM
 
-![Waveform diagram for FSM](/projects/router_fig/top/top_fsm_wave.png)
+![Waveform diagram for FSM](/static/projects//router_fig/top/top_fsm_wave.png)
 
 ## Register 
 
@@ -172,13 +172,13 @@ List of ports for Router Register
 
 ### Block Diagram for Register 
 
-![Block diagram for Register](/projects/router_fig/reg/reg_block_01.png)
+![Block diagram for Register](/static/projects//router_fig/reg/reg_block_01.png)
 
 \newpage 
 
 ### Timing Analysis for Register 
 
-![Waveform diagram for Register](/projects/router_fig/top/top_reg_wave.png)
+![Waveform diagram for Register](/static/projects//router_fig/top/top_reg_wave.png)
 
 ## Router Top 
 
@@ -204,25 +204,25 @@ vld_out_2 | output    | valid out for FIFO-3
 
 ### Block Diagram for Router Top
 
-![Block diagram for router top](/projects/router_fig/top/prime/top_block02.png)
+![Block diagram for router top](/static/projects//router_fig/top/prime/top_block02.png)
 
 #### Outputs:
 
 **Flow Summary**
 
-![Flow Summary](/projects/router_fig/top/prime/flow_summary_image.png)
+![Flow Summary](/static/projects//router_fig/top/prime/flow_summary_image.png)
 
 \newpage 
 
 **Analysis & Synthesis Resource Usage Summary:**
 
-![Resource Usage Summary](/projects/router_fig/top/prime/router_top_cmp.png)
+![Resource Usage Summary](/static/projects//router_fig/top/prime/router_top_cmp.png)
 
 \newpage 
 
 **Post-Synthesis Netlist for Top Partition**
 
-![Post-Synthesis Netlist for Top Partition](/projects/router_fig/top/prime/router_top_postnetlist.png)
+![Post-Synthesis Netlist for Top Partition](/static/projects//router_fig/top/prime/router_top_postnetlist.png)
 
 \newpage 
 
@@ -232,16 +232,16 @@ vld_out_2 | output    | valid out for FIFO-3
 - 
 **Router Top Timing Analysis**
 
-![Router Top Testbench](/projects/router_fig/top/top_tb_wave.png)
+![Router Top Testbench](/static/projects//router_fig/top/top_tb_wave.png)
 
 
 **Router Top DUT**
 
 - We can see that FIFO-1 has faithfully reproduced the input data to the output.
 
-![Router Top DUT (Image-1)](/projects/router_fig/top/top_dut_wave01.png)
+![Router Top DUT (Image-1)](/static/projects//router_fig/top/top_dut_wave01.png)
 
-![Router Top DUT (Image-2)](/projects/router_fig/top/top_dut_wave02.png)
+![Router Top DUT (Image-2)](/static/projects//router_fig/top/top_dut_wave02.png)
 
 **Conclusion:** The router is simulated and synthesized successfully.
 

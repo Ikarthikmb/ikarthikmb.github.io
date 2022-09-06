@@ -42,9 +42,9 @@ This project is about capturing the pictures of strangers through the Pi Camera 
 
 ## Circuit Connection
 
-![Connecting PIR sensor to Raspberry Pi 3](/projects/intruder_rpi/circuit_intruder_rpi.png "Connecting PIR sensor to Raspberry Pi")
+![Connecting PIR sensor to Raspberry Pi 3](/static/projects//intruder_rpi/circuit_intruder_rpi.png "Connecting PIR sensor to Raspberry Pi")
 
-[![Connecting Pi Camera to Raspberry Pi, Source: raspberrypi.org](/projects/intruder_rpi/connect-picamera-rpi.gif)](https://projects-static.raspberrypi.org/projects/getting-started-with-picamera/eb7defb950e2f3eeb8aa5934d26cfd600860c8a0/en/images/connect-camera.gif)
+[![Connecting Pi Camera to Raspberry Pi, Source: raspberrypi.org](/static/projects//intruder_rpi/connect-picamera-rpi.gif)](https://projects-static.raspberrypi.org/projects/getting-started-with-picamera/eb7defb950e2f3eeb8aa5934d26cfd600860c8a0/en/images/connect-camera.gif)
 
  Connect the PIR sensor to raspberry pi as shown in the above circuit diagram. Additionally connect the Pi Cam to Raspberry Pi camera port. To check whether your camera is working or not **run** the following code. 
 
@@ -97,7 +97,7 @@ Save the below code as `pir-camera-test.py` and run.
 
 {{< youtube Nw-yHMn69R0 >}}
 
-<!-- [![Youtube Tutorial Video](/projects/intruder_rpi/intruder_ytthumb.png)](https://youtu.be/Nw-yHMn69R0?t=47 "Click to play")[^1] -->
+<!-- [![Youtube Tutorial Video](/static/projects//intruder_rpi/intruder_ytthumb.png)](https://youtu.be/Nw-yHMn69R0?t=47 "Click to play")[^1] -->
 
 You can rewrite the code and change the parameters for your requirements. If you have suggestions or any trouble with the project, feel free to comment below. Happy Circuiting!
 

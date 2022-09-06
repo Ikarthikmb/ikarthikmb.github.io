@@ -53,7 +53,6 @@ minima:
 header_pages:
  - home.md
  - about.md
- - archive.html
 
 # Build settings
 theme: minima

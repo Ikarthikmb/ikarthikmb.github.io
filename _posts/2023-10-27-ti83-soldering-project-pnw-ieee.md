@@ -19,6 +19,7 @@ One chilly Friday evening on October 27, 2023, I found myself at the Design Stud
 ![group holding ti83](https://raw.githubusercontent.com/Ikarthikmb/ikarthikmb.github.io/master/static/posts/ti83/12.jpg)
 
 ### The Setup
+
 The design studio was a veritable paradise for DIY enthusiasts like myself. With multiple solder stations, heat sinks, power cords, safety glasses, masks, and an atmosphere brimming with creative energy, I couldn't have asked for a better setting to dive into the world of soldering.
 
 ### First Steps

@@ -22,7 +22,10 @@ One chilly Friday evening on October 27, 2023, I found myself at the Design Stud
 The design studio was a veritable paradise for DIY enthusiasts like myself. With multiple solder stations, heat sinks, power cords, safety glasses, masks, and an atmosphere brimming with creative energy, I couldn't have asked for a better setting to dive into the world of soldering.
 
 ### First Steps
-| ![ti83 damaged](https://raw.githubusercontent.com/Ikarthikmb/ikarthikmb.github.io/master/static/posts/ti83/1.jpg#left) | I was handed a TI-83 calculator from Texas Instruments, and the task was clear: it had screen issues that needed fixing. These calculators either had non-working screens, display glitches, or were completely blacked out. I had never used a solder station before, but it turned out to be simpler and quicker than I had imagined. As I worked, I couldn't help but think that having a solder station at home might be a great idea for future projects. |
+
+![ti83 damaged](https://raw.githubusercontent.com/Ikarthikmb/ikarthikmb.github.io/master/static/posts/ti83/1.jpg#left) 
+
+I was handed a TI-83 calculator from Texas Instruments, and the task was clear: it had screen issues that needed fixing. These calculators either had non-working screens, display glitches, or were completely blacked out. I had never used a solder station before, but it turned out to be simpler and quicker than I had imagined. As I worked, I couldn't help but think that having a solder station at home might be a great idea for future projects.
 
 ![cal internal](https://raw.githubusercontent.com/Ikarthikmb/ikarthikmb.github.io/master/static/posts/ti83/3.jpg)
 
@@ -33,7 +36,7 @@ I began by testing the calculator, and it seemed to have a faded screen. After c
 
 ### Taking on a Bigger Challenge
 
-![blank screen ti83](https://raw.githubusercontent.com/Ikarthikmb/ikarthikmb.github.io/master/static/posts/ti83/7.gif)
+![blank screen ti83](https://raw.githubusercontent.com/Ikarthikmb/ikarthikmb.github.io/master/static/posts/ti83/7.gif#center)
 
 With my newfound confidence, I decided to tackle a more significant challenge. Another TI-83 calculator was presented, but this one wasn't working at all. When powered on, it displayed a black screen with a single straight line and showed no cursor. I suspected a problem with the display connection. After unscrewing and opening the backcase, I used the multimeter again and discovered that eight out of the fifteen pins had no connections.
 

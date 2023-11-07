@@ -4,7 +4,7 @@ date: 2023-10-27T21:37:23+05:30
 author: Karhtik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
-cover: /posts/ti83/9.jpg
+cover: ../static/posts/ti83/9.jpg
 categories:
   - posts
 tags:

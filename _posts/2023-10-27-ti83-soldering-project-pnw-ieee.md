@@ -24,8 +24,6 @@ The design studio was a veritable paradise for DIY enthusiasts like myself. With
 
 ### First Steps
 
-![ti83 damaged](https://raw.githubusercontent.com/Ikarthikmb/ikarthikmb.github.io/master/static/posts/ti83/1.jpg#left) 
-
 I was handed a TI-83 calculator from Texas Instruments, and the task was clear: it had screen issues that needed fixing. These calculators either had non-working screens, display glitches, or were completely blacked out. I had never used a solder station before, but it turned out to be simpler and quicker than I had imagined. As I worked, I couldn't help but think that having a solder station at home might be a great idea for future projects.
 
 ![cal internal](https://raw.githubusercontent.com/Ikarthikmb/ikarthikmb.github.io/master/static/posts/ti83/3.jpg)

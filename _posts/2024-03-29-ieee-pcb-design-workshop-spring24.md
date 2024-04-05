@@ -1,7 +1,7 @@
 ---
 title: PNW IEEE PCB Design Workshop - Live session
 date: 2024-03-29T20:20:13+05:30
-author: Karhtik Mahendra
+author: Karthik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
 cover: /static/projects/pcb_workshop/image1.png

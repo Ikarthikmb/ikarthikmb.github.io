@@ -22,7 +22,7 @@ The preparation phase involved selecting a project suitable for all skill levels
 
 With the project chosen, I designed and ordered my first PCB. Unfortunately, due to an older version being manufactured, the board lacked a capacitor footprint. My initial attempt at soldering a capacitor resulted in a fried chip. This setback highlighted the importance of breadboard prototyping.
 
-![image2](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/image2.jpg)
+![image2](/static/projects/pcb_workshop/image2.jpg)
 
 I built the circuit on a breadboard first, making adjustments along the way. For instance, using a 3V battery eliminated the need for resistors at the decoder output, unlike the original 5V design. These changes were incorporated into the updated schematic and PCB layout before placing a new order.
 
@@ -30,11 +30,11 @@ The workshop day arrived, and the PCBs were delivered just in time by Le, the IE
 
 The presentation transitioned seamlessly into a hands-on session. Each participant received a pre-designed PCB and the corresponding components. They practiced soldering the components, transforming their digital designs into functioning circuits. This practical experience solidified their understanding of the PCB design process and its real-world applications.
 
-![image3](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/image3.jpg)
+![image3](/static/projects/pcb_workshop/image3.jpg)
 
 The PCB design workshop was a resounding success. The participants' enthusiasm and engagement were truly inspiring. They left the workshop equipped with the tools and knowledge to embark on their personal PCB design adventures. 
 
-![image4](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/image4.jpg)
+![image4](/static/projects/pcb_workshop/image4.jpg)
 
 
 ## References:

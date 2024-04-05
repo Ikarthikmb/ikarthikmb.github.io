@@ -4,7 +4,7 @@ date: 2024-03-29T20:20:13+05:30
 author: Karhtik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
-cover: ![image1](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/image1.jpg)
+cover: /static/projects/pcb_workshop/image1.jpg
 categories:
   - projects
 tags:

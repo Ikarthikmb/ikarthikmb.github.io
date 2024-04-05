@@ -45,6 +45,3 @@ The PCB design workshop was a resounding success. The participants' enthusiasm a
 * [How to Order PCBs using JLPCB](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/How%20to%20Order%20PCB's%20using%20JLPCB.pdf)
 * [PCB Design Workshop Slides](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PCB%20Design%20Slides.pdf)
 * [Step-by-Step for Designing PCB Using KiCAD](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PNW%20IEEE%20_%20Steps%20for%20Designing%20PCB%20Using%20KiCAD.pdf)
-
-<a href="ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PNW%20IEEE%20_%20Steps%20for%20Designing%20PCB%20Using%20KiCAD.pdf" target="_blank">Step-by-Step PCB Designing usign KiCAD</a>
-

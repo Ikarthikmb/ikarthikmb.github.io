@@ -4,7 +4,7 @@ date: 2024-03-29T20:20:13+05:30
 author: Karhtik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
-cover: /static/projects/pcb_workshop/image1.jpg
+cover: /static/projects/pcb_workshop/image1.png
 categories:
   - projects
 tags:
@@ -16,7 +16,7 @@ draft: false
 
 ---
 
-![image 1](/static/projects/pcb_workshop/image1.jpg)
+![image 1](/static/projects/pcb_workshop/image1.png)
 
 On April 29, 2024, I had the exciting opportunity to host a workshop on PCB design for a group of enthusiastic electronics students. 
 

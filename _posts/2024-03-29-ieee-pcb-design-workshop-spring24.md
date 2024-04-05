@@ -16,6 +16,8 @@ draft: false
 
 ---
 
+![image 1](/static/projects/pcb_workshop/image1.jpg)
+
 On April 29, 2024, I had the exciting opportunity to host a workshop on PCB design for a group of enthusiastic electronics students. 
 
 The preparation phase involved selecting a project suitable for all skill levels. I considered various options like simple LED circuits, converters, decoders, and chaser circuits. Ultimately, the chaser circuit emerged as the winner. It offered a balance of fun, challenge, and the opportunity to learn core design concepts.

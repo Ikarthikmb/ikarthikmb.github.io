@@ -24,7 +24,7 @@ The preparation phase involved selecting a project suitable for all skill levels
 
 With the project chosen, I designed and ordered my first PCB. Unfortunately, due to an older version being manufactured, the board lacked a capacitor footprint. My initial attempt at soldering a capacitor resulted in a fried chip. This setback highlighted the importance of breadboard prototyping.
 
-![image2](/static/projects/pcb_workshop/image2.png)
+![image4](/static/projects/pcb_workshop/image4.png)
 
 I built the circuit on a breadboard first, making adjustments along the way. For instance, using a 3V battery eliminated the need for resistors at the decoder output, unlike the original 5V design. These changes were incorporated into the updated schematic and PCB layout before placing a new order.
 
@@ -36,7 +36,7 @@ The presentation transitioned seamlessly into a hands-on session. Each participa
 
 The PCB design workshop was a resounding success. The participants' enthusiasm and engagement were truly inspiring. They left the workshop equipped with the tools and knowledge to embark on their personal PCB design adventures. 
 
-![image4](/static/projects/pcb_workshop/image4.png)
+![image2](/static/projects/pcb_workshop/image2.png)
 
 
 ## References:
@@ -45,3 +45,6 @@ The PCB design workshop was a resounding success. The participants' enthusiasm a
 * [How to Order PCBs using JLPCB](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/How%20to%20Order%20PCB's%20using%20JLPCB.pdf)
 * [PCB Design Workshop Slides](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PCB%20Design%20Slides.pdf)
 * [Step-by-Step for Designing PCB Using KiCAD](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PNW%20IEEE%20_%20Steps%20for%20Designing%20PCB%20Using%20KiCAD.pdf)
+
+<a href="Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PNW%20IEEE%20_%20Steps%20for%20Designing%20PCB%20Using%20KiCAD.pdf" target="_blank">PDF.</a>
+

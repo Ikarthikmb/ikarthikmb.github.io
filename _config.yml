@@ -24,7 +24,7 @@ minima:
     # facebook: jekyll
     # flickr:   jekyll
     # instagram: jekyll
-    # linkedin: jekyll
+    linkedin: karthik-mb
     # pinterest: jekyll
     # youtube: jekyll
     youtube_channel: UCv-uZxa_Zr7OCYs1Wu35RjA
@@ -56,6 +56,8 @@ header_pages:
 
 # Build settings
 theme: minima
+minima: 
+  skin: dark
 
 plugins:
  - jekyll-feed

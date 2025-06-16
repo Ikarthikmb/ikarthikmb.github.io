@@ -10,7 +10,7 @@ categories:
 tags:
   - articles
 nolastmod: true
-draft: true
+draft: false
 
 ---
 

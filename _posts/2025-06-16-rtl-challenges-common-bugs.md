@@ -20,10 +20,10 @@ draft: true
 
 **Example code**: 
 
+![example](/static/common_rtl_bugs/image5.png)
+![waveform](/static/common_rtl_bugs/image8.png)
 
 Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns. This is because the synthesis infers a latch as simulation is incorrect because ‘c’ isn’t in the sensitivity list. 
-
-
 
 **Try it out**: https://edaplayground.com/x/KdCM
 
@@ -34,6 +34,7 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 
 **Example code**:
 
+![example](/static/common_rtl_bugs/image11.png)
 
 **Try it out**: https://edaplayground.com/x/Yatc
 
@@ -44,7 +45,8 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 
 **Example code**:
 
-
+![Example](/static/common_rtl_bugs/image1.png)
+![waveform](/static/common_rtl_bugs/image4.png)
 
 
 **Try it out**: (https://edaplayground.com/x/iYSV)[https://edaplayground.com/x/iYSV]
@@ -56,6 +58,8 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 
 **Example code**:
 
+![example](/static/common_rtl_bugs/image7.png)
+![waveform](/static/common_rtl_bugs/image6.png)
 
 
 **Try it out**: (https://edaplayground.com/x/YM3E)[https://edaplayground.com/x/YM3E]
@@ -68,6 +72,8 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 
 **Example code**:
 
+![example code](/static/common_rtl_bugs/image9.png)
+![waveform](/static/common_rtl_bugs/image10.png)
 
 
 **Try it out**: (https://edaplayground.com/x/KzCh)[https://edaplayground.com/x/KzCh]
@@ -80,7 +86,7 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 
 **Example code**:
 
-
+![example code](/static/common_rtl_bugs/image3.png)
 
 
 ## Width Mismatch in Assignments
@@ -90,4 +96,5 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 
 **Example code**: 
 
+![example code](/static/common_rtl_bugs/image2.png)
 

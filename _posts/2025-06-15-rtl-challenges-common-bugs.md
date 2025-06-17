@@ -1,6 +1,6 @@
 ---
 title: Most common RTL Bugs and How they are Fixed
-date: 2025-05-16T07:40:13-05:30
+date: 2025-06-15T07:40:13-05:30
 author: Karthik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
@@ -13,6 +13,10 @@ nolastmod: true
 draft: false
 
 ---
+
+You’ve written the code. Simulations passed. Timing looks clean. But the chip still misbehaves. You might be wondering what the issue is! Well it could be a blocking condition mis written with non - blocking condition or a missed default case statement. 
+
+In this article, we’ll walk through seven common RTL issues, each illustrated with code and its fix.
 
 ## Incomplete Sensitivity:
 
@@ -97,4 +101,8 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 **Example code**: 
 
 ![example code](/static/posts/common_rtl_bugs/image2.png)
+
+Unlike software bugs that can be patched post-release, RTL bugs get etched into silicon, often at the cost of millions. Yet, many of these issues like incomplete assignments, silent truncations, or misuse of blocking assignments are entirely preventable with the right practices.
+
+By learning from these mistakes, not just in code but in cultural habits and review practices, you future proof your designs and contribute to robust, reliable hardware that just works.
 

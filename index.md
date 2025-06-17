@@ -9,6 +9,3 @@ layout: home
 ---
 
 Welcome home!
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1641601721908312"
-     crossorigin="anonymous"></script>

@@ -6,9 +6,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Joel Glovier"]
   spec.email         = ["jglovier@github.com"]
 
-  spec.summary       = "A beautiful, minimal theme for Jekyll."
-  spec.homepage      = "https://github.com/jekyll/minima"
-  spec.license       = "MIT"
+  spec.summary  = "A beautiful, minimal theme for Jekyll."
+  spec.homepage = "https://github.com/jekyll/minima"
+  spec.license  = "MIT"
 
   spec.metadata["plugin_type"] = "theme"
 

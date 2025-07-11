@@ -12,7 +12,7 @@ tags:
   - pcb
   - soldering
 nolastmod: true
-draft: false
+draft: true
 
 ---
 

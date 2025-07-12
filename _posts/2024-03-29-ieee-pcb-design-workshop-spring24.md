@@ -1,5 +1,5 @@
 ---
-title: PNW IEEE PCB Design Workshop - Live session
+title: LED Chaser circuit with KiCAD at Purdue's Design Studio
 date: 2024-03-29T20:20:13+05:30
 author: Karthik Mahendra
 avatar: /me.png

@@ -1,6 +1,6 @@
 ---
-title: "Breathing Life Back into TI-83 Calculators Through Soldering"
 layout: post
+title: "Breathing Life Back into TI-83 Calculators Through Soldering"
 date: 2023-10-27T21:37:23+05:30
 author: Karhtik Mahendra
 avatar: /me.png
@@ -9,7 +9,7 @@ cover: /posts/ti83/9.jpg
 excerpt: >
  A step-by-step walkthrough of how I identified display issues on a broken TI-83 calculator and brought it back to working condition through soldering.
 categories:
-  - posts
+  - article
 tags:
   - soldering
 nolastmod: true

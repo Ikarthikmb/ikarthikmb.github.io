@@ -52,49 +52,39 @@ layout: default
   .more-link:hover {
     color: #007acc;
   }
+
+  .tag {
+    font-size: 0.8rem;
+    background: #eee;
+    color: #333;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+    margin-right: 0.5rem;
+  }
 </style>
 
 <div class="home">
 
+  <!-- Featured Section -->
   <div class="section">
-    <h2>Featured Projects</h2>
+    <h2>Featured</h2>
     <ul class="item-list">
-      {% assign featured_projects = site.projects | sort: 'date' | reverse | slice: 0, 3 %}
-      {% for project in featured_projects %}
+      {% assign combined = site.projects | concat: site.blog %}
+      {% assign sorted_combined = combined | sort: 'date' | reverse %}
+      {% for item in sorted_combined limit:8 %}
         <li>
-          <a href="{{ project.url }}">{{ project.title }}</a>
+          <span class="tag">
+            {% if item.collection == 'projects' %}Project{% elsif item.collection == 'blog' %}Blog{% endif %}
+          </span>
+          <a href="{{ item.url }}">{{ item.title }}</a>
           <div class="excerpt">
-            {% if project.excerpt %}
-              {{ project.excerpt | truncatewords: 25 }}
+            {% if item.excerpt %}
+              {{ item.excerpt | truncatewords: 25 }}
             {% else %}
-              {{ project.content | strip_html | truncatewords: 30 }}
+              {{ item.content | strip_html | truncatewords: 30 }}
             {% endif %}
           </div>
         </li>
       {% endfor %}
     </ul>
-    <a class="more-link" href="/projects/">🔗 See all projects</a>
   </div>
-
-  <div class="section">
-    <h2>Recent Blog Posts</h2>
-    <ul class="item-list">
-      {% assign latest_posts = site.blog | sort: 'date' | reverse | slice: 0, 3 %}
-      {% for post in latest_posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <div class="excerpt">
-            {% if post.excerpt %}
-              {{ post.excerpt | truncatewords: 25 }}
-            {% else %}
-              {{ post.content | strip_html | truncatewords: 30 }}
-            {% endif %}
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
-    <a class="more-link" href="/blog/">🔗 Read all blog posts</a>
-  </div>
-
-</div>
-

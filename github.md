@@ -4,10 +4,11 @@ title: Github
 permalink: /github/
 ---
 
-## Featured Projects
-These are some of the major projects I've worked on, showcasing advanced topics in digital design and cryptography.
+<!-- Featured Projects -->
 
-### [ACORN Encryption/Decryption RTL](https://github.com/Ikarthikmb/ACORN128b2025/tree/state_in_top)
+These are some of the major projects I've worked on,
+
+### [Hardware for ACORN Encryption/Decryption cipher algorithm](https://github.com/Ikarthikmb/ACORN128b2025/tree/state_in_top)
 An implementation of the ACORN authenticated encryption cipher in Verilog. A real-world cryptographic design showcasing hardware-level security principles.
 
 ### [16-bit Neuron Unit with ReLU Activation](https://github.com/Ikarthikmb/rtl_designs/blob/main/9_neuron_unit/README.md)
@@ -46,7 +47,8 @@ These projects cover the essentials of Verilog HDL, from basic gates to more com
   A simple 2:1 MUX, essential for data routing in digital systems.
 
 
-### Processors & AI Projects
+<!-- Processors & AI Projects -->
+
 Explore how processors and machine learning can be implemented in hardware.
 
 - [Cilantro RISC-V Processor](https://github.com/Ikarthikmb/rtl_designs) *(In Progress)*  

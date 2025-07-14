@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Github
-permalink: /projects/
+permalink: /github/
 ---
 
 <h2>GitHub</h2>

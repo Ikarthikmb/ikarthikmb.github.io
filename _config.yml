@@ -51,6 +51,7 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
+ - github.md
  - projects.md
  - blog.md
  - about.md
@@ -63,6 +64,8 @@ plugins:
  - jekyll-seo-tag
 
 collections:
+  github:
+    output: true
   projects:
     output: true
   blog:
@@ -71,6 +74,8 @@ collections:
 navigation:
     - title: "Home"
       url: "/"
+    - title: "Github"
+      url: "/github/"
     - title: "Projects"
       url: "/projects/"
     - title: "Blog"

@@ -14,7 +14,7 @@ tags:
   - pcb
   - soldering
 nolastmod: true
-draft: true
+draft: false
 
 ---
 

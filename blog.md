@@ -5,7 +5,7 @@ permalink: /blog/
 ---
 
 <ul>
-  {% assign sorted_posts = site.blog | sort: 'date' | reverse %}
+  {% assign sorted_posts = site.blog | where: "draft", false | sort: 'date' | reverse %}
   {% for post in sorted_posts %}
     <li style="margin-bottom: 1.5rem;">
       <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>

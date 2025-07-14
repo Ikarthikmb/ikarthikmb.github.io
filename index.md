@@ -11,12 +11,16 @@ title: Home
 
 Welcome home!
 
+## Top Projects
+
 <ul>
   {% assign top_projects = site.projects | sort: 'date' | reverse | slice: 0,3 %}
   {% for project in top_projects %}
     <li><a href="{{ project.url }}">{{ project.title }}</a></li>
   {% endfor %}
 </ul>
+
+## Latest Blog Posts
 
 <ul>
   {% assign top_posts = site.posts | slice: 0,3 %}

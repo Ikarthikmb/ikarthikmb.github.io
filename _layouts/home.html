@@ -74,9 +74,9 @@ layout: default
       {% for item in sorted_combined limit:8 %}
         <li>
           <span class="tag">
-            {% if item.collection == 'projects' %}Project{% elsif item.collection == 'blog' %}Blog{% endif %}
+            {% if item.collection == 'projects' %}[Project]{% elsif item.collection == 'blog' %}[Blog]{% endif %}
           </span>
-          <a href="[{{ item.url }}]">{{ item.title }}</a>
+          <a href="{{ item.url }}">{{ item.title }}</a>
           <div class="excerpt">
             {% if item.excerpt %}
               {{ item.excerpt | truncatewords: 25 }}

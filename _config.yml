@@ -90,6 +90,11 @@ defaults:
       type: projects
     values:
       layout: post
+  - scope:
+      path: ""
+      type: blog
+    values:
+      layout: post
 
 layouts_dir: _layouts
 

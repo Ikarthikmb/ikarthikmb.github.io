@@ -1,5 +1,6 @@
 ---
-title: Breathing Life Back into TI-83 Calculators Through Soldering
+title: "Breathing Life Back into TI-83 Calculators Through Soldering"
+layout: post
 date: 2023-10-27T21:37:23+05:30
 author: Karhtik Mahendra
 avatar: /me.png
@@ -14,6 +15,7 @@ tags:
 nolastmod: true
 draft: false
 
+![](static/posts/ti83/9.jpg)
 ---
 
 One chilly Friday evening on October 27, 2023, I found myself at the Design Studio of Purdue University Northwest, embarking on a thrilling soldering adventure. Led by an IEEE president experienced instructor, Anhviet Le, we were in for a day filled with learning, hands-on experience, and the satisfaction of making things work. Little did I know that my introduction to soldering would prove to be both fun and enlightening.

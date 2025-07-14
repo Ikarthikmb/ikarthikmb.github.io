@@ -4,7 +4,9 @@ date: 2024-03-29T20:20:13+05:30
 author: Karthik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
-cover: /static/projects/pcb_workshop/image1.png
+cover: /projects/pcb_workshop/image1.png
+excerpt: >
+	Hosted a PCB design workshop at Purdue where I guided students through designing, prototyping, and soldering an LED chaser circuit using KiCAD—turning digital schematics into real working hardware.
 categories:
   - projects
 tags:

@@ -2,6 +2,8 @@
 layout: post
 title: "The Abated Invention Found Its Way Creating Electronic History"
 categories: article
+excerpt: >
+  Julius Edgar Lilienfeld was a visionary physicist whose early 20th-century patents laid the groundwork for the field-effect transistor (FET) and solid-state amplifiers, predating later semiconductor breakthroughs. Despite initial skepticism and technological limitations, his pioneering work has profoundly influenced modern electronics and semiconductor technology.
 
 ---
 

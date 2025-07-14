@@ -5,6 +5,9 @@ author: Karhtik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
 cover: /posts/rpi_ethernet/rpi_thumb01.jpg
+excerpt: >
+  A step-by-step guide to setting up Raspberry Pi 4 using just a laptop and an Ethernet cable—no monitor, no Wi-Fi needed. Learn how to install the OS, enable SSH, share internet, and remotely access the Pi desktop using VNC Viewer.
+
 categories:
   - posts
 tags:

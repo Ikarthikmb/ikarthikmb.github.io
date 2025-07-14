@@ -5,6 +5,8 @@ author: Karhtik Mahendra
 avatar: me.png
 authorlink: https://ikarthikmb.github.io
 cover: /projects/wtree/wallacetree_thumb.JPEG
+excerpt: >
+  Step-by-step implementation of a 3-bit Wallace Tree multiplier using the SKY130 PDK and eSim. The project covers schematic design of CMOS logic gates, half and full adders, netlist generation, and NGSpice simulation with technology-specific device models. Detailed instructions guide the user through circuit creation, verification, and simulation of a multiplier optimized via Wallace tree reduction.
 categories:
   - projects
 tags:

@@ -6,6 +6,9 @@ author: "Karthik Mahendra"
 avatar: /me.png
 # authorlink: https://author.site
 cover: https://images.macrumors.com/t/BInOvZxW-4PuqCCn660Qaaufccc=/1600x1200/smart/article-new/2018/12/siri-shortcuts-duo.jpg
+excerpt: >
+  Explore custom Siri Shortcuts created with block programming to boost productivity and fun. From converting markdown to rich text PDFs, to random turn navigation, Instagram grids, network details, and more—try these handy shortcuts with direct links.
+
 categories:
   - posts
 tags:

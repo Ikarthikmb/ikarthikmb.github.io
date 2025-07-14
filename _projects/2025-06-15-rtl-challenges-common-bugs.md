@@ -5,6 +5,8 @@ author: Karthik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
 cover: 
+excerpt: >
+  Explore seven of the most common RTL coding bugs that cause synthesis and simulation mismatches or silicon failures—such as incomplete sensitivity lists, missing default cases, poor clock gating, and blocking vs non-blocking assignment errors—and learn practical fixes with example code and waveform analysis to prevent costly design mistakes.
 categories:
   - projects
 tags:

@@ -2,6 +2,9 @@
 layout: post
 title: "Open Source Tools to Get Started With Verilog Simulation"
 categories: article
+excerpt: >
+  Get started with Verilog simulation using open-source tools Icarus Verilog and GTKWave. Learn how to install these tools, compile and run Verilog code, and explore example projects including basic gates and line decoders with timing diagrams.
+
 ---
 
 

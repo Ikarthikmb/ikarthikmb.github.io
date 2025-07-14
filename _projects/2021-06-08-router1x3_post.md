@@ -4,7 +4,9 @@ date: 2021-06-08
 author: Karhtik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
-cover: static/projects/router_fig/compare-fibre_router2.jpg
+cover: /projects/router_fig/compare-fibre_router2.jpg
+excerpt: >
+  Design and verification of a 3-port router in Verilog, featuring FIFO buffers, a synchronizer, and a finite state machine (FSM) controller. The project covers detailed module descriptions, port listings, block diagrams, timing analyses, and synthesis results demonstrating reliable packet routing and data flow management.
 categories:
   - projects
 tags:

@@ -5,6 +5,9 @@ author: Karhtik Mahendra
 avatar: me.png
 authorlink: https://ikarthikmb.github.io
 cover: /projects/intruder_rpi/circuit_intruder_rpi.png
+excerpt: >
+  Build a DIY intruder detection system using Raspberry Pi, a Pi Camera, and a PIR motion sensor. Capture photos automatically when motion is detected, enabling simple and effective home security monitoring.
+
 categories:
   - projects
 tags:

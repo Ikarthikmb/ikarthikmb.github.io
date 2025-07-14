@@ -5,6 +5,9 @@ author: Karhtik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
 cover: /posts/rpi_ethernet/rpi_thumb02_square.jpg
+excerpt: >
+  Learn how to set up your Raspberry Pi 4 with Wi-Fi for headless operation. This guide covers OS installation, configuring Wi-Fi credentials, enabling SSH, and remotely accessing the Pi desktop using VNC Viewer.
+
 categories:
   - posts
 tags:

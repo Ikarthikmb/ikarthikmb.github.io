@@ -6,6 +6,9 @@ author: Karhtik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
 cover: /projects/soil_moisture_rpi_fig/soil-moisture-circuit.jpg
+excerpt: >
+  Learn how to measure soil moisture using a Raspberry Pi and a simple sensor circuit. This project walks through hardware setup, wiring using MCP3008 ADC, and Python code to monitor real-time moisture levels—ideal for smart gardening or home automation.
+
 categories:
   - projects
 tags:

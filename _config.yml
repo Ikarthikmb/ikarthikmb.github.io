@@ -54,7 +54,7 @@ header_pages:
  - github.md
  - projects.md
  - blog.md
- - about.md
+ # - about.md
 
 # Build settings
 theme: minima
@@ -80,8 +80,8 @@ navigation:
       url: "/projects/"
     - title: "Blog"
       url: "/blog/"
-    - title: "About"
-      url: "/about/"
+    # - title: "About"
+      # url: "/about/"
 
 defaults:
   - scope:

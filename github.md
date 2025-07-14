@@ -4,12 +4,6 @@ title: Github
 permalink: /github/
 ---
 
----
-layout: page
-title: Github
-permalink: /github/
----
-
 <ul class="item-list">
     <li>
         <a href="https://github.com/Ikarthikmb/ACORN128b2025/tree/state_in_top" target="_blank">

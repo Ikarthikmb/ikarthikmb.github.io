@@ -9,23 +9,28 @@ layout: home
 title: Home
 ---
 
-Welcome home!
+<h1>Hi, welcome to Qarbyte</h1>
 
-## Top Projects
-
+<h2>🛠️ Featured Projects</h2>
 <ul>
-  {% assign top_projects = site.projects | sort: 'date' | reverse | slice: 0,3 %}
+  {% assign top_projects = site.projects | sort: 'date' | reverse | slice: 0, 3 %}
   {% for project in top_projects %}
-    <li><a href="{{ project.url }}">{{ project.title }}</a></li>
+    <li>
+      <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+      <p>{{ project.excerpt }}</p>
+    </li>
   {% endfor %}
 </ul>
+<a href="/projects/">See All Projects →</a>
 
-## Latest Blog Posts
-
+<h2>📝 Latest Blog Posts</h2>
 <ul>
-  {% assign top_posts = site.posts | slice: 0,3 %}
-  {% for post in top_posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% for post in site.posts limit:3 %}
+    <li>
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <p>{{ post.excerpt }}</p>
+    </li>
   {% endfor %}
 </ul>
+<a href="/blog/">Read All Posts →</a>
 

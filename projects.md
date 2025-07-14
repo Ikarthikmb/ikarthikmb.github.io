@@ -1,10 +1,8 @@
 ---
-layout: page
-title: Projects
+layout: post
+title: All Projects
 permalink: /projects/
 ---
-
-## All Projects
 
 <ul>
   {% assign sorted_projects = site.projects | sort: 'date' | reverse %}

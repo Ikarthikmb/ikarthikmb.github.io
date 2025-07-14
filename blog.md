@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Blog
+title: Blog Posts
 permalink: /blog/
 ---
-
-## All Blog Posts
 
 <ul>
   {% for post in site.posts %}

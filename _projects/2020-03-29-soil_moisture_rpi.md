@@ -1,4 +1,5 @@
 ---
+layout: post
 title: Measuring Soil Moisture using Raspberry Pi
 date: 2020-03-29
 author: Karhtik Mahendra

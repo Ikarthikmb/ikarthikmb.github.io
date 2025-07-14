@@ -75,3 +75,11 @@ navigation:
       url: "/blog/"
     - title: "About"
       url: "/about/"
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: post
+

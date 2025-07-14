@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Github
 permalink: /github/
 ---
 
-Featured 
+### Featured 
 
 ### [Hardware for ACORN Encryption/Decryption cipher algorithm](https://github.com/Ikarthikmb/ACORN128b2025/tree/state_in_top)
 An implementation of the ACORN authenticated encryption cipher in Verilog. A real-world cryptographic design showcasing hardware-level security principles.

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Github - Verilog & Digital Logic Projects
+title: Github
 permalink: /github/
 ---
 
@@ -10,21 +10,14 @@ These are some of the major projects I've worked on, showcasing advanced topics 
 ### [ACORN Encryption/Decryption RTL](https://github.com/Ikarthikmb/ACORN128b2025/tree/state_in_top)
 An implementation of the ACORN authenticated encryption cipher in Verilog. A real-world cryptographic design showcasing hardware-level security principles.
 
-### [Cilantro RISC-V Processor](https://github.com/Ikarthikmb/rtl_designs) *(In Progress)*
-A lightweight, modular RISC-V processor designed to understand the inner workings of modern processors. Ideal for those interested in CPU architecture and low-level hardware design.
-
-### [MIPS Processor](https://github.com/Ikarthikmb/rtl_designs/tree/main/8_mips_processor) *(In Progress)*
-A simple yet powerful RTL implementation of a MIPS processor. Great for exploring pipelining, memory management, and control flow in processor design.
-
 ### [16-bit Neuron Unit with ReLU Activation](https://github.com/Ikarthikmb/rtl_designs/blob/main/9_neuron_unit/README.md)
 The fundamental building block of an artificial neural network, using a 16-bit ReLU activation function. A step toward hardware implementations of machine learning.
 
 ---
 
-## Verilog Design Projects
+### Verilog Design Projects
 These projects cover the essentials of Verilog HDL, from basic gates to more complex systems.
 
-### Basic Digital Circuits
 - [Basic Gates: AND, OR, NAND, NOR, XOR, XNOR](https://github.com/Ikarthikmb/VerilogFod/blob/main/gates/basic_gates.v)  
   A simple implementation of fundamental logic gates in Verilog. Key for understanding digital circuit design.
 
@@ -33,8 +26,6 @@ These projects cover the essentials of Verilog HDL, from basic gates to more com
 
 - [Half Adder](https://github.com/Ikarthikmb/VerilogFod/blob/main/half_adder.v)  
   Simple 1-bit addition circuit with carry and sum outputs.
-
-### Advanced Circuits
 
 - [PWM Generator](https://github.com/Ikarthikmb/rtl_designs/blob/main/5_pwm_generator/README.md)  
   Pulse Width Modulation (PWM) generator for controlling things like motor speed or light intensity.
@@ -45,7 +36,6 @@ These projects cover the essentials of Verilog HDL, from basic gates to more com
 - [UART Receiver](https://github.com/Ikarthikmb/VerilogFod/blob/main/uart_rx.v)  
   A simple Universal Asynchronous Receiver-Transmitter (UART) receiver for serial data communication.
 
-### Adders & Multiplexers
 - [16-Bit Binary Adder Tree](https://github.com/Ikarthikmb/VerilogFod/blob/main/binary_adder_tree.v)  
   An efficient way to add binary numbers using a tree structure.
 
@@ -56,7 +46,7 @@ These projects cover the essentials of Verilog HDL, from basic gates to more com
   A simple 2:1 MUX, essential for data routing in digital systems.
 
 
-## Processors & AI Projects
+### Processors & AI Projects
 Explore how processors and machine learning can be implemented in hardware.
 
 - [Cilantro RISC-V Processor](https://github.com/Ikarthikmb/rtl_designs) *(In Progress)*  
@@ -70,7 +60,7 @@ Explore how processors and machine learning can be implemented in hardware.
 
 ---
 
-## Learning Resources & References
+### Learning Resources & References
 For those new to Verilog or looking for deeper insights.
 
 - [Data Types in Verilog HDL](https://github.com/Ikarthikmb/VerilogFod/blob/main/data_types/data_types.v)  

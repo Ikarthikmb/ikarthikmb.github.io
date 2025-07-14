@@ -4,7 +4,7 @@ date: 2021-06-08
 author: Karhtik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
-cover: /static/projects/router_fig/compare-fibre_router2.jpg
+cover: static/projects/router_fig/compare-fibre_router2.jpg
 categories:
   - projects
 tags:

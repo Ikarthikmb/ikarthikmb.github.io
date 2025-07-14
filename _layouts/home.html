@@ -76,7 +76,7 @@ layout: default
           <span class="tag">
             {% if item.collection == 'projects' %}Project{% elsif item.collection == 'blog' %}Blog{% endif %}
           </span>
-          <a href="{{ item.url }}">{{ item.title }}</a>
+          <a href="[{{ item.url }}]">{{ item.title }}</a>
           <div class="excerpt">
             {% if item.excerpt %}
               {{ item.excerpt | truncatewords: 25 }}

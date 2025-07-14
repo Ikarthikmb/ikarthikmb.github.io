@@ -8,6 +8,32 @@
 layout: home
 ---
 
+<div class="home">
+
+  <!-- Featured Section -->
+  <div class="section">
+    <h2>Featured</h2>
+    <ul class="item-list">
+      {% assign combined = site.projects | concat: site.blog %}
+      {% assign sorted_combined = combined | sort: 'date' | reverse %}
+      {% for item in sorted_combined limit:8 %}
+        <li>
+          <span class="tag">
+            {% if item.collection == 'projects' %}[Project]{% elsif item.collection == 'blog' %}[Blog]{% endif %}
+          </span>
+          <a href="{{ item.url }}">{{ item.title }}</a>
+          <div class="excerpt">
+            {% if item.excerpt %}
+              {{ item.excerpt | truncatewords: 25 }}
+            {% else %}
+              {{ item.content | strip_html | truncatewords: 30 }}
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
 ---
 
 ### A Little About Me

@@ -60,3 +60,17 @@ theme: minima
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+collections:
+  projects:
+    output: true
+
+navigation:
+    - title: "Home"
+      url: "/"
+    - title: "Projects"
+      url: "/projects/"
+    - title: "Blog"
+      url: "/blog/"
+    - title: "About"
+      url: "/about/"

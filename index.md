@@ -87,15 +87,3 @@ layout: home
   </ul>
   <a class="more-link" href="/blog/">🔗 Read all blog posts</a>
 </div>
-
-<div class="section">
-  <h2>📫 Contact</h2>
-  <p style="font-size: 0.95rem; color: #444;">
-    Connect with me for RTL/ASIC projects, collaborations, or research ideas:
-    <br>
-    <a href="mailto:b.karthikmahendra@gmail.com">📧 b.karthikmahendra@gmail.com</a><br>
-    <a href="https://github.com/ikarthikmb" target="_blank">💻 GitHub</a> |
-    <a href="https://www.linkedin.com/in/karthikmahendra" target="_blank">LinkedIn</a>
-  </p>
-</div>
-

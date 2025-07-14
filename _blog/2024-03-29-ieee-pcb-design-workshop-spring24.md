@@ -1,4 +1,5 @@
 ---
+layout: post
 title: LED Chaser circuit with KiCAD at Purdue's Design Studio
 date: 2024-03-29T20:20:13+05:30
 author: Karthik Mahendra
@@ -14,7 +15,7 @@ tags:
   - pcb
   - soldering
 nolastmod: true
-draft: false
+# draft: false
 
 ---
 

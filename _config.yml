@@ -6,9 +6,9 @@ title: Qarbyte
   # name: Karthik Mahendra
   # email: b.karthikmahendra@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Blog about electronic projects, articles, and DIY tutorials.
+  Blog about integrated circuit design, electronic projects, articles, and DIY tutorials.
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -89,4 +89,6 @@ defaults:
       type: projects
     values:
       layout: post
+
+layouts_dir: _layouts
 

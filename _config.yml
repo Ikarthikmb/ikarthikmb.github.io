@@ -98,3 +98,5 @@ layouts_dir: _layouts
 
 plugins:
   - jekyll-seo-tag
+
+comments_repo: ikarthikmb.github.io

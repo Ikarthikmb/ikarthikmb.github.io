@@ -1,13 +1,19 @@
 ---
 layout: post
 title: "The Abated Invention Found Its Way Creating Electronic History"
-categories: article
+author: Karthik Mahendra
+avatar: /me.png
+authorlink: https://ikarthikmb.github.io
+cover: /static/posts/lilienfeld/Julius_Edgar_Lilienfeld_poster_169.png
 excerpt: >
   Julius Edgar Lilienfeld was a visionary physicist whose early 20th-century patents laid the groundwork for the field-effect transistor (FET) and solid-state amplifiers, predating later semiconductor breakthroughs. Despite initial skepticism and technological limitations, his pioneering work has profoundly influenced modern electronics and semiconductor technology.
+categories: article
+nolastmod: true
+draft: false
 
 ---
 
-![](https://raw.githubusercontent.com/Ikarthikmb/Qarbyte/2f0e0f861f510ba5fa0d1dab7f899ee5e8a21a17/static/posts/lilienfeld/Julius_Edgar_Lilienfeld_poster_169.png)
+![] (/static/posts/lilienfeld/Julius_Edgar_Lilienfeld_poster_169.png)
 
 Julius Edgar Lilienfeld was born in Poland in 1881. In 1910, he received his Ph.D. from the University of Berlin and then become a physics professor at the University of Leipzig. His early interests were seen in cryogenics (production and behaviour of materials at very low temperatures).
 

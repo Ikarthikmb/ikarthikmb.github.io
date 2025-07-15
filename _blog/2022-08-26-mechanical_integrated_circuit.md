@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Penn State and U.S Air Force researchers have engineered a novel material that can now ‘think’"
+cover: https://psu-gatsby-files-prod.s3.amazonaws.com/s3fs-public/styles/4_3_1000w/public/2022/08/Harne-PSN-3%20copy.jpg?h=707772c7&itok=eBSKBuvi
 categories: article
 excerpt: >
   Penn State and U.S. Air Force researchers have developed a novel soft, conductive mechanical material that acts like an integrated circuit capable of sensing, processing, and responding autonomously to external stimuli — effectively allowing the material to "think" and react without traditional electronics.

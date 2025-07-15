@@ -5,7 +5,7 @@ date: 2023-10-27
 author: Karhtik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io
-cover: /posts/ti83/9.jpg
+cover: /static/posts/ti83/9.jpg
 excerpt: >
  A step-by-step walkthrough of how I identified display issues on a broken TI-83 calculator and brought it back to working condition through soldering.
 categories:
@@ -17,7 +17,7 @@ draft: false
 
 ---
 
-![](static/posts/ti83/9.jpg)
+![](/static/posts/ti83/9.jpg)
 
 One chilly Friday evening on October 27, 2023, I found myself at the Design Studio of Purdue University Northwest, embarking on a thrilling soldering adventure. Led by an IEEE president experienced instructor, Anhviet Le, we were in for a day filled with learning, hands-on experience, and the satisfaction of making things work. Little did I know that my introduction to soldering would prove to be both fun and enlightening.
 

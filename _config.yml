@@ -51,11 +51,9 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
- # - index.md
  - github.md
  - projects.md
  - blog.md
- # - about.md
 
 # Build settings
 theme: minima
@@ -73,11 +71,11 @@ collections:
     output: true
 
 navigation:
-    - title: "Home"
+    - title: "Index"
       url: "/"
     - title: "Github"
       url: "/github/"
-    - title: "Projects"
+    - title: "projects"
       url: "/projects/"
     - title: "Blog"
       url: "/blog/"

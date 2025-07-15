@@ -2,84 +2,24 @@
 layout: default
 ---
 
-<style>
-  .section {
-    margin-bottom: 2.5rem;
-  }
-
-  .section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #eaecef;
-    padding-bottom: 0.4rem;
-    color: #2c3e50;
-  }
-
-  .item-list {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
-
-  .item-list li {
-    margin-bottom: 1.2rem;
-  }
-
-  .item-list a {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: #007acc;
-    text-decoration: none;
-  }
-
-  .item-list a:hover {
-    text-decoration: underline;
-  }
-
-  .excerpt {
-    font-size: 0.95rem;
-    color: #555;
-    margin-top: 0.2rem;
-  }
-
-  .more-link {
-    display: inline-block;
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
-    color: #333;
-  }
-
-  .more-link:hover {
-    color: #007acc;
-  }
-
-  .tag {
-    font-size: 0.8rem;
-    background: #eee;
-    color: #333;
-    padding: 0.2rem 0.5rem;
-    border-radius: 0.3rem;
-    margin-right: 0.5rem;
-  }
-</style>
-
 <div class="home">
-  <!-- Featured Section -->
   <div class="section">
     <h2>Featured</h2>
     <ul class="item-list">
       {% assign combined = site.projects | concat: site.blog | sort: 'date' | reverse %}
-      {% for item in combined limit:8 %}
+      {% for item in combined limit:10 %}
         <li>
-          <span class="tag">
-            {% if item.collection == 'projects' %}[Project]{% elsif item.collection == 'blog' %}[Blog]{% endif %}
-          </span>
-          <a href="{{ item.url }}">{{ item.title }}</a>
-          <div class="excerpt">
-            {{ item.excerpt | default: item.content | strip_html | truncatewords: 25 }}
-          </div>
+          <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+          <p class="excerpt">
+            {{ item.excerpt | default: item.content | strip_html | truncatewords: 20 }}
+          </p>
         </li>
       {% endfor %}
     </ul>
   </div>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
 </div>
+

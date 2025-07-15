@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Breathing Life Back into TI-83 Calculators Through Soldering"
-date: 2023-10-27T21:37:23+05:30
+date: 2023-10-27
 author: Karhtik Mahendra
 avatar: /me.png
 authorlink: https://ikarthikmb.github.io

@@ -1,87 +1,40 @@
 ---
 layout: post
-title: "The Abated Invention Found Its Way Creating Electronic History"
+title: "LED Chaser circuit with KiCAD at Purdue's Design Studio"
+date: 2024-03-29
 categories: article
+author: Karthik Mahendra
 excerpt: >
-  Julius Edgar Lilienfeld was a visionary physicist whose early 20th-century patents laid the groundwork for the field-effect transistor (FET) and solid-state amplifiers, predating later semiconductor breakthroughs. Despite initial skepticism and technological limitations, his pioneering work has profoundly influenced modern electronics and semiconductor technology.
+	Hosted a PCB design workshop at Purdue where I guided students through designing, prototyping, and soldering an LED chaser circuit using KiCAD—turning digital schematics into real working hardware.
 
 ---
 
-![](https://raw.githubusercontent.com/Ikarthikmb/Qarbyte/2f0e0f861f510ba5fa0d1dab7f899ee5e8a21a17/static/posts/lilienfeld/Julius_Edgar_Lilienfeld_poster_169.png)
+![image 1](/static/projects/pcb_workshop/image1.png)
 
-Julius Edgar Lilienfeld was born in Poland in 1881. In 1910, he received his Ph.D. from the University of Berlin and then become a physics professor at the University of Leipzig. His early interests were seen in cryogenics (production and behaviour of materials at very low temperatures).
+On April 29, 2024, I had the exciting opportunity to host a workshop on PCB design for a group of enthusiastic electronics students. 
 
-Lilienfeld received a US patent in 1911 for separating gas mixtures and then worked on less dense materials. Together with Count Ferdinand von Zeppelin, they designed hydrogen-powered dirigibles.
+The preparation phase involved selecting a project suitable for all skill levels. I considered various options like simple LED circuits, converters, decoders, and chaser circuits. Ultimately, the chaser circuit emerged as the winner. It offered a balance of fun, challenge, and the opportunity to learn core design concepts.
 
-Although the inventions of Karl Braun's cathode ray tube (1897) and Ambrose Fleming's vacuum tube rectifier (1904) marked the beginning of the electronic age, it was Lee de Forest's triode that was the main reason for propelling electronics forward.
+With the project chosen, I designed and ordered my first PCB. Unfortunately, due to an older version being manufactured, the board lacked a capacitor footprint. My initial attempt at soldering a capacitor resulted in a fried chip. This setback highlighted the importance of breadboard prototyping.
 
-The tirode's success soon confronted its long-term limitations. It was a fragile device and consumed a lot of power. In the mid-1920s, Lilienfeld set out to find a solid-state replacement for the thermonic triode with an eye towards radio technology.
+![image4](/static/projects/pcb_workshop/image4.png)
 
-He was responsible for the identification of field electron emission as a separate physical effect, which he called "auto-electronic emission," which could have been the electronic source for miniaturized X-ray tubes.
+I built the circuit on a breadboard first, making adjustments along the way. For instance, using a 3V battery eliminated the need for resistors at the decoder output, unlike the original 5V design. These changes were incorporated into the updated schematic and PCB layout before placing a new order.
 
-Lilienfeld then left Leipzig for the United States in 1921 to pursue his patent claims, resigning from his professorship.
+The workshop day arrived, and the PCBs were delivered just in time by Le, the IEEE President. We kicked things off with a presentation on the fundamentals of PCBs. Participants learned about the various components, including layers, vias, pads, tracks, solder mask, and silkscreen, and how they work together to create a compact and efficient circuit.
 
-In 1922, Lilienfeld was responsible for the first reliable account of the experimental phenomenology of field electron emission.
+The presentation transitioned seamlessly into a hands-on session. Each participant received a pre-designed PCB and the corresponding components. They practiced soldering the components, transforming their digital designs into functioning circuits. This practical experience solidified their understanding of the PCB design process and its real-world applications.
 
-Between the years 1914 and 1920, Lilienfeld made significant contributions to x-ray tube design, earning six US patents.
+![image3](/static/projects/pcb_workshop/image3.png)
 
-He also invented an "FET-like" transistor, and filed several patents describing the construction and operation of transistors, as well as many features of modern transistors.
+The PCB design workshop was a resounding success. The participants' enthusiasm and engagement were truly inspiring. They left the workshop equipped with the tools and knowledge to embark on their personal PCB design adventures. 
 
-![Lilienfeld’s patent of FET lilke transistor](https://ethw.org/w/images/1/17/FigA-1.gif)
+![image2](/static/projects/pcb_workshop/image2.png)
 
-Lilienfeld’s patent of FET lilke transistor
 
-![Lilienfeld’s patents](https://ethw.org/w/images/d/dd/FigB-2.gif)
+## References:
 
-Lilienfeld’s patents
-
-In his patent, Lilienfeld claimed that his solid-state amplifier "relates to a method and apparatus for controlling the flow of an electrical current between two terminals of an electrically conducting solid by establishing a third potential between said terminals."
-
-Only a small group of history buffs and intellectuals know that the pursuit of the solid-state amplifier dates back to 1924–1925.
-
-Lilienfeld was more specific about his goals: "the provision of a simple, compact, and substantial device that is inexpensive to build." Lilienfeld argued that his novel device "could be operated under much lower voltage conditions than before" as an alternative to thermionic principles.
-
-But people thought his device had no practical value and would have failed due to a lack of high-quality semiconductor materials. Lilienfeld's field effect approach was buried and forgotten for nearly two decades. After few years it got recognized when a team of researchers in Bell Labs were working on the idea of solid-state amplifier.
-
-In the early 1940s, Shockley focused his attention on using an electric field as the "valve" to control the flow of electrons through a semiconductor. His theoretical analysis persuaded him and others that it was feasible. Shockley’s solid-state group, which included John Bardeen and Walter Brattain, failed to create a working prototype for the field-effect semiconductor amplifier. Along the way, Bardeen and Brattain developed new theoretical insights and a different design — the point-contact transistor, also known as the "bipolar transistor."
-
-When Brattain, Bardeen, and their colleague, Robert Gibney, tried to get patents on their earliest devices, most of their claims were rejected due to the Lilienfeld patents.
-
-Shockley believed that the first BTL patent for a solid-state amplifier should be based on his conceptual model of the field-effect and that he should be credited as the inventor. After discovering Julius Edgar Lilienfeld's patents, BTL lawyers refused Shockley's request, pointing that the idea of using an electric field as a "grid" was not new.
-
-Later in 1927, Lilienfeld left Germany to escape the rising tide of anti-Semitism, immigrating to the United States.
-
-Lilienfeld patented the electrolytic capacitor in 1931 after conducting research on anodic aluminium oxide films. He patented several contributions to capacitor technology while heading an industrial research laboratory, including the first solid-state electrolytic capacitor. It's possible that his early work on capacitors influenced his conception of the solid-state amplifier through the framework of electric field effects.
-
-After that the X-ray tube anodes used in optical radiation emitted electrons and striked a metal surface. This phenomenon was termed "Lilienfeld radiation." Lilienfeld radiation was the foundation of vacuum tubes (invented by John Ambrose Fleming) which led to the invention of Television by Philo Farnsworth.
-
-Today, a century after Lilienfeld’s work, Metal Oxide Semiconductor (MOS) devices built around field effect principles have dominated semiconductor electronics in the past fifty years and provided the foundation for modern digital technology.
-
-In an address to the American Institute of Physics in 1988, Bardeen acknowledged Lilienfeld's pioneering efforts in developing the semiconductor amplifier. Lilienfeld could not have comprehended the physics of the field-effect semiconductor amplifier in the 1920s because the quantum theory of solids was still several years away.
-
-"Lilienfeld had the basic concept of controlling the flow of current in a semiconductor to make an amplifying device," says Bardeen. Many years of theoritical development and material technology were required to make his dream a reality."
-
-One of the American Physical Society's major prizes is named after Lilienfeld.
-
-**List of Lilienfeld patents**
-
-- US 1122011 "Process and apparatus for producing Roentgen rays" filed on 1912-10-02, describing an X-ray tube that produced x-rays from electrons emitted from a hot filament
-- US 1218423 "Roentgen ray tube" filed on 1914-04-17, describing a refinement of his earlier X-ray tube that produced x-rays from electrons emitted from a hot filament
-- US 1745175 "Method and apparatus for controlling electric current" first filed in Canada on 1925-10-22, describing a field-effect transistor
-- US 1900018 "Device for controlling electric current" filed on 1928-03-28, a thin film field-effect transistor
-- US 1877140 "Amplifier for electric currents" filed on 1928-12-08, solid state device where the current flow is controlled by a porous metal layer, a solid state version of the vacuum tube
-- US 2013564 "Electrolytic condenser" filed on 1931-08-29, describing an electrolytic capacitor
-
-## Summary
-
-Julius Edgar Lilienfeld was a pioneer in the field of x-ray tubes. He was responsible for the first reliable account of the experimental phenomenology of field electron emission. He also invented an "FET-like" transistor and filed several patents describing the construction and operation of transistors in 1920. After a few years, it was recognized when researchers at Bell Telephone Laboratories (BTL) were working on a solid-state amplifier. Lilienfeld's contributions to capacitor technology include the first solid-state electrolytic capacitor and the semiconductor amplifier which have dominated the current day semiconductor electronics.
-
----
-
-### References:
-
-[https://en.wikipedia.org/wiki/Julius_Edgar_Lilienfeld](https://en.wikipedia.org/wiki/Julius_Edgar_Lilienfeld)
-
-[https://ethw.org/A_Very_Early_Conception_of_a_Solid_State_Device](https://ethw.org/A_Very_Early_Conception_of_a_Solid_State_Device)
-
-[http://www.salem-news.com/articles/january122011/tesla-electromagnetism-jda.php](http://www.salem-news.com/articles/january122011/tesla-electromagnetism-jda.php)
+* [[PDF] Downloading KiCAD on Windows 10](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/Downloading%20Kicad%20On%20Windows%2010.pdf)
+* [[PDF] How to Order PCBs using JLPCB](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/How%20to%20Order%20PCB's%20using%20JLPCB.pdf)
+* [[PDF] PCB Design Workshop Slides](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PCB%20Design%20Slides.pdf)
+* [[PDF] Step-by-Step for Designing PCB Using KiCAD](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PNW%20IEEE%20_%20Steps%20for%20Designing%20PCB%20Using%20KiCAD.pdf)

@@ -79,8 +79,6 @@ navigation:
       url: "/projects/"
     - title: "Blog"
       url: "/blog/"
-    # - title: "About"
-      # url: "/about/"
 
 defaults:
   - scope:
@@ -95,8 +93,5 @@ defaults:
       layout: post
 
 layouts_dir: _layouts
-
-plugins:
-  - jekyll-seo-tag
 
 comments_repo: ikarthikmb/ikarthikmb.github.io

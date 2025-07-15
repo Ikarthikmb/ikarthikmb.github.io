@@ -98,3 +98,5 @@ defaults:
 
 layouts_dir: _layouts
 
+plugins:
+  - jekyll-seo-tag

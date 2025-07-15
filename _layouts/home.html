@@ -3,11 +3,15 @@ layout: default
 ---
 
 <div class="home">
+  <div class="post-content">
+    {{ content }}
+  </div>
+
   <div class="section">
-    <h2>Featured</h2>
+    <h2>Latest Posts</h2>
     <ul class="item-list">
       {% assign combined = site.projects | concat: site.blog | sort: 'date' | reverse %}
-      {% for item in combined limit:10 %}
+      {% for item in combined limit:5 %}
         <li>
           <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
           <p class="excerpt">
@@ -17,9 +21,8 @@ layout: default
       {% endfor %}
     </ul>
   </div>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
+  
+  <p><em>For more articles, check out my <a href="{{ site.base_url }}/projects" target="_blank">Projects</a> and <a href="{{ site.base_url }}/blog" target="_blank">Blog</a>.</em></p>
+  
 </div>
 

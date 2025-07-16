@@ -42,53 +42,53 @@ permalink: /github/
 
 ### Verilog Design Projects
 
-- Basic Gates: AND, OR, NAND, NOR, XOR, XNOR [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/gates/basic_gates.v)]  
-- 1-Bit Inverter [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/inverter/inverter.v)]  
-- Half Adder [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/half_adder.v)]  
-- Pulse Width Modulation (PWM) [[repo](https://github.com/Ikarthikmb/rtl_designs/blob/main/5_pwm_generator)]  
-- 8-bit Numerically Controlled Oscillator [[repo](https://github.com/Ikarthikmb/rtl_designs/tree/main/6_numerically_controlled_oscillator)]
-- Universal Asynchronous Receiver-Transmitter (UART) Receiver [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/uart_rx.v)]  
-- 16-Bit Binary Adder Tree [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/binary_adder_tree.v)]  
-- 1-Bit Full Adder [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/half_adder.v)]  
-  Building block for any binary arithmetic operation.
-- [2:1 Multiplexer](https://github.com/Ikarthikmb/VerilogFod/blob/main/lab1.md)  
-  A simple 2:1 MUX, essential for data routing in digital systems.
-- Cilantro RISC-V Processor [[repo](https://github.com/Ikarthikmb/rtl_designs)] *(In Progress)*  
-  Focus on hardware implementation of RISC-V with minimalistic architecture.
-- MIPS Processor [[repo](https://github.com/Ikarthikmb/rtl_designs/tree/main/8_mips_processor)] *(In Progress)*  
-- 16-bit Neuron Unit with ReLU Activation [[repo](https://github.com/Ikarthikmb/rtl_designs/blob/main/9_neuron_unit/README.md)]
-- Simon 32/64 Cipher [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/12_simon3264/rtl/top.v)]
-- Ripple carry adder testbench [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/10_ripple_carry_adder/tb_RippleCarryAdder.v)]
-- Universal Shift register - [DUT](https://github.com/Ikarthikmb/rtl_designs/blob/main/11_universal_shift_register/universal_shift_register.v), [TB](https://github.com/Ikarthikmb/rtl_designs/blob/main/11_universal_shift_register/universal_shift_register_tb.v)
-- FNN - Example neural network [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/14_neural_networks_j24/fnn/fnn.v)], [[TB](https://github.com/Ikarthikmb/rtl_designs/blob/main/14_neural_networks_j24/fnn/tb_fnn.v)]
--  High performance ALU [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/15_high_perform_alu/rtl/alu.v)]
-- VLSI Design through verilog part 1 [[pdf](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Verilog-examples/VLSI%20design%20lab%20Part-1%20K1.pdf)]: 4 X 1 Multiplexer, Full Adder, 4 bit UP/DOWN Counter
-- VLSI Design through verilog part 2 [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Verilog-examples/VLSI%20design%20lab%20Part-2%20K1.pdf)]: Verilog code for an ALU, Decoder, 4×2 Multiplexer using 2×1 mux, Parity Checker, Encoder
+1. Basic Gates: AND, OR, NAND, NOR, XOR, XNOR [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/gates/basic_gates.v)]  
+1. 1-Bit Inverter [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/inverter/inverter.v)]  
+1. Half Adder [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/half_adder.v)]  
+1. Pulse Width Modulation (PWM) [[repo](https://github.com/Ikarthikmb/rtl_designs/blob/main/5_pwm_generator)]  
+1. 8-bit Numerically Controlled Oscillator [[repo](https://github.com/Ikarthikmb/rtl_designs/tree/main/6_numerically_controlled_oscillator)]
+1. Universal Asynchronous Receiver-Transmitter (UART) Receiver [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/uart_rx.v)]  
+1. 16-Bit Binary Adder Tree [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/binary_adder_tree.v)]  
+1. 1-Bit Full Adder [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/half_adder.v)]  
+1. Building block for any binary arithmetic operation.
+1. [2:1 Multiplexer](https://github.com/Ikarthikmb/VerilogFod/blob/main/lab1.md)  
+1. A simple 2:1 MUX, essential for data routing in digital systems.
+1. Cilantro RISC-V Processor [[repo](https://github.com/Ikarthikmb/rtl_designs)] *(In Progress)*  
+1. Focus on hardware implementation of RISC-V with minimalistic architecture.
+1. MIPS Processor [[repo](https://github.com/Ikarthikmb/rtl_designs/tree/main/8_mips_processor)] *(In Progress)*  
+1. 16-bit Neuron Unit with ReLU Activation [[repo](https://github.com/Ikarthikmb/rtl_designs/blob/main/9_neuron_unit/README.md)]
+1. Simon 32/64 Cipher [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/12_simon3264/rtl/top.v)]
+1. Ripple carry adder testbench [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/10_ripple_carry_adder/tb_RippleCarryAdder.v)]
+1. Universal Shift register - [DUT](https://github.com/Ikarthikmb/rtl_designs/blob/main/11_universal_shift_register/universal_shift_register.v), [TB](https://github.com/Ikarthikmb/rtl_designs/blob/main/11_universal_shift_register/universal_shift_register_tb.v)
+1. FNN - Example neural network [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/14_neural_networks_j24/fnn/fnn.v)], [[TB](https://github.com/Ikarthikmb/rtl_designs/blob/main/14_neural_networks_j24/fnn/tb_fnn.v)]
+1.  High performance ALU [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/15_high_perform_alu/rtl/alu.v)]
+1. VLSI Design through verilog part 1 [[pdf](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Verilog-examples/VLSI%20design%20lab%20Part-1%20K1.pdf)]: 4 X 1 Multiplexer, Full Adder, 4 bit UP/DOWN Counter
+1. VLSI Design through verilog part 2 [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Verilog-examples/VLSI%20design%20lab%20Part-2%20K1.pdf)]: Verilog code for an ALU, Decoder, 4×2 Multiplexer using 2×1 mux, Parity Checker, Encoder
 
 ---
 
 ### Schematic and PCB Designs
 
-- Digital Gates circuit
+1. Digital Gates circuit
 [AND](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/and_gate)
 , [OR](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/or_gate)
 , [XOR](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/xor_gate)
 , [Inverter](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/inverter)
-- Half adder circuit [[repo](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/halfadder)]
-- Full adder circuit [[repo](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/fulladder)]
-- 555 Timer circuit [[repo](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/timer555)]
-- Wallace Tree multiplier circuits
+1. Half adder circuit [[repo](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/halfadder)]
+1. Full adder circuit [[repo](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/fulladder)]
+1. 555 Timer circuit [[repo](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/timer555)]
+1. Wallace Tree multiplier circuits
 [2 bit](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/wallace2tree)
 , [3 bit](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/wallace3tree)
 , [4 bit](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/wallace4bit)
 , [8 bit](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/wallace8tree)
-- Breadboard power supply [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/1_Breadboard_power_supply)]
-- Raspberry Pi FS Hat v01 [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/2_Raspberrypi_fs_hat_v01)]
-- Arduino Battery Powered clone with extended EEPROM and clock [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/5_Project_BACEE)]
-- Op Amp Logarthmic amplifier [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/6_Opamp/Log_amplifier)]
-- DC to DC converter [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/7_dctodc)]
-- Gouriet clapp capacitive three point oscillator [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/Gouriet_clapp_capacitive_oscillator)]
-- Decimal counter [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/decimal_counter)]
+1. Breadboard power supply [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/1_Breadboard_power_supply)]
+1. Raspberry Pi FS Hat v01 [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/2_Raspberrypi_fs_hat_v01)]
+1. Arduino Battery Powered clone with extended EEPROM and clock [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/5_Project_BACEE)]
+1. Op Amp Logarthmic amplifier [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/6_Opamp/Log_amplifier)]
+1. DC to DC converter [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/7_dctodc)]
+1. Gouriet clapp capacitive three point oscillator [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/Gouriet_clapp_capacitive_oscillator)]
+1. Decimal counter [[repo](https://github.com/Ikarthikmb/Circuit-Designs/tree/master/decimal_counter)]
 
 ---
 

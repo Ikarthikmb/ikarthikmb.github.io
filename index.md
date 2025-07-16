@@ -32,18 +32,11 @@ Hope you enjoy what you’re reading here!
 
 ### Papers
 
-- Modelling a Wireless Channel at Different Propagation Scenarios 2025 [[pdf](/pdfviewer.html?file=_papers/WirelessChannelModelIndoor2025.pdf&title=Modelling a Wireless Channel at Different Propagation Scenarios 2025)]
-
-- Two-Level Branch Predictor 2024 [[pdf](/pdfviewer.html?file=_papers/TwoLevelBranchPredictor2024.pdf&title=Two Level Branch Predictor 2024)]
-
-- Design and Implementation of an Efficient Base-Base Conversion Tool Using MATLAB 2024 [[pdf](/pdfviewer.html?file=_papers/BaseToBaseConverter2024.pdf&title=Design and Implementation of an Efficient Base-Base Conversion Tool Using MATLAB 2024)]
-
-- IP Geolocation using Traceroute and IP Interpolation 2023[[pdf](/pdfviewer.html?file=_papers/IPGeolocation2023.pdf&title=IP Geolocation using Traceroute and IP Interpolation 2023)]
-
-- Kalman Filter Implementation for State Estimation with Noisy Measurements 2023 [[pdf](/pdfviewer.html?file=_papers/KalmanFilter2023.pdf&title=Kalman Filter 2023)]
-
-- Design of UART Receiver Protocol 2019 [[pdf](/pdfviewer.html?file=_papers/UARTProtocol2019.pdf&title=Design of UART Receiver Protocol 2019)]
-
-- House sale prices prediction using linear regression 2019 [[pdf](/pdfviewer.html?file=_papers/LinearRegressionML2019.pdf&title=House sale prices prediction using linear regression 2019)]
-
-- Green Chips - the tech that made world smaller 2018 [[pdf](/pdfviewer.html?file=_papers/GreenChips2018.pdf&title=Green Chips - the tech that made world smaller 2018)]
+1. Modelling a Wireless Channel at Different Propagation Scenarios 2025 [[pdf](/pdfviewer.html?file=_papers/WirelessChannelModelIndoor2025.pdf&title=Modelling a Wireless Channel at Different Propagation Scenarios 2025)]
+1. Two-Level Branch Predictor 2024 [[pdf](/pdfviewer.html?file=_papers/TwoLevelBranchPredictor2024.pdf&title=Two Level Branch Predictor 2024)]
+1. Design and Implementation of an Efficient Base-Base Conversion Tool Using MATLAB 2024 [[pdf](/pdfviewer.html?file=_papers/BaseToBaseConverter2024.pdf&title=Design and Implementation of an Efficient Base-Base Conversion Tool Using MATLAB 2024)]
+1. IP Geolocation using Traceroute and IP Interpolation 2023[[pdf](/pdfviewer.html?file=_papers/IPGeolocation2023.pdf&title=IP Geolocation using Traceroute and IP Interpolation 2023)]
+1. Kalman Filter Implementation for State Estimation with Noisy Measurements 2023 [[pdf](/pdfviewer.html?file=_papers/KalmanFilter2023.pdf&title=Kalman Filter 2023)]
+1. Design of UART Receiver Protocol 2019 [[pdf](/pdfviewer.html?file=_papers/UARTProtocol2019.pdf&title=Design of UART Receiver Protocol 2019)]
+1. House sale prices prediction using linear regression 2019 [[pdf](/pdfviewer.html?file=_papers/LinearRegressionML2019.pdf&title=House sale prices prediction using linear regression 2019)]
+1. Green Chips - the tech that made world smaller 2018 [[pdf](/pdfviewer.html?file=_papers/GreenChips2018.pdf&title=Green Chips - the tech that made world smaller 2018)]

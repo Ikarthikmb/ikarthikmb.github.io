@@ -24,6 +24,8 @@ Hope you enjoy what you’re reading here!
 
 - 5th Place in the ["IEEE HKN Founders Day Hackathon"](https://hkn.ieee.org/news-and-announcements/2024/11/first-hkn-international-hackathon#:~:text=Coders%2C%20Jumbos%2C%20and-,Leo,-.) *(October 2024)*
 
-- Top 52 in ["Capture the Bug - A Design Verification Hackathon"](https://www.linkedin.com/posts/activity-6975543672410886144-VcwP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs) *(September 2022)*
+- Top 52 in ["Capture the Bug - A Design Verification Hackathon"](https://www.linkedin.com/posts/activity-6975543672410886144-VcwP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs) [[repo](https://github.com/Ikarthikmb/ctb2023-challenges-Ikarthikmb)] *(September 2022)*
 
 - 1st Place, 600+ submissions in ["Circuit Design and Simulation Marathon using eSim"](https://www.linkedin.com/posts/activity-6833789615363657728-py75?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs) *(June 2021)*
+
+- Member of Institute of Electrical and Electronics Engineers (IEEE)

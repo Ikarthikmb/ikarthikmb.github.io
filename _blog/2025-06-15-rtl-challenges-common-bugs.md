@@ -32,7 +32,7 @@ In this article, we’ll walk through seven common RTL issues, each illustrated 
 
 Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns. This is because the synthesis infers a latch as simulation is incorrect because ‘c’ isn’t in the sensitivity list. 
 
-**Try it out**: https://edaplayground.com/x/KdCM
+**Try it out**: [link to playground](https://edaplayground.com/x/KdCM)
 
 
 ## Unused Signals, Ports:
@@ -43,7 +43,7 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 
 ![example](/static/posts/common_rtl_bugs/image11.png)
 
-**Try it out**: https://edaplayground.com/x/Yatc
+**Try it out**: [link to playground](https://edaplayground.com/x/Yatc)
 
 
 ## Poor Clock Gating:
@@ -56,7 +56,7 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 ![waveform](/static/posts/common_rtl_bugs/image4.png)
 
 
-**Try it out**: (https://edaplayground.com/x/iYSV)[https://edaplayground.com/x/iYSV]
+**Try it out**: [link to playground](https://edaplayground.com/x/iYSV)
 
 
 ## Non-Full case statement:
@@ -69,7 +69,7 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 ![waveform](/static/posts/common_rtl_bugs/image6.png)
 
 
-**Try it out**: (https://edaplayground.com/x/YM3E)[https://edaplayground.com/x/YM3E]
+**Try it out**: [link to playground](https://edaplayground.com/x/YM3E)
 
 
 
@@ -83,7 +83,7 @@ Notice how the output ‘latch_out’ is still 0 after c is turned HIGH at 10ns.
 ![waveform](/static/posts/common_rtl_bugs/image10.png)
 
 
-**Try it out**: (https://edaplayground.com/x/KzCh)[https://edaplayground.com/x/KzCh]
+**Try it out**: [link to playground](https://edaplayground.com/x/KzCh)
 
 
 

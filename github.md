@@ -40,21 +40,6 @@ permalink: /github/
 
 ---
 
-### Papers
-
-- Modelling a Wireless Channel at Different Propagation Scenarios 2025 [[pdf](/pdfviewer.html?file=_papers/WirelessChannelModelIndoor2025.pdf&title=Modelling a Wireless Channel at Different Propagation Scenarios 2025)]
-- Two-Level Branch Predictor 2024 [[pdf](/pdfviewer.html?file=_papers/TwoLevelBranchPredictor2024.pdf&title=Two Level Branch Predictor 2024)]
-- Design and Implementation of an Efficient Base-Base Conversion Tool Using MATLAB 2024 [[pdf](/pdfviewer.html?file=_papers/BaseToBaseConverter2024.pdf&title=Design and Implementation of an Efficient Base-Base Conversion Tool Using MATLAB 2024)]
-- IP Geolocation using Traceroute and IP Interpolation 2023[[pdf](/pdfviewer.html?file=_papers/IPGeolocation2023.pdf&title=IP Geolocation using Traceroute and IP Interpolation 2023)]
-- Kalman Filter Implementation for State Estimation with Noisy Measurements 2023 [[pdf](/pdfviewer.html?file=_papers/KalmanFilter2023.pdf&title=Kalman Filter 2023)]
-- Design of UART Receiver Protocol 2019 [[pdf](/pdfviewer.html?file=_papers/UARTProtocol2019.pdf&title=Design of UART Receiver Protocol 2019)]
-- House sale prices prediction using linear regression 2019 [[pdf](/pdfviewer.html?file=_papers/LinearRegressionML2019.pdf&title=House sale prices prediction using linear regression 2019)]
-- Green Chips - the tech that made world smaller 2018 [[pdf](/pdfviewer.html?file=_papers/GreenChips2018.pdf&title=Green Chips - the tech that made world smaller 2018)]
-
-
-
----
-
 ### Verilog Design Projects
 
 - Basic Gates: AND, OR, NAND, NOR, XOR, XNOR [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/gates/basic_gates.v)]  
@@ -110,15 +95,15 @@ permalink: /github/
 ### Hardware Programming
 
 - [Raspberry pi projects](https://github.com/Ikarthikmb/Hardware-Programming/tree/master/RaspberryPi)
-	1. Measuring Soil Moisture using Raspberry Pi [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/moist-soil.py)]
-	2. Using Ultrasonic Sensor to Capture Positional Changes of Objects [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/README.md#2-using-ultrasonic-sensor-to-capture-positional-changes-of-objects)]
-	3. Intruder Detection Using Pi Camera [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/pir-camera-test.py)]
+1. Measuring Soil Moisture using Raspberry Pi [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/moist-soil.py)]
+2. Using Ultrasonic Sensor to Capture Positional Changes of Objects [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/README.md#2-using-ultrasonic-sensor-to-capture-positional-changes-of-objects)]
+3. Intruder Detection Using Pi Camera [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/pir-camera-test.py)]
 
 - [Getting Started with Arduino](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Arduino-repo/README.md)
-	1. Blinking internal LED of an Arduino UNO [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Arduino-repo/README.md#the-code)]
-	2. Home automation using NodeMCU [[code](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/Adafruit-Led-NodeMCU.ino)]
-	3. Making a Server Access Point with NodeMCU, commecting it to the Wi-Fi [[code](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/Server-AP-mode.ino)]
-	4. Creating a Server using NodeMCU [[code](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/server-code-AP.ino)]
+1. Blinking internal LED of an Arduino UNO [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Arduino-repo/README.md#the-code)]
+2. Home automation using NodeMCU [[code](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/Adafruit-Led-NodeMCU.ino)]
+3. Making a Server Access Point with NodeMCU, commecting it to the Wi-Fi [[code](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/Server-AP-mode.ino)]
+4. Creating a Server using NodeMCU [[code](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/server-code-AP.ino)]
 
 ---
 

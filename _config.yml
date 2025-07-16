@@ -2,9 +2,9 @@ title: Qarbyte
 # domain: ikarthikmb.github.io
 # url: https://ikarthikmb.github.io
 # baseurl: /ikarthikmb/
-# author:
-  # name: Karthik Mahendra
-  # email: b.karthikmahendra@gmail.com
+author:
+  name: Karthik Mahendra
+  email: b.karthikmahendra@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
   Blog about integrated circuit design, electronic projects, articles, and how-to tutorials.
 

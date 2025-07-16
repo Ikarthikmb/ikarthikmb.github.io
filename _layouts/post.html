@@ -28,6 +28,9 @@ layout: default
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
+	<div class="no-print">
+      {% include navlinks.html %}
+    </div>
   </div>
 
   {%- if site.disqus.shortname -%}

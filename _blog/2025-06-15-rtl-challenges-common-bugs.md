@@ -3,6 +3,7 @@ title: Most common RTL Bugs and How they are Fixed
 date: 2025-06-15T07:40:13-05:30
 author: Karthik Mahendra
 avatar: /me.png
+layout: post
 authorlink: https://ikarthikmb.github.io
 cover: 
 excerpt: >

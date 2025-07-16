@@ -44,7 +44,7 @@ The PCB design workshop was a resounding success. The participants' enthusiasm a
 
 ## References:
 
-* Downloading KiCAD on Windows 10 [[PDF](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/Downloading%20Kicad%20On%20Windows%2010.pdf)]
-* How to Order PCBs using JLPCB [[PDF](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/How%20to%20Order%20PCB's%20using%20JLPCB.pdf)]
-* PCB Design Workshop Slides [[PDF](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PCB%20Design%20Slides.pdf)]
-* Step-by-Step for Designing PCB Using KiCAD [[PDF](https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PNW%20IEEE%20_%20Steps%20for%20Designing%20PCB%20Using%20KiCAD.pdf)]
+* Downloading KiCAD on Windows 10 [[PDF](/pdfviewer?file=https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/Downloading%20Kicad%20On%20Windows%2010.pdf)]
+* How to Order PCBs using JLPCB [[PDF](/pdfviewer.html?file=https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/How%20to%20Order%20PCB's%20using%20JLPCB.pdf)]
+* PCB Design Workshop Slides [[PDF](/pdfviewer.html?file=https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PCB%20Design%20Slides.pdf)]
+* Step-by-Step for Designing PCB Using KiCAD [[PDF](/pdfviewer.html?file=https://github.com/Ikarthikmb/ikarthikmb.github.io/blob/master/static/projects/pcb_workshop/docs/PNW%20IEEE%20_%20Steps%20for%20Designing%20PCB%20Using%20KiCAD.pdf)]

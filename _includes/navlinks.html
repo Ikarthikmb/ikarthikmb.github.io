@@ -1,26 +1,18 @@
 <div class="post_navi">
-  {%- if page.previous.url -%}
-  <a class="post_navi-item nav_prev" href="{{ page.previous.url }}" title="{{ page.previous.title }}">
-    <div class="post_navi-arrow">→</div>
-    <div><span>{{ page.previous.title }}</span></div>
+  <!-- Previous Button -->
+  <a class="post_navi-item nav_prev"
+     href="{{ page.previous.url | default: '/' }}"
+     title="{{ page.previous.title | default: 'Home' }}">
+    <div class="post_navi-label">← Previous</div>
+    <div class="post_navi-title">{{ page.previous.title | default: 'Home' }}</div>
   </a>
-  {%- else -%}
-  <a class="post_navi-item nav_prev" href="{{ absolute_url }}" title="Blog Archive">
-    <div class="post_navi-arrow">→</div>
-    <div><span>Archive of all previous blog posts</span></div>
-  </a>
-  {%- endif -%}
 
-  {%- if page.next.url -%}
-  <a class="post_navi-item nav_next" href="{{ page.next.url }}" title="{{ page.next.title }}">
-    <div><span>{{ page.next.title }}</span></div>
-    <div class="post_navi-arrow">→</div>
+  <!-- Next Button -->
+  <a class="post_navi-item nav_next"
+     href="{{ page.next.url | default: '/' }}"
+     title="{{ page.next.title | default: 'Home' }}">
+    <div class="post_navi-label">Next →</div>
+    <div class="post_navi-title">{{ page.next.title | default: 'Home' }}</div>
   </a>
-  {%- else -%}
-  <a class="post_navi-item nav_next" href="{{ absolute_url }}" title="Home">
-    <div><span>Home</span></div>
-    <div class="post_navi-arrow">→</div>
-  </a>
-  {%- endif -%}
 </div>
 

@@ -8,7 +8,7 @@ permalink: /github/
 
 ### [Hardware for ACORN Encryption/Decryption cipher algorithm](https://github.com/Ikarthikmb/ACORN128b2025/tree/state_in_top)
 
-- An implementation of the ACORN authenticated encryption cipher in Verilog. A real-world cryptographic design showcasing hardware-level security principles.
+- An implementation of the ACORN authenticated encryption cipher in Verilog. A cryptographic design showcasing hardware security principles.
 
 
 ### [16-bit Neuron Unit with ReLU Activation](https://github.com/Ikarthikmb/rtl_designs/blob/main/9_neuron_unit/README.md)
@@ -30,10 +30,28 @@ permalink: /github/
 
 - RTL for I2C controller in verilog, passed through OpenLANE flow to generate GDS II
 
+### [Schematic design of Wallace tree multiplier using SKY130 PDK in eSim](https://github.com/Ikarthikmb/wallace-tree)]
+
+- A Wallace multiplier is a digital circuit which multiplies two integers in binary format. It uses half and full adders to sum partial products in stages until two numbers are left. 
 
 ### [Logging Fundamental Parameters of Plants with Raspberry-Pi](https://github.com/Ikarthikmb/gardener-groot)
 
 - This project is built using Raspberry Pi which acts as a Gardener collecting sensor data and computing accordingly.
+
+---
+
+### Papers
+
+- Modelling a Wireless Channel at Different Propagation Scenarios 2025 [[pdf](/pdfviewer.html?file=_papers/WirelessChannelModelIndoor2025.pdf&title=Modelling a Wireless Channel at Different Propagation Scenarios 2025)]
+- Two-Level Branch Predictor 2024 [[pdf](/pdfviewer.html?file=_papers/TwoLevelBranchPredictor2024.pdf&title=Two Level Branch Predictor 2024)]
+- Design and Implementation of an Efficient Base-Base Conversion Tool Using MATLAB 2024 [[pdf](/pdfviewer.html?file=_papers/BaseToBaseConverter2024.pdf&title=Design and Implementation of an Efficient Base-Base Conversion Tool Using MATLAB 2024)]
+- IP Geolocation using Traceroute and IP Interpolation 2023[[pdf](/pdfviewer.html?file=_papers/IPGeolocation2023.pdf&title=IP Geolocation using Traceroute and IP Interpolation 2023)]
+- Kalman Filter Implementation for State Estimation with Noisy Measurements 2023 [[pdf](/pdfviewer.html?file=_papers/KalmanFilter2023.pdf&title=Kalman Filter 2023)]
+- Design of UART Receiver Protocol 2019 [[pdf](/pdfviewer.html?file=_papers/UARTProtocol2019.pdf&title=Design of UART Receiver Protocol 2019)]
+- House sale prices prediction using linear regression 2019 [[pdf](/pdfviewer.html?file=_papers/LinearRegressionML2019.pdf&title=House sale prices prediction using linear regression 2019)]
+- Green Chips - the tech that made world smaller 2018 [[pdf](/pdfviewer.html?file=_papers/GreenChips2018.pdf&title=Green Chips - the tech that made world smaller 2018)]
+
+
 
 ---
 
@@ -66,7 +84,6 @@ permalink: /github/
 
 ### Schematic and PCB Designs
 
-- Schematic design of Wallace tree multiplier using SKY130 PDK in eSim [[repo](https://github.com/Ikarthikmb/wallace-tree)]
 - Digital Gates circuit
 [AND](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/and_gate)
 , [OR](https://github.com/Ikarthikmb/eSim-Workspace/tree/master/or_gate)
@@ -113,12 +130,6 @@ permalink: /github/
 
 ---
 
-### Papers
-
-- IP Geolocation using Traceroute and IP Interpolation [[pdf](https://github.com/Ikarthikmb/ip-geolocation-2023/blob/main/ECE463_547_Final_Report_Geolocation.pdf)]
-
----
-
 ### Learning Resources & References
 For those new to Verilog or looking for deeper insights.
 
@@ -128,16 +139,17 @@ For those new to Verilog or looking for deeper insights.
 - Code Questions on Data Types [[doc](https://github.com/Ikarthikmb/VerilogFod/blob/main/assignment2.md)]  
   Exercises to test your understanding of Verilog data types.
 
-- Icarus Verilog + GTK Wave Guide [[pdf](https://github.com/Ikarthikmb/VerilogFod/blob/main/References/Icarus_Verilog_GTKWave_guide.pdf)]  
+- Icarus Verilog + GTK Wave Guide [[pdf](/pdfviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/References/Icarus_Verilog_GTKWave_guide.pdf)]
+
   Learn how to simulate and visualize your Verilog designs with Icarus Verilog and GTK Wave.
 
 - Memory maps for engineering concepts:
-[Antennas Classification](https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Antennas.pdf)
-, [Computer Networks](https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Computer-Networks.pdf)
-, [Cryptography](https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Crypto.pdf)
-, [Modern Communication](https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Digital-communication.pdf)
-, [Evolution of Semiconductor](https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Evolution-of-semiconductors.pdf)
-, [microwave Devices](https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Microwave-Devices.pdf)
+[Antennas Classification](/pdfviewer.html?file=https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Antennas.pdf)
+, [Computer Networks](/pdfviewer.html?file=https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Computer-Networks.pdf)
+, [Cryptography](/pdfviewer.html?file=https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Crypto.pdf)
+, [Modern Communication](/pdfviewer.html?file=https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Digital-communication.pdf)
+, [Evolution of Semiconductor](/pdfviewer.html?file=https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Evolution-of-semiconductors.pdf)
+, [microwave Devices](/pdfviewer.html?file=https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Microwave-Devices.pdf)
 
 - OpenRAM Configuration for 4kB SRAM using sky130 [[doc](https://github.com/Ikarthikmb/OpenRAM_Tech)]
 

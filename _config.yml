@@ -6,7 +6,7 @@ title: Qarbyte
   # name: Karthik Mahendra
   # email: b.karthikmahendra@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Blog about integrated circuit design, electronic projects, articles, and DIY tutorials.
+  Blog about integrated circuit design, electronic projects, articles, and how-to tutorials.
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -95,3 +95,6 @@ defaults:
 layouts_dir: _layouts
 
 comments_repo: ikarthikmb/ikarthikmb.github.io
+
+include:
+  - _papers

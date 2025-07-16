@@ -1,0 +1,72 @@
+---
+layout: default
+title: PDF Viewer
+---
+
+<button onclick="history.back()" style="margin-bottom: 1rem; padding: 8px 16px; font-size: 14px; cursor: pointer;">
+  ← Go Back
+</button>
+
+<h2 id="pdf-title">PDF Viewer</h2>
+
+<div id="pdf-container" style="margin-top: 1rem;">
+  <p>Loading PDF...</p>
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const file = params.get("file");
+  const customTitle = params.get("title");
+
+  function getFileName(path) {
+    if (!path) return '';
+    try {
+      const url = new URL(path, window.location.href);
+      return url.pathname.split('/').pop();
+    } catch {
+      return path.split('/').pop();
+    }
+  }
+
+  const titleElem = document.getElementById('pdf-title');
+  const container = document.getElementById('pdf-container');
+
+  if (file) {
+    const fileName = getFileName(file);
+
+    // Friendly title map (add your own here)
+    const titles = {
+      'house_sale_predication.pdf': 'House Sale Prediction Paper',
+    };
+
+    let displayTitle = customTitle ? decodeURIComponent(customTitle) : (titles[fileName] || fileName);
+
+    titleElem.textContent = `Viewing: ${displayTitle}`;
+
+    const isExternal = /^https?:\/\//i.test(file);
+
+    if (isExternal) {
+      // Show a link/button to open external PDF in a new tab
+      container.innerHTML = `
+        <p>This PDF is hosted externally and cannot be embedded.</p>
+        <p>
+          <a href="${file}" target="_blank" rel="noopener noreferrer" style="font-weight:bold; font-size:16px;">
+            Click here to open the PDF in a new tab
+          </a>
+        </p>
+      `;
+    } else {
+      // Internal PDF, embed in iframe
+      // Normalize path to prevent double slashes
+      const iframeSrc = '/' + file.replace(/^\/+/, '');
+      container.innerHTML = `
+        <iframe src="${iframeSrc}" width="100%" height="800px" style="border:none;"></iframe>
+      `;
+    }
+
+  } else {
+    titleElem.textContent = 'No PDF specified';
+    container.innerHTML = `<p style="color: red;">No PDF file specified in the URL. Please use: <code>?file=path/to/file.pdf</code></p>`;
+  }
+</script>
+

@@ -13,7 +13,7 @@ draft: false
 
 ---
 
-![] (/static/posts/lilienfeld/Julius_Edgar_Lilienfeld_poster_169.png)
+![](/static/posts/lilienfeld/Julius_Edgar_Lilienfeld_poster_169.png)
 
 Julius Edgar Lilienfeld was born in Poland in 1881. In 1910, he received his Ph.D. from the University of Berlin and then become a physics professor at the University of Leipzig. His early interests were seen in cryogenics (production and behaviour of materials at very low temperatures).
 

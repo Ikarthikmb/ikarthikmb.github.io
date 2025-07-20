@@ -48,7 +48,7 @@ In this project lets try to build a circuit which can measure the water content 
 10. SoilMoisture VCC to +3V
 11. SoilMoisture GND to GND 
 
-Make all the connections and power up the Raspberry Pi. If you want to learn how to connect a Raspberry Pi check out my previous post on how to [Set Up Raspberry Pi 4 Through Laptop/pc Using Ethernet Cable(No Monitor, No Wi-Fi)](https://ikarthikmb.github.io/posts/rpi4_setup_w_ethernet/)[^1].
+Make all the connections and power up the Raspberry Pi. If you want to learn how to connect a Raspberry Pi check out my previous post on how to [Set Up Raspberry Pi 4 Through Laptop/pc Using Ethernet Cable(No Monitor, No Wi-Fi)]({{ '/projects/2020-04-03-rpi4_setup_w_ethernet' | relative_url }})
 
 [^1]: https://ikarthikmb.github.io/posts/rpi4_setup_w_ethernet/
 
@@ -65,7 +65,7 @@ cd Adafruit_Python_MCP3008
 ```
 
 ## The Code
-Once the library has been installed it's time to execute the code. You can use the below code or download it from [here](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/RaspberryPi/moist-soil.py)[^2].
+Once the library has been installed it's time to execute the code. You can use the below code or download it from [here](/codeviewer.html?file=https://github.com/Ikarthikmb/Hardware-Codes/blob/master/RaspberryPi/moist-soil.py)[^2].
 
 [^2]: https://github.com/Ikarthikmb/Hardware-Codes/blob/master/RaspberryPi/moist-soil.py
 

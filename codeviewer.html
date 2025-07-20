@@ -1,0 +1,227 @@
+---
+layout: default
+title: Code Viewer
+---
+
+<!-- Go Back + Download Buttons -->
+<div style="margin-bottom: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+  <button onclick="history.back()" style="padding: 8px 16px; font-size: 14px; cursor: pointer; border: 1px solid #d0d7de; border-radius: 6px; background: white; color: #24292f;">
+    ← Go Back
+  </button>
+  <a id="download-btn" download style="padding: 8px 16px; font-size: 14px; background-color: #0969da; color: white; text-decoration: none; border-radius: 6px; user-select: none;" target="_blank" rel="noopener noreferrer">
+    ⬇ Download
+  </a>
+</div>
+
+<h1 id="file-title">Code Viewer</h1>
+<p id="file-link" style="margin-bottom: 1rem;"></p>
+
+<div id="markdown-container" style="display:none;"></div>
+
+<pre id="code-block" class="line-numbers" style="margin-top: 1.5rem;">
+  <code id="code-content" class="">// Loading code...</code>
+</pre>
+
+<!-- Prism & Markdown Libraries -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css" />
+<script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script>
+  // Map common extensions to Prism language classes
+  const extensionToLang = {
+    'py': 'python',
+    'js': 'javascript',
+    'ts': 'typescript',
+    'java': 'java',
+    'c': 'c',
+    'cpp': 'cpp',
+    'h': 'cpp',
+    'hpp': 'cpp',
+    'cs': 'csharp',
+    'rb': 'ruby',
+    'go': 'go',
+    'php': 'php',
+    'html': 'markup',
+    'xml': 'markup',
+    'json': 'json',
+    'md': 'markdown',
+    'markdown': 'markdown',
+    'sh': 'bash',
+    'bat': 'batch',
+    'verilog': 'verilog',
+    'v': 'verilog',
+	'ino': 'cpp'
+  };
+
+  // Dynamically load Prism language component if needed
+  async function loadPrismLang(lang) {
+    if (!Prism.languages[lang]) {
+      try {
+        await import(`https://cdn.jsdelivr.net/npm/prismjs/components/prism-${lang}.min.js`);
+      } catch {
+        // Fallback to none
+      }
+    }
+  }
+
+  window.addEventListener('load', async function () {
+    const params = new URLSearchParams(window.location.search);
+    let fileUrl = params.get('file');
+    const originalFileUrl = fileUrl; // for display and download
+    const codeBlock = document.getElementById('code-block');
+    const codeEl = document.getElementById('code-content');
+    const markdownEl = document.getElementById('markdown-container');
+    const titleEl = document.getElementById('file-title');
+    const linkEl = document.getElementById('file-link');
+    const downloadBtn = document.getElementById('download-btn');
+
+    if (!fileUrl) {
+      codeEl.textContent = '// No file specified';
+      return;
+    }
+
+    // Convert GitHub URL to raw if needed
+    if (fileUrl.includes('github.com')) {
+      fileUrl = fileUrl.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+    }
+
+    const fileName = fileUrl.split('/').pop();
+    titleEl.textContent = `Viewing: ${fileName}`;
+    linkEl.innerHTML = `🔗 <a href="${originalFileUrl}" target="_blank" rel="noopener noreferrer">${originalFileUrl}</a>`;
+    downloadBtn.href = fileUrl;
+    downloadBtn.setAttribute('download', fileName);
+
+    const ext = fileName.split('.').pop().toLowerCase();
+    const isMarkdown = ext === 'md' || ext === 'markdown';
+
+    if (!isMarkdown) {
+      // Set Prism language class based on extension
+      const lang = extensionToLang[ext] || 'none';
+      codeEl.className = `language-${lang}`;
+      codeBlock.className = `line-numbers language-${lang}`;
+
+      if (lang !== 'none') {
+        await loadPrismLang(lang);
+      }
+    }
+
+    fetch(fileUrl)
+      .then(response => {
+        if (!response.ok) throw new Error('HTTP ' + response.status);
+        return response.text();
+      })
+      .then(data => {
+        if (isMarkdown) {
+          markdownEl.innerHTML = marked.parse(data);
+          markdownEl.style.display = 'block';
+          codeBlock.style.display = 'none';
+        } else {
+          codeEl.textContent = data;
+          Prism.highlightElement(codeEl);
+          codeBlock.style.display = 'block';
+          markdownEl.style.display = 'none';
+        }
+      })
+      .catch(error => {
+        codeEl.textContent = `// Failed to load code: ${error.message}`;
+        markdownEl.style.display = 'none';
+        codeBlock.style.display = 'block';
+      });
+  });
+</script>
+
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    background-color: #ffffff;
+    color: #24292f;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    word-break: break-word;
+  }
+
+  #file-link a {
+    color: #0969da;
+    text-decoration: underline;
+    font-weight: 500;
+    word-break: break-all;
+  }
+
+  pre[class*="language-"] {
+    background: #ffffff !important;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    overflow-x: auto;
+    font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    line-height: 1.5;
+    padding: 1rem;
+    margin: 0;
+    white-space: pre-wrap;       /* wrap long lines */
+    word-wrap: break-word;
+  }
+
+  code[class*="language-"] {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: block;
+  }
+
+  .line-numbers .line-numbers-rows {
+    border-right: 1px solid #d0d7de;
+    background: #f6f8fa;
+    padding: 0.5rem 0;
+  }
+
+  .line-numbers .line-numbers-rows > span:before {
+    color: #6e7781;
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  /* Markdown Styling */
+  #markdown-container {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  #markdown-container h1,
+  #markdown-container h2,
+  #markdown-container h3 {
+    margin-top: 1.5rem;
+    font-weight: 600;
+  }
+
+  #markdown-container code {
+    background: #f6f8fa;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  }
+
+  #markdown-container pre {
+    background: #f6f8fa;
+    padding: 1rem;
+    overflow: auto;
+    border-radius: 6px;
+  }
+
+  /* Download button hover */
+  #download-btn:hover {
+    background-color: #084298;
+  }
+</style>
+

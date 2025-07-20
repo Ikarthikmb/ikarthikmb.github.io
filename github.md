@@ -11,7 +11,7 @@ permalink: /github/
 - An implementation of the ACORN authenticated encryption cipher in Verilog. A cryptographic design showcasing hardware security principles.
 
 
-### [16-bit Neuron Unit with ReLU Activation](https://github.com/Ikarthikmb/rtl_designs/blob/main/9_neuron_unit/README.md)
+### [16-bit Neuron Unit with ReLU Activation](https://github.com/Ikarthikmb/rtl_designs/tree/main/9_neuron_unit)
 
 - The fundamental building block of an artificial neural network, using a 16-bit ReLU activation function. A step toward hardware implementations of machine learning.
 
@@ -42,28 +42,29 @@ permalink: /github/
 
 ### Verilog Design Projects
 
-1. Basic Gates: AND, OR, NAND, NOR, XOR, XNOR [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/gates/basic_gates.v)]  
-1. 1-Bit Inverter [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/inverter/inverter.v)]  
-1. Half Adder [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/half_adder.v)]  
+1. Basic Gates: AND, OR, NAND, NOR, XOR, XNOR [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/gates/basic_gates.v)]  
+1. 1-Bit Inverter [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/inverter/inverter.v)]  
+1. Half Adder [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/half_adder.v)]  
 1. Pulse Width Modulation (PWM) [[repo](https://github.com/Ikarthikmb/rtl_designs/blob/main/5_pwm_generator)]  
 1. 8-bit Numerically Controlled Oscillator [[repo](https://github.com/Ikarthikmb/rtl_designs/tree/main/6_numerically_controlled_oscillator)]
-1. Universal Asynchronous Receiver-Transmitter (UART) Receiver [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/uart_rx.v)]  
-1. 16-Bit Binary Adder Tree [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/binary_adder_tree.v)]  
-1. 1-Bit Full Adder [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/half_adder.v)]  
+1. Universal Asynchronous Receiver-Transmitter (UART) Receiver [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/uart_rx.v)]
+
+1. 16-Bit Binary Adder Tree [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/binary_adder_tree.v)]  
+1. 1-Bit Full Adder [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/half_adder.v)]  
 1. Building block for any binary arithmetic operation.
-1. [2:1 Multiplexer](https://github.com/Ikarthikmb/VerilogFod/blob/main/lab1.md)  
+1. [2:1 Multiplexer](/codeviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/lab1.md)  
 1. A simple 2:1 MUX, essential for data routing in digital systems.
 1. Cilantro RISC-V Processor [[repo](https://github.com/Ikarthikmb/rtl_designs)] *(In Progress)*  
 1. Focus on hardware implementation of RISC-V with minimalistic architecture.
 1. MIPS Processor [[repo](https://github.com/Ikarthikmb/rtl_designs/tree/main/8_mips_processor)] *(In Progress)*  
 1. 16-bit Neuron Unit with ReLU Activation [[repo](https://github.com/Ikarthikmb/rtl_designs/blob/main/9_neuron_unit/README.md)]
-1. Simon 32/64 Cipher [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/12_simon3264/rtl/top.v)]
-1. Ripple carry adder testbench [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/10_ripple_carry_adder/tb_RippleCarryAdder.v)]
-1. Universal Shift register - [DUT](https://github.com/Ikarthikmb/rtl_designs/blob/main/11_universal_shift_register/universal_shift_register.v), [TB](https://github.com/Ikarthikmb/rtl_designs/blob/main/11_universal_shift_register/universal_shift_register_tb.v)
-1. FNN - Example neural network [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/14_neural_networks_j24/fnn/fnn.v)], [[TB](https://github.com/Ikarthikmb/rtl_designs/blob/main/14_neural_networks_j24/fnn/tb_fnn.v)]
-1.  High performance ALU [[code](https://github.com/Ikarthikmb/rtl_designs/blob/main/15_high_perform_alu/rtl/alu.v)]
-1. VLSI Design through verilog part 1 [[pdf](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Verilog-examples/VLSI%20design%20lab%20Part-1%20K1.pdf)]: 4 X 1 Multiplexer, Full Adder, 4 bit UP/DOWN Counter
-1. VLSI Design through verilog part 2 [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Verilog-examples/VLSI%20design%20lab%20Part-2%20K1.pdf)]: Verilog code for an ALU, Decoder, 4×2 Multiplexer using 2×1 mux, Parity Checker, Encoder
+1. Simon 32/64 Cipher [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/rtl_designs/blob/main/12_simon3264/rtl/top.v)]
+1. Ripple carry adder testbench [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/rtl_designs/blob/main/10_ripple_carry_adder/tb_RippleCarryAdder.v)]
+1. Universal Shift register - [DUT](/codeviewer.html?file=https://github.com/Ikarthikmb/rtl_designs/blob/main/11_universal_shift_register/universal_shift_register.v), [TB](/codeviewer.html?file=https://github.com/Ikarthikmb/rtl_designs/blob/main/11_universal_shift_register/universal_shift_register_tb.v)
+1. FNN - Example neural network [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/rtl_designs/blob/main/14_neural_networks_j24/fnn/fnn.v)], [[TB](/codeviewer.html?file=https://github.com/Ikarthikmb/rtl_designs/blob/main/14_neural_networks_j24/fnn/tb_fnn.v)]
+1.  High performance ALU [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/rtl_designs/blob/main/15_high_perform_alu/rtl/alu.v)]
+1. VLSI Design through verilog part 1 [[pdf](/pdfviewer.html?file=https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Verilog-examples/VLSI%20design%20lab%20Part-1%20K1.pdf)]: 4 X 1 Multiplexer, Full Adder, 4 bit UP/DOWN Counter
+1. VLSI Design through verilog part 2 [[pdf](/pdfviewer.html?file=https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Verilog-examples/VLSI%20design%20lab%20Part-2%20K1.pdf)]: Verilog code for an ALU, Decoder, 4×2 Multiplexer using 2×1 mux, Parity Checker, Encoder
 
 ---
 
@@ -95,15 +96,15 @@ permalink: /github/
 ### Hardware Programming
 
 - [Raspberry pi projects](https://github.com/Ikarthikmb/Hardware-Programming/tree/master/RaspberryPi)
-1. Measuring Soil Moisture using Raspberry Pi [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/moist-soil.py)]
-2. Using Ultrasonic Sensor to Capture Positional Changes of Objects [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/README.md#2-using-ultrasonic-sensor-to-capture-positional-changes-of-objects)]
-3. Intruder Detection Using Pi Camera [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/pir-camera-test.py)]
+1. Measuring Soil Moisture using Raspberry Pi [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/moist-soil.py)]
+2. Using Ultrasonic Sensor to Capture Positional Changes of Objects [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/README.md#2-using-ultrasonic-sensor-to-capture-positional-changes-of-objects)]
+3. Intruder Detection Using Pi Camera [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/Hardware-Programming/blob/master/RaspberryPi/pir-camera-test.py)]
 
 - [Getting Started with Arduino](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Arduino-repo/README.md)
-1. Blinking internal LED of an Arduino UNO [[code](https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Arduino-repo/README.md#the-code)]
-2. Home automation using NodeMCU [[code](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/Adafruit-Led-NodeMCU.ino)]
-3. Making a Server Access Point with NodeMCU, commecting it to the Wi-Fi [[code](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/Server-AP-mode.ino)]
-4. Creating a Server using NodeMCU [[code](https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/server-code-AP.ino)]
+1. Blinking internal LED of an Arduino UNO [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Arduino-repo/README.md#the-code)]
+2. Home automation using NodeMCU [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/Adafruit-Led-NodeMCU.ino)]
+3. Making a Server Access Point with NodeMCU, commecting it to the Wi-Fi [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/Server-AP-mode.ino)]
+4. Creating a Server using NodeMCU [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/Hardware-Codes/blob/master/Arduino-repo/server-code-AP.ino)]
 
 ---
 
@@ -118,10 +119,10 @@ permalink: /github/
 ### Learning Resources & References
 For those new to Verilog or looking for deeper insights.
 
-- Data Types in Verilog HDL [[code](https://github.com/Ikarthikmb/VerilogFod/blob/main/data_types/data_types.v)]  
+- Data Types in Verilog HDL [[code](/codeviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/data_types/data_types.v)]  
   A primer on Verilog data types, essential for anyone working with hardware description languages.
 
-- Code Questions on Data Types [[doc](https://github.com/Ikarthikmb/VerilogFod/blob/main/assignment2.md)]  
+- Code Questions on Data Types [[doc](/codeviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/assignment2.md)]  
   Exercises to test your understanding of Verilog data types.
 
 - Icarus Verilog + GTK Wave Guide [[pdf](/pdfviewer.html?file=https://github.com/Ikarthikmb/VerilogFod/blob/main/References/Icarus_Verilog_GTKWave_guide.pdf)]
@@ -136,7 +137,7 @@ For those new to Verilog or looking for deeper insights.
 , [Evolution of Semiconductor](/pdfviewer.html?file=https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Evolution-of-semiconductors.pdf)
 , [microwave Devices](/pdfviewer.html?file=https://github.com/Ikarthikmb/MindMaps_xmind/tree/master/Engineering-subject-memory-maps/Microwave-Devices.pdf)
 
-- OpenRAM Configuration for 4kB SRAM using sky130 [[doc](https://github.com/Ikarthikmb/OpenRAM_Tech)]
+- OpenRAM Configuration for 4kB SRAM using sky130 [[doc](/codeviewer.html?file=https://github.com/Ikarthikmb/OpenRAM_Tech/blob/main/README.md)]
 
 ---
 

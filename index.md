@@ -16,6 +16,8 @@ Hope you enjoy what you’re reading here!
 
 ### Highlights
 
+{% include gallery.html %}
+
 - Speaker & Workshop Instructor, ["Sand to Silicon: Build Your Custom ASICs"](https://www.linkedin.com/posts/activity-7322883938060828672-fHcn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs), Purdue University *(March, April 2025)*
 
 - ECE Department Internship Instructor, Purdue University *(January - May 2025)*

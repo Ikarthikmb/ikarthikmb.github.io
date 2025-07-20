@@ -1,0 +1,146 @@
+<div class="gallery-container">
+  <div class="main-image-wrapper">
+    <img id="main-image" src="" alt="Main Highlight" />
+    <div class="thumbnail-overlay">
+      {% assign image_extensions = "jpg,jpeg,png,gif,webp" | split: "," %}
+      {% assign first_image_set = false %}
+      {% for file in site.static_files %}
+        {% if file.path contains 'static/highlights/' %}
+          {% assign ext = file.extname | remove: '.' | downcase %}
+          {% if image_extensions contains ext %}
+            {% assign alt_text = file.name | split: '.' | first | replace: '_', ' ' | capitalize %}
+            {% unless first_image_set %}
+			<script>
+			const imageList = [];
+			const altList = [];
+			let currentIndex = 0;
+			let slideshowInterval = null;
+
+			// Populate imageList and altList from thumbnails
+			document.addEventListener('DOMContentLoaded', function () {
+			const thumbnails = document.querySelectorAll('.thumbnail-overlay img.thumbnail');
+			thumbnails.forEach((thumb, index) => {
+				imageList.push(thumb.src);
+				altList.push(thumb.alt);
+
+				// Initialize the first image
+				if (index === 0) {
+				setMainImage(thumb.src, thumb.alt);
+				}
+			});
+
+			// Start slideshow
+			startSlideshow();
+			});
+
+			function setMainImage(src, alt) {
+			const mainImage = document.getElementById('main-image');
+			const caption = document.getElementById('main-caption');
+			mainImage.src = src;
+			caption.innerText = alt;
+
+			currentIndex = imageList.indexOf(src);
+			if (currentIndex === -1) currentIndex = 0;
+			}
+
+			function showNextImage() {
+			currentIndex = (currentIndex + 1) % imageList.length;
+			setMainImage(imageList[currentIndex], altList[currentIndex]);
+			}
+
+			function startSlideshow() {
+			if (slideshowInterval) clearInterval(slideshowInterval);
+			slideshowInterval = setInterval(showNextImage, 3000); // 3 seconds
+			}
+
+			// Allow thumbnail clicks to restart slideshow from selected image
+			document.addEventListener('click', function (e) {
+			if (e.target.classList.contains('thumbnail')) {
+				setMainImage(e.target.src, e.target.alt);
+				startSlideshow(); // Restart from this image
+			}
+			});
+			</script>
+
+              {% assign first_image_set = true %}
+            {% endunless %}
+            <img class="thumbnail" src="{{ file.path | relative_url }}" alt="{{ alt_text }}" onclick="setMainImage(this.src, this.alt)">
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <div id="main-caption" class="caption"></div>
+</div>
+
+<style>
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.main-image-wrapper {
+  position: relative;
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.main-image-wrapper img#main-image {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  z-index: 1;
+}
+
+.thumbnail-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.75); /* slightly frosted strip */
+  z-index: 2;
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.thumbnail-overlay img.thumbnail {
+  height: 50px;
+  width: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.thumbnail-overlay img.thumbnail:hover {
+  transform: scale(1.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.caption {
+  font-size: 14px;
+  color: #555;
+  margin-top: 1rem;
+  font-style: italic;
+  text-align: center;
+}
+</style>
+
+<script>
+function setMainImage(src, alt) {
+  const mainImage = document.getElementById('main-image');
+  const caption = document.getElementById('main-caption');
+  mainImage.src = src;
+  caption.innerText = alt;
+}
+</script>
+

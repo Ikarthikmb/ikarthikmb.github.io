@@ -67,7 +67,7 @@ cd Adafruit_Python_MCP3008
 ## The Code
 Once the library has been installed it's time to execute the code. You can use the below code or download it from [here](/codeviewer.html?file=https://github.com/Ikarthikmb/Hardware-Codes/blob/master/RaspberryPi/moist-soil.py)[^2].
 
-[^2]: https://github.com/Ikarthikmb/Hardware-Codes/blob/master/RaspberryPi/moist-soil.py
+[^2]: [https://github.com/Ikarthikmb/Hardware-Codes/blob/master/RaspberryPi/moist-soil.py](https://youtu.be/pzBi1nwDn8U?si=PQNUI_5rbGOs8-fK)
 
 ```
 import RPi.GPIO as GPIO
@@ -93,9 +93,6 @@ while True:
 
 ## Youtube Video Tutorial:
 
-youtube ahQhEWf1PRI
-
-[![](/static/projects/soil_moisture_rpi_fig/soilmoisture_youtubethumb.png)](https://youtu.be/ahQhEWf1PRI "Click to play")
-
+{% include ytplayer.html video_id="ahQhEWf1PRI" %}
 
 You can rewrite the code and change the parameters for your requirements. If you have suggestions or any trouble with the project, feel free to comment below. Happy Circuiting!

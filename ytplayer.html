@@ -1,0 +1,54 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Viewer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        iframe {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Watch a YouTube Video</h1>
+    
+    <!-- Input field for YouTube Video ID -->
+    <div style="text-align: center;">
+        <label for="videoID">Enter YouTube Video ID: </label>
+        <input type="text" id="videoID" placeholder="e.g., Da3kzKzzuLs" />
+        <button onclick="loadVideo()">Load Video</button>
+    </div>
+
+    <!-- Video container where the iframe will be inserted -->
+    <div class="video-container">
+        <iframe id="ytPlayer" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <script>
+        // Function to load the YouTube video dynamically based on the input video ID
+        function loadVideo() {
+            // Get the value from the input field
+            var videoID = document.getElementById('videoID').value.trim();
+
+            // Check if the input is not empty
+            if (videoID) {
+                // Construct the YouTube embed URL with the provided video ID
+                var embedUrl = "https://www.youtube.com/embed/" + videoID;
+
+                // Set the iframe source to the new embed URL
+                document.getElementById('ytPlayer').src = embedUrl;
+            } else {
+                // Show an alert if the input is empty
+                alert("Please enter a valid YouTube video ID.");
+            }
+        }
+    </script>
+</body>
+</html>
+

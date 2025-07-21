@@ -169,8 +169,7 @@ With this the ciruit simluation is verified. If you encounter with errors rechec
 
 ## Video Tutorial
 
-
-{{< youtube Da3kzKzzuLs >}}
+{% include ytplayer.html video_id="Da3kzKzzuLs" %}
 
 ## References: 
 

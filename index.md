@@ -24,13 +24,13 @@ Hope you enjoy what you’re reading here!
 
 - PCB Design Workshop Instructor, Design Studio at Purdue University *([March 29th](https://ikarthikmb.github.io/blog/2024-03-29-ieee-pcb-design-workshop-spring24.html), [October 25th](https://www.linkedin.com/posts/activity-7257959280723537920-fdZg?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs), 2024)*
 
-- 5th Place in the ["IEEE HKN Founders Day Hackathon"](https://hkn.ieee.org/news-and-announcements/2024/11/first-hkn-international-hackathon#:~:text=Coders%2C%20Jumbos%2C%20and-,Leo,-.) *(October 2024)*
+- 5th Place in the ["IEEE HKN Founders Day Hackathon"](https://hkn.ieee.org/news-and-announcements/2024/11/first-hkn-international-hackathon#:~:text=Coders%2C%20Jumbos%2C%20and-,Leo,-.) [[Certificate](/pdfviewer.html?file=static/other/IEEE_HKN_Hackathon_2024_Winner_Certificate.pdf)] *(October 2024)*
 
 - Top 52 in ["Capture the Bug - A Design Verification Hackathon"](https://www.linkedin.com/posts/activity-6975543672410886144-VcwP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs) [[repo](https://github.com/Ikarthikmb/ctb2023-challenges-Ikarthikmb)] *(September 2022)*
 
-- 1st Place, 600+ submissions in ["Circuit Design and Simulation Marathon using eSim"](https://www.linkedin.com/posts/activity-6833789615363657728-py75?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs) *(June 2021)*
+- 1st Place, 600+ submissions in ["Circuit Design and Simulation Marathon using eSim"](https://www.linkedin.com/posts/activity-6833789615363657728-py75?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs) [[Certificate](/pdfviewer.html?file=static/other/eSim_Circuit_Design_Marathon_Certificate_June_2021.pdf)] *(June 2021)*
 
-- Member of Institute of Electrical and Electronics Engineers (IEEE)
+- Member of Institute of Electrical and Electronics Engineers (IEEE) [[Profile](https://ieee-collabratec.ieee.org/app/p/KarthikBanakar)]
 
 ### Papers
 

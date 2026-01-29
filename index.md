@@ -8,37 +8,44 @@
 layout: home
 ---
 
+{% include hero.html %}
+
 Welcome to my little corner of the internet, where I code, create, and sometimes accidentally break things. The blog covers hardware articles, how-to's, workshops experiences, and electronic designs. 
 
 Here, you’ll find my portfolio, a byte of my journey, and hopefully a bit of inspiration for your next project.
 
 Hope you enjoy what you’re reading here!
 
+### Achievements
+
+| Event | Result | Context |
+|:------|:-------|:--------|
+| **IEEE HKN Hackathon** | **5th Place** | Int'l Founders Day Hackathon [[Cert](/pdfviewer.html?file=static/other/IEEE_HKN_Hackathon_2024_Winner_Certificate.pdf)] |
+| **Capture the Bug** | **Top 52** | National Design Verification Hackathon [[Repo](https://github.com/Ikarthikmb/ctb2023-challenges-Ikarthikmb)] |
+| **eSim Marathon** | **1st Place** | Winner out of 600+ submissions [[Cert](/pdfviewer.html?file=static/other/eSim_Circuit_Design_Marathon_Certificate_June_2021.pdf)] |
+
 ### Highlights
 
 {% include gallery.html %}
 
-- Speaker & Workshop Instructor, ["Sand to Silicon: Build Your Custom ASICs"](https://www.linkedin.com/posts/activity-7322883938060828672-fHcn/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs), Purdue University *(March, April 2025)*
 
-- ECE Department Internship Instructor, Purdue University *(January - May 2025)*
 
-- PCB Design Workshop Instructor, Design Studio at Purdue University *([March 29th](https://ikarthikmb.github.io/blog/2024-03-29-ieee-pcb-design-workshop-spring24.html), [October 25th](https://www.linkedin.com/posts/activity-7257959280723537920-fdZg?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs), 2024)*
+### Highlights & Workshops
 
-- 5th Place in the ["IEEE HKN Founders Day Hackathon"](https://hkn.ieee.org/news-and-announcements/2024/11/first-hkn-international-hackathon#:~:text=Coders%2C%20Jumbos%2C%20and-,Leo,-.) [[Certificate](/pdfviewer.html?file=static/other/IEEE_HKN_Hackathon_2024_Winner_Certificate.pdf)] *(October 2024)*
-
-- Top 52 in ["Capture the Bug - A Design Verification Hackathon"](https://www.linkedin.com/posts/activity-6975543672410886144-VcwP?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs) [[repo](https://github.com/Ikarthikmb/ctb2023-challenges-Ikarthikmb)] *(September 2022)*
-
-- 1st Place, 600+ submissions in ["Circuit Design and Simulation Marathon using eSim"](https://www.linkedin.com/posts/activity-6833789615363657728-py75?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs) [[Certificate](/pdfviewer.html?file=static/other/eSim_Circuit_Design_Marathon_Certificate_June_2021.pdf)] *(June 2021)*
-
+- Speaker & Workshop Instructor, ["Sand to Silicon: Build Your Custom ASICs"](https://www.linkedin.com/posts/activity-7322883938060828672-fHcn/), Purdue University.
+- ECE Department Internship Instructor, Purdue University.
+- PCB Design Workshop Instructor, Design Studio at Purdue University *([March 29th](https://ikarthikmb.github.io/blog/2024-03-29-ieee-pcb-design-workshop-spring24.html), [October 25th](https://www.linkedin.com/posts/activity-7257959280723537920-fdZg?utm_source=share&utm_medium=member_desktop&rcm=ACoAACyJs6IBHF0R8VMjlhgjaOi-3OXpyN-R9vs) 2024)*
 - Member of Institute of Electrical and Electronics Engineers (IEEE) [[Profile](https://ieee-collabratec.ieee.org/app/p/KarthikBanakar)]
 
-### Papers
+### Technical Papers & Research
 
-1. Modelling a Wireless Channel at Different Propagation Scenarios 2025 [[pdf](/pdfviewer.html?file=_papers/WirelessChannelModelIndoor2025.pdf&title=Modelling a Wireless Channel at Different Propagation Scenarios 2025)]
-1. Two-Level Branch Predictor 2024 [[pdf](/pdfviewer.html?file=_papers/TwoLevelBranchPredictor2024.pdf&title=Two Level Branch Predictor 2024)]
-1. Design and Implementation of an Efficient Base-Base Conversion Tool Using MATLAB 2024 [[pdf](/pdfviewer.html?file=_papers/BaseToBaseConverter2024.pdf&title=Design and Implementation of an Efficient Base-Base Conversion Tool Using MATLAB 2024)]
-1. IP Geolocation using Traceroute and IP Interpolation 2023[[pdf](/pdfviewer.html?file=_papers/IPGeolocation2023.pdf&title=IP Geolocation using Traceroute and IP Interpolation 2023)]
-1. Kalman Filter Implementation for State Estimation with Noisy Measurements 2023 [[pdf](/pdfviewer.html?file=_papers/KalmanFilter2023.pdf&title=Kalman Filter 2023)]
-1. Design of UART Receiver Protocol 2019 [[pdf](/pdfviewer.html?file=_papers/UARTProtocol2019.pdf&title=Design of UART Receiver Protocol 2019)]
-1. House sale prices prediction using linear regression 2019 [[pdf](/pdfviewer.html?file=_papers/LinearRegressionML2019.pdf&title=House sale prices prediction using linear regression 2019)]
-1. Green Chips - the tech that made world smaller 2018 [[pdf](/pdfviewer.html?file=_papers/GreenChips2018.pdf&title=Green Chips - the tech that made world smaller 2018)]
+| Year | Technical Deep-Dive | Format |
+|:-----|:-------------------|:-------|
+| 2025 | **Wireless Channel Modelling at Propagation Scenarios** | [[PDF]](/pdfviewer.html?file=_papers/WirelessChannelModelIndoor2025.pdf) |
+| 2024 | **Two-Level Branch Predictor Design** | [[PDF]](/pdfviewer.html?file=_papers/TwoLevelBranchPredictor2024.pdf) |
+| 2024 | **Base-Base Conversion Tool (MATLAB)** | [[PDF]](/pdfviewer.html?file=_papers/BaseToBaseConverter2024.pdf) |
+| 2023 | **IP Geolocation using Traceroute** | [[PDF]](/pdfviewer.html?file=_papers/IPGeolocation2023.pdf) |
+| 2023 | **Kalman Filter for State Estimation** | [[PDF]](/pdfviewer.html?file=_papers/KalmanFilter2023.pdf) |
+| 2019 | **Design of UART Receiver Protocol** | [[PDF]](/pdfviewer.html?file=_papers/UARTProtocol2019.pdf) |
+| 2019 | **House Sale Prediction via Linear Regression** | [[PDF]](/pdfviewer.html?file=_papers/LinearRegressionML2019.pdf) |
+| 2018 | **Green Chips - The Tech That Made World Smaller** | [[PDF]](/pdfviewer.html?file=_papers/GreenChips2018.pdf) |

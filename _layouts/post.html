@@ -1,58 +1,176 @@
 ---
 layout: default
 ---
+<div class="reading-progress-track">
+  <div id="reading-bar" class="reading-progress-fill"></div>
+</div>
+
+<div class="system-path">
+  <span class="prompt">root@qarbyte:~/logs$</span>
+  <span class="command">cat ./{{ page.date | date: "%Y_%m_%d" }}_{{ page.title | slugify | truncate: 15 }}.v</span>
+  <a href="/blog" class="cd-back" title="Return to Log Index">[ cd .. ]</a>
+</div>
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: date_format }}
-      </time>
-      {%- if page.modified_date -%}
-        ~ 
-        {%- assign mdate = page.modified_date | date_to_xmlschema -%}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
+    <h1 class="post-title p-name" itemprop="name headline">
+      <span class="bracket">module</span> 
+      {{ page.title | escape }} 
+      <span class="bracket">();</span>
+    </h1>
+
+    <div class="post-metadata-inline">
+      <div class="meta-item">
+        <span class="label">TS:</span>
+        <time class="dt-published value" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: "%Y.%m.%d" }}
         </time>
-      {%- endif -%}
-      {%- if page.author -%}
-        • {% for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-            {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
-      {%- endif -%}</p>
+      </div>
+
+      <div class="meta-item">
+        <span class="label">SRC:</span>
+        <span class="value p-author h-card" itemprop="author">{{ page.author | default: "karthik_b" }}</span>
+      </div>
+
+      <div class="meta-item">
+        <span class="label">SIZE:</span>
+        {% assign words = content | number_of_words %}
+        <span class="value">{{ words | divided_by: 180 | plus: 1 }}m_read</span>
+      </div>
+      
+      <div class="meta-item status-flag">
+        <span class="value verified">// VERIFIED_LOG</span>
+      </div>
+    </div>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
-	<div class="no-print">
+    
+    <div class="no-print mt-4">
       {% include navlinks.html %}
     </div>
   </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+  <footer class="post-footer">
+    <div class="eof">
+      <span class="line"></span>
+      <span class="text">ENDMODULE</span>
+      <span class="line"></span>
+    </div>
+  </footer>
 
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
-{% if site.comments_repo %}
-  {% include comments.html %}
+{% if site.comments_repo or site.disqus.shortname %}
+<div class="feedback-section">
+  <h3 class="feedback-title">>> User_Feedback_Loop</h3>
+  {% if site.comments_repo %}
+    {% include comments.html %}
+  {% endif %}
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</div>
 {% endif %}
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8448907819369888"
-     crossorigin="anonymous"></script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T06G3L5TRS"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-T06G3L5TRS');
+  window.onscroll = function() {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById("reading-bar").style.width = scrolled + "%";
+  };
 </script>
+
+<style>
+  /* 1. Top Reading Trace */
+  .reading-progress-track {
+    position: fixed; top: 0; left: 0; width: 100%; height: 2px;
+    background: transparent; z-index: 100;
+  }
+  .reading-progress-fill {
+    height: 100%; background: #00ff41; width: 0%;
+    box-shadow: 0 0 10px #00ff41;
+  }
+
+  /* 2. Terminal Path */
+  .system-path {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.75rem;
+    margin-bottom: 25px; color: #475569;
+  }
+  .system-path .prompt { color: #00ff41; }
+  .cd-back { margin-left: auto; color: #00ff41; text-decoration: none; opacity: 0.5; }
+  .cd-back:hover { opacity: 1; }
+
+  /* 3. Title - Large & Distinct */
+  .post-title { 
+    font-family: 'JetBrains Mono', monospace; 
+    font-size: clamp(1.5rem, 5vw, 2.2rem); /* Fluid sizing */
+    color: #f8fafc; 
+    margin: 0 0 10px 0; 
+    letter-spacing: -1px;
+    font-weight: 700;
+  }
+  .post-title .bracket { color: #334155; font-weight: 400; font-size: 0.8em; }
+
+  /* 4. Inline Metadata */
+  .post-metadata-inline {
+    display: flex; flex-wrap: wrap; gap: 15px;
+    padding-bottom: 15px; margin-bottom: 3rem;
+    border-bottom: 1px solid #1e293b;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.65rem;
+  }
+  .meta-item { display: flex; gap: 6px; align-items: center; }
+  .meta-item .label { color: #475569; }
+  .meta-item .value { color: #94a3b8; }
+  .value.verified { color: #00ff41; opacity: 0.5; }
+
+  /* 5. Content Typography & Optimized Heading Sizes */
+  .post-content {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #cbd5e1; line-height: 1.8; font-size: 1.1rem;
+  }
+  
+  /* H2 - The Primary Section Header */
+  .post-content h2 { 
+    font-family: 'JetBrains Mono', monospace; 
+    color: #f8fafc;
+    font-size: 1.35rem; 
+    margin-top: 3rem; 
+    margin-bottom: 1.2rem;
+    display: flex; 
+    align-items: center; 
+    gap: 12px;
+  }
+  .post-content h2::before { content: "0x02"; color: #00ff41; font-size: 0.6em; opacity: 0.4; }
+
+  /* H3 - Sub-section Header */
+  .post-content h3 {
+    font-family: 'JetBrains Mono', monospace;
+    color: #f8fafc;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.8rem;
+    opacity: 0.9;
+  }
+  .post-content h3::before { content: ">"; color: #00ff41; margin-right: 8px; font-size: 0.9em; }
+  
+  .post-content a { color: #00ff41; text-decoration: none; border-bottom: 1px dotted rgba(0, 255, 65, 0.4); }
+  .post-content a:hover { border-bottom: 1px solid #00ff41; }
+
+  /* 6. Footer (EOF) */
+  .eof { margin-top: 5rem; display: flex; align-items: center; }
+  .eof .line { flex: 1; height: 1px; background: #1e293b; }
+  .eof .text { padding: 0 20px; font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: #475569; letter-spacing: 2px; }
+
+  .feedback-section { margin-top: 4rem; padding-top: 30px; border-top: 1px solid #1e293b; }
+  .feedback-title { color: #00ff41; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; margin-bottom: 2rem; opacity: 0.7; }
+
+  @media (max-width: 600px) {
+    .post-title { font-size: 1.5rem; }
+    .post-metadata-inline { gap: 10px; }
+  }
+</style>

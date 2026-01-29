@@ -3,27 +3,33 @@ layout: default
 title: Code Viewer
 ---
 
-<!-- Go Back + Download Buttons -->
-<div style="margin-bottom: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-  <button onclick="history.back()" style="padding: 8px 16px; font-size: 14px; cursor: pointer; border: 1px solid #d0d7de; border-radius: 6px; background: white; color: #24292f;">
-    ← Go Back
+<div class="viewer-controls">
+  <button onclick="history.back()" class="btn btn-outline">
+    ← Back
   </button>
-  <a id="download-btn" download style="padding: 8px 16px; font-size: 14px; background-color: #0969da; color: white; text-decoration: none; border-radius: 6px; user-select: none;" target="_blank" rel="noopener noreferrer">
-    ⬇ Download
+  <a id="download-btn" download class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+    ⬇ Download Source
   </a>
 </div>
 
-<h1 id="file-title">Code Viewer</h1>
-<p id="file-link" style="margin-bottom: 1rem;"></p>
+<div class="file-info">
+  <h1 id="file-title">Code Viewer</h1>
+  <p id="file-link"></p>
+</div>
 
-<div id="markdown-container" style="display:none;"></div>
+<div id="markdown-container" class="markdown-body" style="display:none;"></div>
 
-<pre id="code-block" class="line-numbers" style="margin-top: 1.5rem;">
-  <code id="code-content" class="">// Loading code...</code>
-</pre>
+<div id="code-wrapper" class="code-window">
+  <div class="window-header">
+    <div class="dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+    <div id="window-filename" class="window-title">code_viewer.v</div>
+  </div>
+  <pre id="code-block" class="line-numbers">
+    <code id="code-content">/* Initializing hardware registers... */</code>
+  </pre>
+</div>
 
-<!-- Prism & Markdown Libraries -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.css" />
 <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script>
@@ -50,62 +56,60 @@ title: Code Viewer
     'md': 'markdown',
     'markdown': 'markdown',
     'sh': 'bash',
-    'bat': 'batch',
     'verilog': 'verilog',
     'v': 'verilog',
-	'ino': 'cpp'
+    'sv': 'systemverilog',
+    'vh': 'verilog',
+    'ino': 'cpp',
+    'm': 'matlab'
   };
 
-  // Dynamically load Prism language component if needed
   async function loadPrismLang(lang) {
     if (!Prism.languages[lang]) {
       try {
-        await import(`https://cdn.jsdelivr.net/npm/prismjs/components/prism-${lang}.min.js`);
-      } catch {
-        // Fallback to none
-      }
+        const script = document.createElement('script');
+        script.src = `https://cdn.jsdelivr.net/npm/prismjs/components/prism-${lang}.min.js`;
+        document.head.appendChild(script);
+        return new Promise(resolve => script.onload = resolve);
+      } catch (e) { console.error("Lang load failed", e); }
     }
   }
 
   window.addEventListener('load', async function () {
     const params = new URLSearchParams(window.location.search);
     let fileUrl = params.get('file');
-    const originalFileUrl = fileUrl; // for display and download
+    const originalFileUrl = fileUrl;
     const codeBlock = document.getElementById('code-block');
     const codeEl = document.getElementById('code-content');
     const markdownEl = document.getElementById('markdown-container');
     const titleEl = document.getElementById('file-title');
+    const windowTitle = document.getElementById('window-filename');
     const linkEl = document.getElementById('file-link');
     const downloadBtn = document.getElementById('download-btn');
 
     if (!fileUrl) {
-      codeEl.textContent = '// No file specified';
+      codeEl.textContent = '// ERROR: No source file specified in URL';
       return;
     }
 
-    // Convert GitHub URL to raw if needed
     if (fileUrl.includes('github.com')) {
       fileUrl = fileUrl.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
     }
 
     const fileName = fileUrl.split('/').pop();
-    titleEl.textContent = `Viewing: ${fileName}`;
-    linkEl.innerHTML = `🔗 <a href="${originalFileUrl}" target="_blank" rel="noopener noreferrer">${originalFileUrl}</a>`;
+    titleEl.textContent = fileName;
+    windowTitle.textContent = fileName;
+    linkEl.innerHTML = `Source: <a href="${originalFileUrl}" target="_blank">${originalFileUrl}</a>`;
     downloadBtn.href = fileUrl;
-    downloadBtn.setAttribute('download', fileName);
 
     const ext = fileName.split('.').pop().toLowerCase();
     const isMarkdown = ext === 'md' || ext === 'markdown';
 
     if (!isMarkdown) {
-      // Set Prism language class based on extension
       const lang = extensionToLang[ext] || 'none';
       codeEl.className = `language-${lang}`;
       codeBlock.className = `line-numbers language-${lang}`;
-
-      if (lang !== 'none') {
-        await loadPrismLang(lang);
-      }
+      if (lang !== 'none') await loadPrismLang(lang);
     }
 
     fetch(fileUrl)
@@ -117,111 +121,142 @@ title: Code Viewer
         if (isMarkdown) {
           markdownEl.innerHTML = marked.parse(data);
           markdownEl.style.display = 'block';
-          codeBlock.style.display = 'none';
+          document.getElementById('code-wrapper').style.display = 'none';
         } else {
           codeEl.textContent = data;
           Prism.highlightElement(codeEl);
-          codeBlock.style.display = 'block';
-          markdownEl.style.display = 'none';
         }
       })
       .catch(error => {
-        codeEl.textContent = `// Failed to load code: ${error.message}`;
-        markdownEl.style.display = 'none';
-        codeBlock.style.display = 'block';
+        codeEl.textContent = `// Failed to fetch source: ${error.message}`;
       });
   });
 </script>
 
 <style>
+  /* Base Theme - Slate & Green */
   body {
-    font-family: system-ui, sans-serif;
-    background-color: #ffffff;
-    color: #24292f;
-    padding: 2rem;
-    max-width: 900px;
+    background-color: #020617; /* Slate 950 */
+    color: #e2e8f0;
+    font-family: 'Inter', -apple-system, sans-serif;
+    padding: 2rem 1rem;
+    max-width: 1000px;
     margin: auto;
   }
 
-  h1 {
-    font-size: 1.6rem;
+  .viewer-controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    padding: 8px 18px;
+    font-size: 14px;
     font-weight: 600;
-    margin-bottom: 0.5rem;
-    word-break: break-word;
-  }
-
-  #file-link a {
-    color: #0969da;
-    text-decoration: underline;
-    font-weight: 500;
-    word-break: break-all;
-  }
-
-  pre[class*="language-"] {
-    background: #ffffff !important;
-    border: 1px solid #d0d7de;
     border-radius: 6px;
-    font-size: 0.875rem;
-    overflow-x: auto;
-    font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
-    line-height: 1.5;
-    padding: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .btn-outline {
+    background: transparent;
+    border: 1px solid #334155;
+    color: #94a3b8;
+  }
+
+  .btn-outline:hover {
+    border-color: #22c55e;
+    color: #22c55e;
+  }
+
+  .btn-primary {
+    background: #22c55e; /* Dev Green */
+    color: #020617;
+    border: none;
+  }
+
+  .btn-primary:hover {
+    background: #4ade80;
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+  }
+
+  .file-info h1 {
+    font-size: 1.8rem;
+    color: #f8fafc;
     margin: 0;
-    white-space: pre-wrap;       /* wrap long lines */
-    word-wrap: break-word;
   }
 
-  code[class*="language-"] {
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    display: block;
+  #file-link {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-bottom: 2rem;
   }
 
-  .line-numbers .line-numbers-rows {
-    border-right: 1px solid #d0d7de;
-    background: #f6f8fa;
-    padding: 0.5rem 0;
+  #file-link a { color: #22c55e; text-decoration: none; }
+
+  /* The Terminal / Code Window Styling */
+  .code-window {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   }
 
-  .line-numbers .line-numbers-rows > span:before {
-    color: #6e7781;
-    font-size: 0.875rem;
-    line-height: 1.5;
+  .window-header {
+    background: #1e293b;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #334155;
   }
 
-  /* Markdown Styling */
-  #markdown-container {
-    font-size: 1rem;
+  .dots {
+    display: flex;
+    gap: 8px;
+  }
+
+  .dots span { width: 12px; height: 12px; border-radius: 50%; }
+  .r { background: #ff5f56; }
+  .y { background: #ffbd2e; }
+  .g { background: #27c93f; }
+
+  .window-title {
+    margin-left: 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.75rem;
+    color: #94a3b8;
+  }
+
+  /* Prism Customization */
+  pre[class*="language-"] {
+    background: #0f172a !important;
+    margin: 0 !important;
+    padding: 1.5rem !important;
+    font-family: 'Fira Code', monospace !important;
+    font-size: 0.9rem !important;
     line-height: 1.6;
   }
 
-  #markdown-container h1,
-  #markdown-container h2,
-  #markdown-container h3 {
-    margin-top: 1.5rem;
-    font-weight: 600;
+  .line-numbers .line-numbers-rows {
+    border-right: 1px solid #1e293b !important;
+    background: #0f172a !important;
   }
 
-  #markdown-container code {
-    background: #f6f8fa;
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  /* Markdown Body Styling */
+  .markdown-body {
+    background: #0f172a;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
+    line-height: 1.7;
   }
 
-  #markdown-container pre {
-    background: #f6f8fa;
-    padding: 1rem;
-    overflow: auto;
-    border-radius: 6px;
-  }
-
-  /* Download button hover */
-  #download-btn:hover {
-    background-color: #084298;
-  }
+  .markdown-body h1, .markdown-body h2 { border-bottom: 1px solid #1e293b; padding-bottom: 0.3rem; }
+  .markdown-body code { background: #334155; padding: 2px 5px; border-radius: 4px; }
 </style>
-

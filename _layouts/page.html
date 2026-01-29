@@ -1,40 +1,243 @@
 ---
 layout: default
 ---
-<article class="post">
+<div class="system-path">
+  <span class="prompt">root@qarbyte:~$</span> 
+  <span class="command">cd ./{{ page.title | downcase | replace: " ", "_" | truncate: 30 }}{% if page.collection == 'projects' %}.prj{% else %}; ls{% endif %}</span>
+  
+  <a href="/" class="cd-back" title="Return to Root">[ cd .. ]</a>
+</div>
+
+<article class="post minimal-logic">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title | escape }}</h1>
+    <h1 class="post-title">
+      {{ page.title | escape }}<span class="cursor">_</span>
+    </h1>
+    
+    <div class="logic-analyzer-grid">
+      <div class="logic-waves">
+        <svg viewBox="0 0 800 100" preserveAspectRatio="xMidYMid slice">
+          <path class="wave-trace" d="M0,70 L40,70 L40,30 L80,30 L80,70 L160,70 L160,30 L200,30 L200,70 L300,70 L300,30 L340,30 L340,70 L440,70 L440,30 L520,30 L520,70 L800,70" />
+        </svg>
+      </div>
+
+      <div class="meta-item">
+        <span class="label">TS_COMPILE</span> 
+        <span class="value">{% if page.date %}{{ page.date | date: "%Y.%m.%d" }}{% else %}{{ "now" | date: "%Y.%m.%d" }}{% endif %}</span>
+      </div>
+      
+      {% if page.tags.size > 0 %}
+      <div class="meta-item">
+        <span class="label">SIG_FLAGS</span> 
+        <div class="tag-list">
+          {% for tag in page.tags %}<span class="mini-tag">{{ tag }}</span>{% endfor %}
+        </div>
+      </div>
+      {% endif %}
+
+      <div class="meta-item">
+        <span class="label">DATA_SIZE</span> 
+        <span class="value">{{ content | number_of_words }} WDS</span>
+      </div>
+    </div>
   </header>
 
   <div class="post-content">
     {{ content }}
   </div>
 
+  <footer class="post-footer">
+    <div class="eof-marker">
+      <span class="hex">0x04</span>
+      <span class="label">EOT (End of Transmission)</span>
+    </div>
+  </footer>
+
 </article>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8448907819369888"
-     crossorigin="anonymous"></script>
+<style>
+  /* 1. System Bar */
+  .system-path {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    margin-bottom: 25px;
+    color: #475569;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .system-path .prompt { color: #00ff41; font-weight: bold; margin-right: 8px; }
+  .system-path .command { color: #94a3b8; }
+  .cd-back { margin-left: auto; color: #00ff41; text-decoration: none; opacity: 0.5; font-size: 0.75rem; transition: opacity 0.2s; }
+  .cd-back:hover { opacity: 1; text-decoration: none; }
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8448907819369888"
-     crossorigin="anonymous"></script>
-<!-- Simple -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-8448907819369888"
-     data-ad-slot="1877335249"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+  /* 2. Title & Logic Waveform */
+  .post-title { 
+    font-family: 'JetBrains Mono', monospace; 
+    font-size: 2rem; 
+    color: #f8fafc;
+    margin: 0 0 25px 0;
+    letter-spacing: -1px;
+  }
+  .cursor { color: #00ff41; animation: blink 1s infinite; }
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T06G3L5TRS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  .logic-analyzer-grid {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 10px;
+    background: rgba(15, 23, 42, 0.4);
+    border-left: 2px solid #00ff41;
+    overflow: hidden;
+    margin-bottom: 40px;
+  }
 
-  gtag('config', 'G-T06G3L5TRS');
-</script>
+  .logic-waves {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.15;
+    pointer-events: none;
+  }
+  
+  .logic-waves svg { width: 100%; height: 50%; }
+
+  .wave-trace {
+    fill: none;
+    stroke: #00ff41;
+    stroke-width: 2;
+    stroke-dasharray: 1200; 
+    stroke-dashoffset: 1200;
+    animation: flow 10s linear infinite;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  @keyframes flow { to { stroke-dashoffset: 0; } }
+
+  /* 3. Metadata Styling */
+  .meta-item { z-index: 2; font-family: 'JetBrains Mono', monospace; text-align: center; }
+  .meta-item .label { display: block; font-size: 0.6rem; color: #64748b; margin-bottom: 6px; letter-spacing: 1.5px; }
+  .meta-item .value { font-size: 0.9rem; color: #00ff41; }
+
+  .tag-list { display: flex; gap: 6px; justify-content: center; }
+  .mini-tag {
+    font-size: 0.6rem;
+    color: #00ff41;
+    border: 1px solid rgba(0, 255, 65, 0.2);
+    padding: 1px 5px;
+  }
+
+  /* 4. Terminal Log Index Styling (Projects/Blog Lists) */
+  .terminal-log {
+    margin-top: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .log-line {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 8px 10px; /* Added horizontal padding for row highlight */
+    margin: 0 -10px;   /* Offset padding to keep alignment */
+    text-decoration: none;
+    border-bottom: 1px solid #1e293b;
+    transition: background 0.1s ease, color 0.1s ease;
+  }
+
+  .log-date {
+    color: #475569;
+    font-size: 0.85rem;
+    width: 100px;
+    flex-shrink: 0;
+  }
+
+  .log-title {
+    color: #f8fafc;
+    font-size: 0.95rem;
+    flex-grow: 1;
+    padding: 0 20px;
+    word-break: break-all;
+  }
+
+  .log-tags {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .tag-item {
+    color: #334155;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+  }
+
+  /* Index Hover Logic: Row highlight & Text Green, No Underline */
+  .log-line:hover {
+    background: rgba(0, 255, 65, 0.05); /* Slight row highlight */
+    text-decoration: none !important;
+  }
+
+  .log-line:hover .log-date,
+  .log-line:hover .log-title,
+  .log-line:hover .tag-item {
+    color: #00ff41 !important;
+  }
+
+  /* 5. Post Content Styling */
+  .post-content {
+    font-family: 'Inter', sans-serif;
+    color: #cbd5e1;
+    line-height: 1.8;
+  }
+
+  .post-content h1, .post-content h2, .post-content h3, .post-content h4 { 
+    font-family: 'JetBrains Mono', monospace;
+    color: #f8fafc;
+    border-bottom: 1px solid #1e293b;
+    padding-bottom: 8px;
+    margin-top: 2.5rem;
+  }
+
+  .post-content h1 a, .post-content h2 a, .post-content h3 a, .post-content h4 a {
+    color: #f8fafc;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .post-content h1 a:hover, .post-content h2 a:hover, .post-content h3 a:hover, .post-content h4 a:hover {
+    color: #00ff41 !important;
+    text-decoration: none;
+  }
+
+  /* Normal Body Links: Pure Highlight, No Underline */
+  .post-content a:not(.log-line) { 
+    color: #00ff41; 
+    text-decoration: none; 
+    transition: opacity 0.2s;
+  }
+  
+  .post-content a:not(.log-line):hover {
+    text-decoration: none;
+    filter: brightness(1.2); /* Slight "glow" effect on hover */
+  }
+
+  /* 6. Footer */
+  .eof-marker {
+    margin-top: 60px;
+    border-top: 1px solid #1e293b;
+    padding-top: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    opacity: 0.5;
+  }
+  .eof-marker .hex { color: #00ff41; margin-right: 10px; }
+
+  @keyframes blink { 50% { opacity: 0; } }
+</style>

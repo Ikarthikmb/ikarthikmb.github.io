@@ -1,40 +1,58 @@
 ---
 layout: page
-title: Github
-permalink: /github/
+title: Silicon
+permalink: /silicon/
 ---
 
-> _All the links direct to github files or reporsitories_
+_All the links direct to github files or reporsitories_
 
-### [Hardware for ACORN Encryption/Decryption cipher algorithm](https://github.com/Ikarthikmb/ACORN128b2025/tree/state_in_top)
+### TAPEOUT_&_GDS_GALLERY
+`// process: skywater_130nm // flow: openlane_automated`
+
+<div class="tapeout-row-3">
+  {% include tapeout.html name="I2C Controller" image="/static/tapeout/i2c_gds.png" link="https://github.com/Ikarthikmb/i2c_ctrl2202" %}
+  {% include tapeout.html name="8-bit Dadda Multiplier" image="/static/tapeout/dadda_tree_gds.png" link="https://github.com/Ikarthikmb/dvsd_wt8216m" %}
+  {% include tapeout.html name="AI Solar Monitor" image="/static/tapeout/solar_panalel_gds.png" link="https://github.com/Ikarthikmb/ai_solar_panel_monitor" %}
+  </div>
+
+---
+[Hardware for ACORN Encryption/Decryption cipher algorithm](https://github.com/Ikarthikmb/ACORN128b2025/tree/state_in_top)
 
 - An implementation of the ACORN authenticated encryption cipher in Verilog. A cryptographic design showcasing hardware security principles.
 
+---
 
-### [16-bit Neuron Unit with ReLU Activation](https://github.com/Ikarthikmb/rtl_designs/tree/main/9_neuron_unit)
+[16-bit Neuron Unit with ReLU Activation](https://github.com/Ikarthikmb/rtl_designs/tree/main/9_neuron_unit)
 
 - The fundamental building block of an artificial neural network, using a 16-bit ReLU activation function. A step toward hardware implementations of machine learning.
 
+---
 
-### [AI Powered Solar panel monitor Hardware design](https://github.com/Ikarthikmb/ai_solar_panel_monitor)
+[AI Powered Solar panel monitor Hardware design](https://github.com/Ikarthikmb/ai_solar_panel_monitor)
 
 - This RTL block implements an AI-powered solar panel monitor. It takes the voltage, current, and temperature readings from the solar panel as inputs, and calculates the power and efficiency of the solar panel. The results are then displayed on an external display.
 
+---
 
-### [RTL to GDS for a Modified 8-bit Dadda Multiplier using 3:2 Compressors with sky130 PDK and OpenLane](https://github.com/Ikarthikmb/dvsd_wt8216m)
+[RTL to GDS for a Modified 8-bit Dadda Multiplier using 3:2 Compressors with sky130 PDK and OpenLane](https://github.com/Ikarthikmb/dvsd_wt8216m)
 
 - A modified Dadda multiplier uses 3:2 compressors to further reduce the speed and improve the efficiency of the design. The multiplier design uses two 8-bit inputs(A and B) to produce a 16-bit output.
 
+---
 
-### [Design of Inter Integrated Circuit I2C in Verilog](https://github.com/Ikarthikmb/i2c_ctrl2202/blob/main/verilog/rtl/i2c_ctrl2202.v)
+[Design of Inter Integrated Circuit I2C in Verilog](https://github.com/Ikarthikmb/i2c_ctrl2202/blob/main/verilog/rtl/i2c_ctrl2202.v)
 
 - RTL for I2C controller in verilog, passed through OpenLANE flow to generate GDS II
 
-### [Schematic design of Wallace tree multiplier using SKY130 PDK in eSim](https://github.com/Ikarthikmb/wallace-tree)]
+---
+
+[Schematic design of Wallace tree multiplier using SKY130 PDK in eSim](https://github.com/Ikarthikmb/wallace-tree)]
 
 - A Wallace multiplier is a digital circuit which multiplies two integers in binary format. It uses half and full adders to sum partial products in stages until two numbers are left. 
 
-### [Logging Fundamental Parameters of Plants with Raspberry-Pi](https://github.com/Ikarthikmb/gardener-groot)
+---
+
+[Logging Fundamental Parameters of Plants with Raspberry-Pi](https://github.com/Ikarthikmb/gardener-groot)
 
 - This project is built using Raspberry Pi which acts as a Gardener collecting sensor data and computing accordingly.
 

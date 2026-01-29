@@ -1,270 +1,191 @@
-<div class="gallery-container" role="region" aria-label="Image Gallery">
-  <div class="main-image-wrapper">
-    <div id="main-caption" class="caption-overlay" aria-live="polite"></div> 
-    <img id="main-image" src="" alt="Main Highlight" /> 
+<div class="silicon-gallery">
+  <div class="stage-wrapper">
+    <div class="display-unit">
+      <div class="progress-track">
+        <div class="progress-fill" id="timer-bar"></div>
+      </div>
+      
+      <img id="main-image" src="" alt="Hardware View" />
+      
+      <div class="data-overlay">
+        <div id="main-caption" class="simple-caption">INITIALIZING...</div>
+        <div class="sys-info">ARCH: QARBYTE-CORE // STATUS: ACTIVE_TRACE</div>
+      </div>
+    </div>
+
+    <div class="nav-cluster">
+      <button class="node-btn" onclick="manualChange(-1)">_PREV</button>
+      <div class="node-index"><span id="curr-num">01</span> / <span id="total-num">08</span></div>
+      <button class="node-btn" onclick="manualChange(1)">_NEXT</button>
+    </div>
   </div>
 
-  <div class="thumbnail-overlay" role="list">
+  <div class="wafer-grid">
     {% assign image_extensions = "jpg,jpeg,png,gif,webp" | split: "," %}
-    {% assign first_image_set = false %}
     {% for file in site.static_files %}
       {% if file.path contains 'static/highlights/' %}
         {% assign ext = file.extname | remove: '.' | downcase %}
         {% if image_extensions contains ext %}
-          {% assign alt_text = file.name | split: '.' | first | replace: '_', ' ' | capitalize %}
-          {% unless first_image_set %}
-          <script>
-          const imageList = [];
-          const altList = [];
-          let currentIndex = 0;
-          let slideshowInterval = null;
-
-          document.addEventListener('DOMContentLoaded', () => {
-            const thumbnails = document.querySelectorAll('.thumbnail-overlay img.thumbnail');
-            thumbnails.forEach((thumb, index) => {
-              imageList.push(thumb.src);
-              altList.push(thumb.alt);
-
-              if (index === 0) {
-                setMainImage(thumb.src, thumb.alt);
-                thumbnails[0].setAttribute('aria-current', 'true');
-              }
-            });
-
-            startSlideshow();
-          });
-
-          function formatImageTitle(fileName) {
-            return fileName.replace(/_/g, ' ').replace(/\b\w/g, (match) => match.toUpperCase());
-          }
-
-          function setMainImage(src, alt) {
-            const mainImage = document.getElementById('main-image');
-            const caption = document.getElementById('main-caption');
-
-            mainImage.src = src;
-            mainImage.alt = alt;
-
-            // Format the title based on image name
-            const title = formatImageTitle(alt);
-            caption.textContent = title;
-
-            const thumbnails = document.querySelectorAll('.thumbnail-overlay img.thumbnail');
-            thumbnails.forEach((thumb) => thumb.removeAttribute('aria-current'));
-            const activeThumb = Array.from(thumbnails).find(t => t.src === src);
-            if (activeThumb) activeThumb.setAttribute('aria-current', 'true');
-
-            currentIndex = imageList.indexOf(src);
-            if (currentIndex === -1) currentIndex = 0;
-          }
-
-          function showNextImage() {
-            currentIndex = (currentIndex + 1) % imageList.length;
-            setMainImage(imageList[currentIndex], altList[currentIndex]);
-          }
-
-          function showPreviousImage() {
-            currentIndex = (currentIndex - 1 + imageList.length) % imageList.length;
-            setMainImage(imageList[currentIndex], altList[currentIndex]);
-          }
-
-          function startSlideshow() {
-            if (slideshowInterval) clearInterval(slideshowInterval);
-            slideshowInterval = setInterval(showNextImage, 4000);
-          }
-
-          document.addEventListener('click', (e) => {
-            if (e.target.classList.contains('thumbnail')) {
-              setMainImage(e.target.src, e.target.alt);
-              startSlideshow();
-            }
-          });
-
-          document.querySelector('.next').addEventListener('click', showNextImage);
-          document.querySelector('.prev').addEventListener('click', showPreviousImage);
-          </script>
-          {% assign first_image_set = true %}
-          {% endunless %}
-          <img class="thumbnail" src="{{ file.path | relative_url }}" alt="{{ alt_text }}" role="listitem" tabindex="0" />
+          <div class="wafer-cell">
+            <img class="wafer-thumb" 
+                 src="{{ file.path | relative_url }}" 
+                 alt="{{ file.name | split: '.' | first | replace: '_', ' ' | uppercase }}"
+                 onclick="manualSelect(this, {{ forloop.index0 }})">
+          </div>
         {% endif %}
       {% endif %}
     {% endfor %}
   </div>
 </div>
 
+<script>
+  const imageList = [];
+  const altList = [];
+  let currentIndex = 0;
+  let scanTimer = null;
+  const SCAN_DURATION = 5000;
 
-<style>
-/* Make the entire window 4:3 aspect ratio */
-.gallery-container {
-  width: 80vmin; /* 80% of the viewport's smaller dimension */
-  height: 60vmin; /* 60% of the viewport's smaller dimension to get a 4:3 aspect ratio */
-  margin: 0 auto 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* Align content to the top */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
-}
+  document.addEventListener('DOMContentLoaded', () => {
+    const thumbs = document.querySelectorAll('.wafer-thumb');
+    thumbs.forEach((img) => {
+      imageList.push(img.src);
+      altList.push(img.alt);
+    });
 
-.main-image-wrapper {
-  position: relative;
-  width: 100%;
-  height: calc(100% - 60px); /* Reduced height for the caption and thumbnails */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  background: #fafafa;
-}
+    if(imageList.length > 0) {
+      document.getElementById('total-num').textContent = imageList.length.toString().padStart(2, '0');
+      updateDisplay(0);
+      resetTimer();
+    }
+  });
 
-#main-image {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Ensure the image fits while maintaining aspect ratio */
-  transition: opacity 0.4s ease-in-out;
-  user-select: none;
-}
+  function updateDisplay(index) {
+    currentIndex = index;
+    const mainImg = document.getElementById('main-image');
+    const caption = document.getElementById('main-caption');
+    const indexDisplay = document.getElementById('curr-num');
+    const thumbs = document.querySelectorAll('.wafer-thumb');
 
-/* Style for the caption overlay */
-.caption-overlay {
-  position: absolute;
-  top: 10px; /* Space from the top */
-  left: 0;
-  width: 100%;
-  padding: 0.6rem 1.2rem;
-  background: rgba(255 255 255 / 0.8);
-  color: #222;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center;
-  backdrop-filter: blur(6px);
-  box-sizing: border-box;
-  pointer-events: none;
-  user-select: none;
-  white-space: normal; /* Allow multiple lines */
-  word-wrap: break-word; /* Break words if they exceed the container width */
-  line-height: 1.4;
-  overflow: visible;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
-}
+    // Smooth fade transition
+    mainImg.style.opacity = '0';
+    setTimeout(() => {
+      mainImg.src = imageList[index];
+      mainImg.onload = () => { mainImg.style.opacity = '1'; };
+      caption.innerText = altList[index];
+    }, 200);
 
-/* Ensure the gallery title is shown fully and on new lines if necessary */
-#main-caption {
-  word-wrap: break-word; /* Break words when needed */
-  line-height: 1.4; /* Space out the lines for better readability */
-  text-align: center; /* Keep the text centered */
-  padding: 0.6rem 1.2rem; /* Add some padding around the text */
-}
-
-
-.thumbnail-overlay {
-  margin-top: 12px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  gap: 10px;
-  padding: 8px 12px;
-  background: rgba(255 255 255 / 0.85);
-  border-radius: 8px;
-  box-shadow: inset 0 4px 8px rgb(0 0 0 / 0.04);
-  scroll-behavior: smooth;
-  position: absolute;
-  bottom: 10px; /* Fix the thumbnails at the bottom */
-  overflow-x: auto; /* Enable horizontal scrolling */
-}
-
-.thumbnail-overlay::-webkit-scrollbar {
-  height: 6px;
-}
-
-.thumbnail-overlay::-webkit-scrollbar-thumb {
-  background-color: #bbb;
-  border-radius: 3px;
-}
-
-.thumbnail {
-  height: 56px;
-  width: auto;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  filter: grayscale(20%);
-  user-select: none;
-}
-
-.thumbnail:hover,
-.thumbnail:focus {
-  transform: scale(1.15);
-  filter: grayscale(0);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
-  outline: none;
-  border: 2px solid #0078d4; /* subtle accent border */
-}
-
-.thumbnail[aria-current="true"] {
-  filter: none;
-  box-shadow: 0 0 8px 3px #0078d4;
-  transform: scale(1.2);
-  pointer-events: none; /* prevent clicking on current */
-}
-
-/* Style for the navigation buttons */
-.nav-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent;
-  color: #222;
-  font-size: 2rem;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.nav-button:hover,
-.nav-button:focus {
-  color: #0078d4;  /* change color on hover/focus */
-  transform: scale(1.1);
-}
-
-.prev {
-  left: 15px;
-}
-
-.next {
-  right: 15px;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  .gallery-container {
-    width: 80vmin;
-    height: 60vmin;
+    indexDisplay.textContent = (index + 1).toString().padStart(2, '0');
+    thumbs.forEach((t, i) => {
+      t.parentElement.classList.toggle('active', i === index);
+    });
   }
 
-  .main-image-wrapper {
-    height: calc(100% - 60px);
+  function resetTimer() {
+    if (scanTimer) clearInterval(scanTimer);
+    
+    const bar = document.getElementById('timer-bar');
+    bar.style.transition = 'none';
+    bar.style.width = '0%';
+    
+    // Trigger reflow to restart animation
+    setTimeout(() => {
+      bar.style.transition = `width ${SCAN_DURATION}ms linear`;
+      bar.style.width = '100%';
+    }, 50);
+
+    scanTimer = setInterval(() => {
+      let nextIndex = (currentIndex + 1) % imageList.length;
+      updateDisplay(nextIndex);
+      resetTimer();
+    }, SCAN_DURATION);
+  }
+
+  function manualSelect(el, index) {
+    updateDisplay(index);
+    resetTimer();
+  }
+
+  function manualChange(step) {
+    let newIndex = (currentIndex + step + imageList.length) % imageList.length;
+    updateDisplay(newIndex);
+    resetTimer();
+  }
+</script>
+
+<style>
+  .silicon-gallery {
+    display: flex; flex-direction: column; gap: 12px;
+    background: #0f172a; padding: 15px; border-radius: 4px;
+    border: 1px solid #1e293b; margin-bottom: 2rem;
+  }
+
+  .display-unit {
+    position: relative; width: 100%; aspect-ratio: 16 / 9;
+    background: #020617; overflow: hidden; border: 1px solid #1e293b;
   }
 
   #main-image {
-    max-height: 320px;
+    width: 100%; height: 100%; object-fit: contain;
+    opacity: 0; transition: opacity 0.4s ease-in-out;
   }
 
-  .thumbnail {
-    height: 40px;
+  /* Smooth loading line at the top of the data overlay */
+  .progress-track {
+    position: absolute; bottom: 42px; /* Sits right on top of the overlay */
+    left: 0; width: 100%; height: 1px;
+    background: rgba(0, 255, 65, 0.05); z-index: 20;
   }
 
-  .nav-button {
-    font-size: 1.5rem;
-    padding: 0.8rem;
+  .progress-fill {
+    height: 100%; background: #00ff41; width: 0%;
+    box-shadow: 0 0 8px #00ff41;
   }
-}
 
+  .data-overlay {
+    position: absolute; bottom: 0; left: 0; width: 100%;
+    padding: 8px 15px; background: rgba(2, 6, 23, 0.9);
+    border-top: 1px solid #1e293b; z-index: 15;
+  }
+
+  .simple-caption {
+    font-family: 'JetBrains Mono', monospace;
+    color: #f8fafc; font-size: 0.75rem;
+  }
+
+  .sys-info {
+    font-size: 0.5rem; color: #475569;
+    font-family: 'JetBrains Mono', monospace; margin-top: 2px;
+  }
+
+  .wafer-grid {
+    display: flex; gap: 8px; padding: 5px;
+    background: #020617; overflow-x: auto;
+  }
+
+  .wafer-cell {
+    width: 45px; height: 45px; flex-shrink: 0;
+    border: 1px solid #1e293b; cursor: pointer;
+  }
+
+  .wafer-cell.active { border-color: #00ff41; }
+
+  .wafer-thumb {
+    width: 100%; height: 100%; object-fit: cover;
+    opacity: 0.3; filter: grayscale(1); transition: 0.3s;
+  }
+
+  .wafer-cell.active .wafer-thumb { opacity: 1; filter: grayscale(0); }
+
+  .nav-cluster {
+    display: flex; justify-content: space-between; align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .node-btn {
+    background: transparent; border: 1px solid #1e293b;
+    color: #475569; padding: 4px 10px; font-size: 0.6rem; cursor: pointer;
+  }
+
+  .node-btn:hover { color: #00ff41; border-color: #00ff41; }
+  .node-index { color: #00ff41; font-size: 0.75rem; opacity: 0.8; }
 </style>

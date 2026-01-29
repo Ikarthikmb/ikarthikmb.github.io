@@ -8,21 +8,35 @@
 
 .post_navi-item {
   flex: 1;
-  padding: 1em;
-  background: #f4f4f4;
-  border-radius: 8px;
+  padding: 1.5em;
+  background: $slate-900; // Match your dark theme
+  border: 1px solid $slate-850;
+  border-radius: 4px;
   text-decoration: none;
-  color: inherit;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  transition: background 0.3s ease;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $dev-green; // Glow effect on hover
+    background: lighten($slate-900, 2%);
+  }
 }
 
-.post_navi-item:hover {
-  background: #e2e2e2;
+.post_navi-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: $dev-green; // Green labels
+  margin-bottom: 8px;
+  opacity: 0.7;
 }
 
+.post_navi-title {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: bold;
+}
 .post_navi-label {
   font-size: 0.9em;
   font-weight: bold;

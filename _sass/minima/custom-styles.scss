@@ -1,2 +1,48 @@
 // Placeholder to allow defining custom styles that override everything else.
 // (Use `_sass/minima/custom-variables.scss` to override variable defaults)
+/* Container for 3 projects per row */
+.tapeout-row-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Forces three columns */
+  gap: 20px; /* Adjust spacing between projects */
+  margin: 2rem 0;
+}
+
+/* Individual project styling */
+.tapeout-entry {
+  display: flex;
+  flex-direction: column;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.tapeout-visual img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #1e293b;
+  border-left: 3px solid #00ff41;
+  margin-bottom: 8px;
+  filter: brightness(0.85);
+}
+
+.hw-title {
+  color: #ffffff;
+  font-size: 0.85rem; /* Slightly smaller to fit 3 in a row */
+  margin-bottom: 4px;
+}
+
+.hw-src {
+  color: #00ff41;
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.hw-src:hover {
+  text-decoration: underline;
+}
+
+/* Mobile: Switch to 1 column */
+@media (max-width: 768px) {
+  .tapeout-row-3 {
+    grid-template-columns: 1fr;
+  }
+}

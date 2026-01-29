@@ -1,18 +1,70 @@
 <div class="post_navi">
-  <!-- Previous Button -->
   <a class="post_navi-item nav_prev"
      href="{{ page.previous.url | default: '/' }}"
      title="{{ page.previous.title | default: 'Home' }}">
-    <div class="post_navi-label">← Previous</div>
-    <div class="post_navi-title">{{ page.previous.title | default: 'Home' }}</div>
+    <div class="post_navi-label"><span class="arrow"><</span> prev_module</div>
+    <div class="post_navi-title">{{ page.previous.title | default: 'Return to Index' | truncate: 30 }}</div>
   </a>
 
-  <!-- Next Button -->
   <a class="post_navi-item nav_next"
      href="{{ page.next.url | default: '/' }}"
      title="{{ page.next.title | default: 'Home' }}">
-    <div class="post_navi-label">Next →</div>
-    <div class="post_navi-title">{{ page.next.title | default: 'Home' }}</div>
+    <div class="post_navi-label">next_module <span class="arrow">></span></div>
+    <div class="post_navi-title">{{ page.next.title | default: 'End of Stream' | truncate: 30 }}</div>
   </a>
 </div>
 
+<style>
+  .post_navi {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #1e293b;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .post_navi-item {
+    flex: 1;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+  }
+
+  .nav_next { text-align: right; }
+
+  .post_navi-label {
+    font-size: 0.6rem;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+  }
+
+  .post_navi-item:hover .post_navi-label {
+    color: #00ff41;
+  }
+
+  .post_navi-title {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .post_navi-item:hover .post_navi-title {
+    color: #f8fafc;
+  }
+
+  .arrow {
+    color: #00ff41;
+    font-weight: bold;
+    opacity: 0.6;
+  }
+
+  @media (max-width: 600px) {
+    .post_navi { flex-direction: column; gap: 30px; }
+    .nav_next { text-align: left; }
+  }
+</style>

@@ -1,10 +1,16 @@
-<div class="no-print">
+<div class="no-print comments-wrapper">
     <script src="https://utteranc.es/client.js"
             repo="{{ site.comments_repo }}"
-            issue-term="og:title"
-            label="Comments"
-            theme="preferred-color-scheme"
+            issue-term="pathname"
+            label="log_replies"
+            theme="github-dark"
             crossorigin="anonymous"
             async>
     </script>
 </div>
+
+<style>
+    .comments-wrapper .utterances {
+        max-width: 100%;
+    }
+</style>

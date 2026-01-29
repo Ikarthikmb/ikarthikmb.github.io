@@ -1,39 +1,70 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <div class="trace-line"></div>
 
   <div class="wrapper">
+    <div class="footer-interface">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">Contact me</a></li>
-          {%- endif %}
+      <div class="interface-col">
+        <span class="header-label">>> SYSTEM_DIAGNOSTICS</span>
+        <div class="console-output">
+          <span class="line">HOST: {{ site.url | remove: 'https://' | remove: 'http://' | default: 'localhost:4000' }}</span>
+          <span class="line">KERNEL: Jekyll v{{ jekyll.version }}</span>
+          <span class="line">STATUS: <span class="status-green">OPERATIONAL</span></span>
+          <span class="line copyright">&copy; {{ 'now' | date: "%Y" }} qarbyte.</span>
+          <span class="line" style="margin-top: 10px; color: #00ff41;">root@qarbyte:~$ man qarbyte</span>
+          <span class="line">{{site.description}}</span>
+        </div>
+      </div>
+
+      <div class="interface-col">
+        <span class="header-label">>> MEMORY_MAP</span>
+        <ul class="text-list nav-list">
+          <li><a href="{{ '/' | relative_url }}">0x00 /root</a></li>
+          <li><a href="{{ '/projects/' | relative_url }}">0x01 /projects</a></li>
+          <li><a href="{{ '/logs/' | relative_url }}">0x02 /logs</a></li>
+          <li><a href="{{ '/silicon/' | relative_url }}">0x03 /silicon</a></li>
         </ul>
-      {%- endif %}
       </div>
-		<div class="footer-col">
-			Quick links
-		<ul>
-			<li><a href="{{ '/' | relative_url }}">Home</a></li>
-			<li><a href="{{ '/github/' | relative_url }}">Github</a></li>
-			<li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-			<li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-		</ul>
-		</div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
+
+      <div class="interface-col">
+        <span class="header-label">>> ACTIVE_DRIVERS</span>
+        {%- include social.html -%}
       </div>
-    </div>
 
-    <div class="social-links">
-      {%- include social.html -%}
     </div>
-
   </div>
-
 </footer>
+
+<style>
+  .site-footer {
+    background-color: #050505;
+    padding: 3rem 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: #555;
+  }
+  .footer-interface {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1.2fr;
+    gap: 40px;
+  }
+  .header-label { color: #00ff41; font-weight: bold; display: block; margin-bottom: 15px; }
+  .text-list { list-style: none; padding: 0; margin: 0; }
+  .text-list li { margin-bottom: 8px; }
+  .text-list a { text-decoration: none; color: #888; display: flex; align-items: center; gap: 10px; }
+  
+  /* Active Driver specific styling */
+  .driver-id { color: #444; font-size: 0.75rem; }
+  .driver-name { flex-grow: 1; }
+  .status-light { color: #222; font-size: 0.7rem; }
+  
+  .driver-list a:hover .driver-name { color: #00ff41; }
+  .driver-list a:hover .status-light { color: #00ff41; text-shadow: 0 0 5px #00ff41; }
+
+  /* Email Command */
+  .exec-cmd { margin-top: 15px; border-top: 1px dashed #222; padding-top: 10px; }
+  .cmd-prompt { color: #00ff41; }
+  .cmd-run { color: #ccc; }
+
+  @media (max-width: 768px) { .footer-interface { grid-template-columns: 1fr; } }
+</style>

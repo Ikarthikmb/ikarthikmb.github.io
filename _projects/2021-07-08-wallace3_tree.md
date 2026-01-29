@@ -72,7 +72,7 @@ It has three steps:
 
 ### 3 bit Reduction algorithm
 
-![](static/projects/wtree/stages_gif.gif)
+![](/static/projects/wtree/stages_gif.gif)
 
 
 ## Schematics

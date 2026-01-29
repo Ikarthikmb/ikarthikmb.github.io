@@ -3,101 +3,167 @@ layout: default
 ---
 
 <div class="home">
-  <div class="post-content">
+  <div class="post-content intro-section">
     {{ content }}
   </div>
 
-  <div class="section">
-    <h2>Latest Posts</h2>
-    <ul class="item-list">
-      {% assign combined = site.projects | concat: site.blog | sort: 'date' | reverse %}
-      {% for item in combined limit:5 %}
-        <li>
-          <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
-          <p class="excerpt">
-            {{ item.excerpt | default: item.content | strip_html | truncatewords: 20 }}
-          </p>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+  <div class="vertical-stack">
+    
+    <div class="section posts-feed">
+      <h2 class="text-green">> Latest_Activity</h2>
+      <ul class="item-list custom-feed">
+        {% assign combined = site.projects | concat: site.logs | sort: 'date' | reverse %}
+        {% for item in combined limit:5 %}
+          <li class="feed-item">
+            <span class="date-tag">[{{ item.date | date: "%y.%m.%d" }}]</span>
+            <a class="post-link" href="{{ item.url }}">
+              {{ item.title | downcase | replace: " ", "_" }}{% if item.collection == 'projects' %}.prj{% else %}.log{% endif %}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      <div class="view-all-container">
+        <a href="/logs" class="view-all">view_all_logs()</a>
+      </div>
+    </div>
 
-  <p>
-    <em>
-      For more articles, check out my
-      <a href="{{ site.baseurl }}/projects">Projects</a> and
-      <a href="{{ site.baseurl }}/blog">Blog</a>
-    </em>
-  </p>
+    <div class="section video-feed-section">
+      <h2 class="text-green">> Video_Transmissions</h2>
+      <div id="video-feed" class="video-grid-2x2">
+          <div class="loading-text" style="color: #64748b; font-family: monospace;">[Scanning Frequencies...]</div>
+      </div>
+    </div>
 
-  <div class="section">
-    <h2>Recent Videos</h2>
-    <div id="video-feed"></div>
   </div>
 </div>
 
 <style>
+  /* =========================================
+     HOME LAYOUT LOCAL STYLES
+     ========================================= */
+  
+  .intro-section { margin-bottom: 3rem; }
+
+  .vertical-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; 
+    border-top: 1px solid #1e293b; 
+    padding-top: 2rem; 
+  }
+
+  /* Section Headers */
+  .text-green { 
+    color: #00ff41; 
+    font-family: 'JetBrains Mono', monospace; 
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    opacity: 0.9;
+  }
+
+  /* Latest Activity (Log Style) */
+  .custom-feed { list-style: none; padding-left: 0; margin: 0; }
+  
+  .feed-item { 
+    display: flex; 
+    align-items: baseline;
+    gap: 15px;
+    margin-bottom: 0.8rem; 
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .date-tag { 
+    color: #64748b; 
+    font-size: 0.8rem; 
+    min-width: 95px; 
+  }
+
+  .post-link { 
+    color: #cbd5e1; 
+    text-decoration: none; 
+    font-size: 0.95rem; 
+    transition: color 0.2s;
+  }
+
+  .post-link:hover { 
+    color: #00ff41; 
+    text-decoration: underline;
+  }
+
+  .view-all {
+    display: inline-block;
+    margin-top: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: #64748b;
+    text-decoration: none;
+  }
+  .view-all:hover { color: #00ff41; }
+
+  /* Video Grid (2x2) */
+  .video-grid-2x2 { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+  }
+
   .video-container {
-    width: 100%;
-    max-width: 480px;
-    aspect-ratio: 16/9;
-    margin: 1rem auto;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+    border: 1px solid #1e293b;
+    border-radius: 4px;
+    background: #000;
   }
 
   .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    border: none;
+  }
+
+  @media (max-width: 700px) {
+    .video-grid-2x2 { grid-template-columns: 1fr; }
+    .feed-item { flex-direction: column; gap: 2px; }
   }
 </style>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-  $(function () {
-    const channelID = 'UCv-uZxa_Zr7OCYs1Wu35RjA';
-    const feedUrl = 'https://www.youtube.com/feeds/videos.xml?channel_id=' + channelID;
-    const proxy = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl);
+  $(document).ready(function() {
+    var channelID = 'UCv-uZxa_Zr7OCYs1Wu35RjA';
+    var feedUrl = "https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D" + channelID;
 
-    $.getJSON(proxy, function (data) {
-      if (data.items && data.items.length) {
-        let count = 0;
-        data.items.forEach(item => {
-          if (count >= 4) return;
+    $.getJSON(feedUrl, function(data) {
+      if (data.status === 'ok' && data.items) {
+        $('#video-feed').empty();
+        
+        var videoCount = 0;
+        $.each(data.items, function(i, item) {
+          if (videoCount < 4) { 
+            
+            var videoID = item.link.split('v=')[1];
+            if (videoID) {
+                var ampSplit = videoID.split('&');
+                videoID = ampSplit[0];
+            }
 
-          const isShort = item.link.includes('/shorts/');
-          if (isShort) return;
-
-          // Extract video ID (fallback for reliability)
-          let videoId = item.link.match(/v=([^&]+)/);
-          if (videoId && videoId[1]) {
-            videoId = videoId[1];
-          } else {
-            videoId = item.link.split('/').pop();
+            if (videoID) {
+                var videoEmbed = '<div class="video-container"><iframe src="https://www.youtube.com/embed/' + videoID + '" frameborder="0" allowfullscreen></iframe></div>';
+                $('#video-feed').append(videoEmbed);
+                videoCount++;
+            }
           }
-
-          $('#video-feed').append(`
-            <div class="video-container">
-              <iframe src="https://www.youtube.com/embed/${videoId}" allowfullscreen></iframe>
-            </div>
-          `);
-
-          count++;
         });
+      } else {
+        $('#video-feed').html('<p style="color:#ef4444; font-family:monospace;">[Error: Signal Jammed (API Limit)]</p>');
       }
+    }).fail(function() {
+       $('#video-feed').html('<p style="color:#ef4444; font-family:monospace;">[Error: Connection Lost]</p>');
     });
   });
-</script>
-
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8448907819369888"
-     crossorigin="anonymous"></script>
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-T06G3L5TRS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-T06G3L5TRS');
 </script>

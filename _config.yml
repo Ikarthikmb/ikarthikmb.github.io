@@ -1,4 +1,4 @@
-title: Qarbyte
+title: qarbyte
 # domain: ikarthikmb.github.io
 # url: https://ikarthikmb.github.io
 # baseurl: /ikarthikmb/
@@ -6,7 +6,12 @@ author:
   name: Karthik Mahendra
   email: b.karthikmahendra@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Blog about integrated circuit design, electronic projects, articles, and how-to tutorials.
+  A system log regarding chip design, reverse engineering, and electronic experiments.
+
+terminal:
+  user: "root@qarbyte"
+  path: "~$"
+  footer_command: "help site"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -14,11 +19,15 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
+  skin: slate
 
   # generate social links in footer
   social_links:
-    twitter: qrthik
-    github:  ikarthikmb
+    twitter_username: qrthik
+    github_username:  ikarthikmb
+    linkedin_username: 
+    hdlbits_username:
+    medium_username:
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
@@ -51,9 +60,9 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
- - github.md
+ - silicon.md
  - projects.md
- - blog.md
+ - logs.md
 
 # Build settings
 theme: minima
@@ -63,22 +72,22 @@ plugins:
  - jekyll-seo-tag
 
 collections:
-  github:
+  silicon:
     output: true
   projects:
     output: true
-  blog:
+  logs:
     output: true
 
 navigation:
     - title: "Index"
       url: "/"
-    - title: "Github"
-      url: "/github/"
+    - title: "Silicon"
+      url: "/silicon/"
     - title: "projects"
       url: "/projects/"
-    - title: "Blog"
-      url: "/blog/"
+    - title: "logs"
+      url: "/logs/"
 
 defaults:
   - scope:
@@ -88,7 +97,7 @@ defaults:
       layout: post
   - scope:
       path: ""
-      type: blog
+      type: logs
     values:
       layout: post
 

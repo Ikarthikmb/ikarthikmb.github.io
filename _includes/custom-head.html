@@ -4,3 +4,36 @@
   1. Head over to https://realfavicongenerator.net/ to add your own favicons.
   2. Customize default _includes/custom-head.html in your source directory and insert the given code snippet.
 {% endcomment %}
+{% comment %}
+  1. PRECONNECT: Speeds up connection to Google Fonts
+{% endcomment %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{% comment %}
+  2. FONTS: Loading JetBrains Mono (Code) and Inter (Body) efficiently.
+     We use 'display=swap' to ensure text is visible immediately.
+{% endcomment %}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+{% comment %}
+  3. MOBILE THEME COLOR:
+     Sets the browser address bar color to match your dark background (#020617).
+     This makes the site look like a native app on mobile.
+{% endcomment %}
+<meta name="theme-color" content="#020617">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+{% comment %}
+  4. MATH SUPPORT (KaTeX):
+     Essential for engineering blogs to render equations like $E=mc^2$.
+     Lightweight alternative to MathJax.
+{% endcomment %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+{% comment %}
+  5. FAVICONS:
+     (Generate these at realfavicongenerator.net and drop files in your root)
+{% endcomment %}

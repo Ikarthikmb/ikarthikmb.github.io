@@ -5,3 +5,5 @@ gemspec
 gem 'jekyll-seo-tag'
 
 gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
+gem 'jekyll-reading-time'
+gem "logger"

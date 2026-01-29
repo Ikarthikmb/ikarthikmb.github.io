@@ -1,0 +1,241 @@
+/* =========================================
+   1. VARIABLES & FALLBACKS
+   ========================================= */
+/* Defining these locally ensures the site compiles 
+   even if slate.scss isn't imported yet. */
+$dev-green-hex: #00ff41; 
+$slate-950-hex: #020617; 
+$slate-900-hex: #0f172a;
+$slate-800-hex: #1e293b;
+$foundry-bg-hex: #1a1a1b;
+
+/* =========================================
+   2. HOMEPAGE "VERILOG CARD" (Fixes Index.md)
+   ========================================= */
+.verilog-card {
+    background: $slate-950-hex;
+    border: 1px solid $slate-800-hex;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.card-header {
+    background: $slate-900-hex;
+    padding: 10px 15px;
+    border-bottom: 1px solid $slate-800-hex;
+    display: flex;
+    align-items: center;
+}
+
+.file-name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-left: auto;
+}
+
+/* Mac-style Window Dots */
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.card-body {
+    padding: 20px;
+}
+
+/* Force code blocks inside the card to be transparent */
+.verilog-card pre, 
+.verilog-card code {
+    background: transparent !important;
+    border: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================
+   3. DARK TABLES (Fixes Achievements/Papers)
+   ========================================= */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem 0;
+    font-family: 'Inter', sans-serif;
+    border: 1px solid $slate-800-hex;
+}
+
+th {
+    background-color: $slate-800-hex;
+    color: $dev-green-hex;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid $dev-green-hex;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid $slate-800-hex;
+    color: #cbd5e1;
+    font-size: 0.9rem;
+}
+
+tr:hover {
+    background-color: $slate-900-hex;
+}
+
+td a {
+    color: #4ade80;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+td a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   4. SYSTEM PATH & LAYOUT
+   ========================================= */
+.system-path {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.system-path .prompt {
+    color: $dev-green-hex;
+}
+
+.silicon-card {
+    background: $slate-950-hex;
+    border: 1px solid $dev-green-hex;
+}
+
+/* Unified clean-up for card code blocks */
+.silicon-card pre, 
+.silicon-card code,
+.silicon-card .highlight,
+.silicon-card .highlighter-rouge .highlight {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.post-title .bracket {
+    color: $dev-green-hex;
+    opacity: 0.5;
+    font-weight: 300;
+}
+
+/* =========================================
+   5. POST NAVIGATION & BUTTONS
+   ========================================= */
+hr {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid $slate-800-hex;
+}
+
+.post_navi {
+    display: flex;
+    margin-top: 40px;
+}
+
+.post_navi .post_navi-item {
+    padding: 0 2.2em;
+    width: 50%;
+    position: relative;
+    color: #fff !important;
+    text-decoration: none;
+}
+
+.post_navi .post_navi-item:hover {
+    color: $dev-green-hex !important;
+}
+
+.post_navi-label {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.5;
+    display: block;
+}
+
+.copy-code-button {
+    color: $dev-green-hex !important;
+    background-color: $foundry-bg-hex !important; 
+    border: 1px solid $dev-green-hex !important;
+    border-radius: 2px;
+    padding: 4px 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.copy-code-button:hover {
+    background-color: $dev-green-hex !important;
+    color: $slate-950-hex !important;
+}
+
+/* =========================================
+   6. SPECIFICATION FOOTER (EOF)
+   ========================================= */
+.eof {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    opacity: 0.4;
+}
+
+.eof .line {
+    flex-grow: 1;
+    height: 1px;
+    background: $slate-800-hex;
+}
+
+.eof .text {
+    padding: 0 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 3px;
+}
+
+/* =========================================
+   7. UTILITIES & MEDIA QUERIES
+   ========================================= */
+@media (max-width: 768px) {
+    .silicon-card, .verilog-card {
+        padding: 20px;
+    }
+    .post_navi {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .post_navi .post_navi-item {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}

@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/* =========================================
+   1. IMPORTS & FONTS
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* =========================================
+   2. MINIMA REQUIRED DEFAULTS (The missing piece)
+   ========================================= */
+// These ensure the rest of the theme doesn't break
+$base-font-family: "JetBrains Mono", monospace !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+$spacing-unit:     30px !default;
+$content-width:    800px !default;
+
+/* =========================================
+   3. SLATE PALETTE & VARIABLES
+   ========================================= */
+
+$slate-800: #1e293b;
+$slate-850: #1e293b;
+$slate-900: #0f172a;
+$slate-950: #020617;
+
+$foundry-bg:   #1a1a1b; 
+$foundry-text: #c0c0c0;
+
+$dev-green:       #00ff41; 
+$dev-green-dim:   #4caf50; 
+$dev-green-light: #4ade80;
+
+// Theme Mapping
+$brand-color:           $dev-green !default; 
+$brand-color-light:      $slate-850 !default;
+$brand-color-dark:       $dev-green !default;
+
+$site-title-color:      #f8fafc !default;
+$text-color:            #cbd5e1 !default; 
+$background-color:      $slate-950 !default;
+$code-background-color: $slate-900 !default;
+
+// Links
+$link-base-color:       $dev-green !default;
+$link-visited-color:    $dev-green-light !default;
+$link-hover-color:      #ffffff !default;
+
+// Borders & Tables
+$border-color-01:       $slate-850 !default;
+$border-color-02:       $slate-900 !default;
+$border-color-03:       $dev-green !default;
+
+// Table specific (Prevents Classic leaks)
+$table-text-color:      $text-color !default;
+$table-zebra-color:      $slate-900 !default;
+$table-header-bg-color:  $slate-850 !default;
+$table-header-border:    $slate-800 !default;
+$table-border-color:     $slate-800 !default;
+
+/* =========================================
+   3. SITE COMPONENT STYLES
+   ========================================= */
+
+.site-title {
+  font-family: 'Fira Code', monospace;
+  font-weight: 700;
+  letter-spacing: -1px;
+  
+  &::after {
+    content: ".v";
+    font-size: 0.6em;
+    color: #64748b;
+    margin-left: 2px;
+    font-weight: 400;
+  }
+}
+
+/* =========================================
+   4. SILICON TERMINAL STYLES (Fixed Logic)
+   ========================================= */
+
+.terminal-session {
+  background-color: $foundry-bg;
+  color: $foundry-text;
+  padding: 25px;
+  border-radius: 6px;
+  border: 1px solid #333;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  margin: 2rem 0;
+
+  // Prompts
+  h3 {
+    color: $dev-green;
+    font-size: 1rem;
+    margin: 1.5rem 0 1rem 0;
+    font-weight: bold;
+    border: none;
+  }
+
+  // Lists
+  ul, ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    padding-bottom: 4px;
+  }
+
+  // Metadata (Dates/Log filenames)
+  code {
+    background: transparent !important;
+    color: #666 !important;
+    font-size: 0.85rem;
+    padding: 0;
+    margin-right: 15px;
+    border: none;
+    min-width: 140px;
+  }
+
+  // Links (Project Titles)
+  a {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: bold;
+    
+    &:hover {
+      color: $dev-green !important;
+      text-decoration: underline;
+    }
+  }
+
+  // Descriptions/Comments after the link
+  p, span {
+    color: #888;
+    font-size: 0.85rem;
+  }
+}
+
+/* =========================================
+   5. POST METADATA & EOF (For page.html)
+   ========================================= */
+
+.post-metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin: 10px 0 30px 0;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #333;
+}
+
+.meta-item {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  
+  .label { color: #666; margin-right: 5px; }
+  .value { color: $dev-green; } // Fixed: Use SCSS variable, not var()
+}
+
+.eof {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 20px;
+
+  .text {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 4px;
+    color: #444;
+    white-space: nowrap;
+  }
+
+  .line {
+    height: 1px;
+    background: #222;
+    width: 100%;
+  }
+}
+
+/* Animations */
+.blink {
+  animation: blinker 1s linear infinite;
+  color: $dev-green;
+}
+
+@keyframes blinker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

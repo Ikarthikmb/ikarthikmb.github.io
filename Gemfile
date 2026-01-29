@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 gemspec
 gem 'jekyll-seo-tag'
+gem "github-pages"
 
 gem "jekyll", ENV["JEKYLL_VERSION"] if ENV["JEKYLL_VERSION"]
 gem 'jekyll-reading-time'

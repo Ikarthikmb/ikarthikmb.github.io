@@ -1,0 +1,72 @@
+<div class="hero-terminal">
+  <div class="terminal-head">
+    <div class="dots"><span class="r"></span><span class="y"></span><span class="g"></span></div>
+    <span class="tab-name">cdc_fifo_sync.v / sim_vcd</span>
+  </div>
+  
+  <div class="terminal-grid">
+    <div class="code-side">
+<pre><code><span class="c1">// Gray Code Sync Stage</span>
+<span class="k">assign</span> wptr_gray = wptr ^ (wptr >> <span class="mi">1</span>);
+
+<span class="k">always</span> @(<span class="k">posedge</span> rclk) <span class="k">begin</span>
+  <span class="c1">// 2-stage sync to Fast Clock</span>
+  wptr_s1 <= wptr_gray;
+  wptr_s2 <= wptr_s1;
+<span class="k">end</span>
+
+<span class="k">assign</span> rempty = (wptr_s2 == rptr);</code></pre>
+    </div>
+
+    <div class="wave-side">
+      <div class="wave-meta">DOMAIN_CROSS: SLOW_TO_FAST</div>
+      <div class="wave-container">
+        <div class="wave-labels">
+          <span>WCLK</span>
+          <span>WDATA</span>
+          <span>RCLK</span>
+          <span>RDATA</span>
+        </div>
+        <svg viewBox="0 0 400 100" preserveAspectRatio="none">
+          <path class="hero-clk-slow" d="M0,10 L40,10 L40,2 L80,2 L80,10 L120,10 L120,2 L160,2 L160,10 L200,10 L200,2 L240,2 L240,10 L280,10 L280,2 L320,2 L320,10 L360,10 L360,2 L400,2" />
+          <path class="hero-bus" d="M0,25 L35,25 L45,15 L75,15 L85,25 L115,25 L125,15 L155,15 L165,25 L400,25" />
+          
+          <path class="hero-clk-fast" d="M0,60 L10,60 L10,50 L20,50 L20,60 L30,60 L30,50 L40,50 L40,60 L50,60 L50,50 L60,50 L60,60 L70,60 L70,50 L80,50 L80,60 L90,60 L90,50 L100,50 L100,60 L110,60 L110,50 L120,50 L120,60 L130,60 L130,50 L140,50 L140,60 L150,60 L150,50 L160,50 L160,60 L170,60 L170,50 L180,50 L180,60 L190,60 L190,50 L200,50 L200,60 L210,60 L210,50 L220,50 L220,60 L230,60 L230,50 L240,50 L240,60 L250,60 L250,50 L260,50 L260,60 L270,60 L270,50 L280,50 L280,60 L290,60 L290,50 L300,50 L300,60 L310,60 L310,50 L320,50 L320,60 L330,60 L330,50 L340,50 L340,60 L350,60 L350,50 L360,50 L360,60 L370,60 L370,50 L380,50 L380,60 L390,60 L390,50 L400,50" />
+          <path class="hero-bus-sampled" d="M0,85 L80,85 L90,75 L120,75 L130,85 L160,85 L170,75 L200,75 L210,85 L400,85" />
+        </svg>
+      </div>
+      <div class="sim-log">METASTABILITY_GUARD: ACTIVE</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .hero-terminal { background: #0f172a; border: 1px solid #1e293b; border-radius: 8px; font-family: 'JetBrains Mono', monospace; overflow: hidden; margin-bottom: 2rem; }
+  .terminal-head { background: #1e293b; padding: 6px 12px; display: flex; align-items: center; gap: 12px; }
+  .dots { display: flex; gap: 4px; }
+  .dots span { width: 8px; height: 8px; border-radius: 50%; }
+  .r { background: #ff5f56; } .y { background: #ffbd2e; } .g { background: #27c93f; }
+  .tab-name { color: #64748b; font-size: 0.65rem; }
+
+  .terminal-grid { display: grid; grid-template-columns: 1.2fr 1.8fr; }
+
+  .code-side { padding: 15px; font-size: 0.7rem; border-right: 1px solid #1e293b; color: #94a3b8; }
+  .wave-side { padding: 15px; display: flex; flex-direction: column; justify-content: space-between; }
+  
+  .wave-container { display: flex; gap: 10px; align-items: center; margin: 10px 0; }
+  .wave-labels { display: flex; flex-direction: column; justify-content: space-between; height: 80px; font-size: 0.5rem; color: #475569; }
+
+  svg { flex-grow: 1; height: 80px; }
+  path { fill: none; stroke: #00ff41; stroke-width: 1.2; stroke-dasharray: 600; stroke-dashoffset: 600; animation: trace 8s linear infinite; }
+  
+  .hero-clk-slow { opacity: 0.2; animation-duration: 12s; }
+  .hero-bus { opacity: 0.5; stroke: #94a3b8; }
+  .hero-clk-fast { opacity: 0.2; animation-duration: 4s; }
+  .hero-bus-sampled { opacity: 1; filter: drop-shadow(0 0 2px #00ff41); }
+
+  .wave-meta { font-size: 0.55rem; color: #475569; }
+  .sim-log { font-size: 0.6rem; color: #00ff41; opacity: 0.8; border-top: 1px solid #1e293b; padding-top: 8px; }
+
+  @keyframes trace { to { stroke-dashoffset: 0; } }
+  @media (max-width: 768px) { .terminal-grid { grid-template-columns: 1fr; } .code-side { display: none; } }
+</style>

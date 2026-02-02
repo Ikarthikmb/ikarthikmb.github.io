@@ -1,10 +1,115 @@
-<div class="tapeout-entry">
-  <div class="tapeout-visual">
-    <img src="{{ include.image }}" alt="{{ include.name }}">
+<div class="tapeout-grid">
+  {% for entry in site.data.tapeout_list %}
+  <div class="tapeout-entry">
+    <a href="{{ entry.link }}" class="tapeout-link-wrapper">
+      <div class="tapeout-visual">
+        <img src="{{ entry.image | relative_url }}" alt="{{ entry.name }}" class="gds-invert">
+      </div>
+      <div class="tapeout-info">
+        <p class="hw-title">{{ entry.name }}</p>
+        <p class="hw-stats">
+          {{ entry.process }} | {{ entry.area }} 
+          {% if entry.dimensions %}<br><span class="hw-dim">{{ entry.dimensions }}</span>{% endif %}
+        </p>
+      </div>
+    </a>
+    <div class="hw-links">
+      <a href="{{ entry.link }}" class="hw-src">[ SRC ]</a>
+      {% if entry.pdf %}
+      <a href="{{ entry.pdf | relative_url }}" class="hw-src">[ PDF ]</a>
+      {% endif %}
+    </div>
   </div>
-  <div class="tapeout-info">
-    <h4 class="hw-title">{{ include.name }}</h4>
-    <a href="{{ include.link }}" class="hw-src">[ SRC ]</a>
-  </div>
+  {% endfor %}
 </div>
 
+<style>
+  :root {
+    --neon-green: #4df33f;
+    --terminal-white: #ffffff;
+    --muted-gray: #a0a0a0;
+  }
+
+  .tapeout-grid {
+    display: grid;
+    /* Keeps 3-4 items per row */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 40px;
+    margin: 40px 0;
+  }
+
+  .tapeout-entry {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .tapeout-link-wrapper {
+    text-decoration: none;
+    display: block;
+  }
+
+  .tapeout-visual {
+    background-color: #000000;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1; 
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .gds-invert {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    /* Inverts light background to dark and keeps layer colors sensible */
+    filter: invert(1) hue-rotate(180deg) contrast(1.1);
+  }
+
+  .hw-title {
+    color: var(--terminal-white);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    margin: 0;
+    transition: color 0.2s ease;
+  }
+
+  .hw-stats {
+    color: var(--muted-gray);
+    font-family: monospace;
+    font-size: 0.75rem;
+    margin: 6px 0 10px 0;
+    line-height: 1.4;
+    transition: color 0.2s ease;
+  }
+
+  .hw-dim {
+    opacity: 0.8;
+  }
+
+  .hw-links {
+    display: flex;
+    gap: 15px;
+  }
+
+  .hw-src {
+    color: var(--neon-green);
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 0.85rem;
+    font-weight: bold;
+  }
+
+  /* Global Hover logic: text turns green on hover */
+  .tapeout-entry:hover .hw-title,
+  .tapeout-entry:hover .hw-stats {
+    color: var(--neon-green);
+  }
+
+  .hw-src:hover {
+    text-decoration: underline;
+  }
+</style>

@@ -6,14 +6,9 @@ permalink: /silicon/
 
 _All the links direct to github files or reporsitories_
 
-### TAPEOUT_&_GDS_GALLERY
-`// process: skywater_130nm // flow: openlane_automated`
+### Tapeouts & GDS II 
 
-<div class="tapeout-row-3">
-  {% include tapeout.html name="I2C Controller" image="/static/tapeout/i2c_gds.png" link="https://github.com/Ikarthikmb/i2c_ctrl2202" %}
-  {% include tapeout.html name="8-bit Dadda Multiplier" image="/static/tapeout/dadda_tree_gds.png" link="https://github.com/Ikarthikmb/dvsd_wt8216m" %}
-  {% include tapeout.html name="AI Solar Monitor" image="/static/tapeout/solar_panalel_gds.png" link="https://github.com/Ikarthikmb/ai_solar_panel_monitor" %}
-  </div>
+{% include tapeout.html %}
 
 ---
 [Hardware for ACORN Encryption/Decryption cipher algorithm](https://github.com/Ikarthikmb/ACORN128b2025/tree/state_in_top)

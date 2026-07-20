@@ -1,69 +1,28 @@
 {%- assign social = site.minima.social_links -%}
 
-<ul class="text-list driver-list">
-  
+<ul class="footer-links">
+
   {%- if social.github_username -%}
-  <li>
-    <a href="https://github.com/{{ social.github_username }}">
-      <span class="driver-id">[GH]</span>
-      <span class="driver-name">GITHUB</span>
-      <span class="status-light">●</span>
-    </a>
-  </li>
+  <li><a href="https://github.com/{{ social.github_username }}">GitHub</a></li>
   {%- endif -%}
 
-  <li>
-    <a href="https://hdlbits.01xz.net/wiki/Special:VlgStats/94686AE808000EB">
-      <span class="driver-id">[HB]</span>
-      <span class="driver-name">HDL_Bits</span>
-      <span class="status-light">●</span>
-    </a>
-  </li>
+  <li><a href="https://hdlbits.01xz.net/wiki/Special:VlgStats/94686AE808000EB">HDLBits</a></li>
 
-  <li>
-    <a href="https://medium.com/@karthikmb8">
-      <span class="driver-id">[MD]</span>
-      <span class="driver-name">MEDIUM</span>
-      <span class="status-light">●</span>
-    </a>
-  </li>
+  <li><a href="https://medium.com/@karthikmb8">Medium</a></li>
 
   {%- if social.linkedin -%}
-  <li>
-    <a href="https://www.linkedin.com/in/{{ social.linkedin }}">
-      <span class="driver-id">[IN]</span>
-      <span class="driver-name">LINKEDIN_NET</span>
-      <span class="status-light">●</span>
-    </a>
-  </li>
+  <li><a href="https://www.linkedin.com/in/{{ social.linkedin }}">LinkedIn</a></li>
   {%- endif -%}
 
   {%- if social.youtube_channel -%}
-  <li>
-    <a href="https://www.youtube.com/channel/{{ social.youtube_channel }}">
-      <span class="driver-id">[YT]</span>
-      <span class="driver-name">YOUTUBE</span>
-      <span class="status-light">●</span>
-    </a>
-  </li>
+  <li><a href="https://www.youtube.com/channel/{{ social.youtube_channel }}">YouTube</a></li>
   {%- endif -%}
 
   {%- if social.twitter_username -%}
-  <li>
-    <a href="https://twitter.com/{{ social.twitter_username }}">
-      <span class="driver-id">[X]</span>
-      <span class="driver-name">X</span>
-      <span class="status-light">●</span>
-    </a>
-  </li>
+  <li><a href="https://twitter.com/{{ social.twitter_username }}">X / Twitter</a></li>
   {%- endif -%}
 
   {%- if site.author.email -%}
-  <li class="exec-cmd">
-    <a href="mailto:{{ site.author.email }}">
-      <span class="cmd-prompt">root@qarbyte:~$</span>
-      <span class="cmd-run">send_author()</span>
-    </a>
-  </li>
+  <li><a href="mailto:{{ site.author.email }}">Email</a></li>
   {%- endif -%}
 </ul>

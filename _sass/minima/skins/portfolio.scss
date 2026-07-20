@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/* =========================================
+   Minima's required defaults for this skin.
+   The actual palette lives in minima/custom-variables
+   (imported right after this file) - that's the single
+   source of truth for color, so it deliberately does NOT
+   use !default: it needs to win over these.
+   ========================================= */
+$base-font-family: "Inter", -apple-system, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.6 !default;
+$spacing-unit:     30px !default;
+$content-width:    800px !default;
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}

@@ -1,0 +1,206 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+
+<style>
+    /* Dashboard Container */
+    .logic-dashboard {
+        display: flex;
+        height: 600px; 
+        border: 1px solid #1b5e20;
+        background: #010409;
+        margin: 20px 0;
+        font-family: 'JetBrains Mono', monospace;
+        box-shadow: 0 0 15px rgba(57, 255, 20, 0.05);
+    }
+
+    /* Left Sidebar */
+    .logic-sidebar {
+        width: 300px;
+        background: #050a0e;
+        border-right: 1px solid #1b5e20;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar-header {
+        padding: 15px;
+        border-bottom: 1px solid #1b5e20;
+    }
+
+    #logic-search {
+        width: 100%;
+        background: #0d1117;
+        border: 1px solid #1b5e20;
+        color: #39ff14;
+        padding: 8px;
+        font-family: inherit;
+        font-size: 0.75rem;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .file-list-container {
+        flex-grow: 1;
+        overflow-y: auto;
+        padding: 10px;
+    }
+
+    /* Right Viewer */
+    .logic-viewer {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        background: #000;
+    }
+
+    #file-info-bar {
+        background: #0d1117;
+        color: #888;
+        padding: 8px 15px;
+        font-size: 0.7rem;
+        border-bottom: 1px solid #1b5e20;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #code-area {
+        flex-grow: 1;
+        overflow: auto;
+        padding: 15px;
+    }
+
+    /* Accordion & Links */
+    .repo-section { margin-bottom: 2px; }
+    .repo-btn {
+        width: 100%;
+        text-align: left;
+        background: rgba(57, 255, 20, 0.03);
+        color: #fff;
+        border: none;
+        padding: 8px;
+        font-size: 0.75rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
+    .repo-btn:hover { background: rgba(57, 255, 20, 0.1); color: #39ff14; }
+    
+    .file-sublist { display: none; padding-left: 10px; border-left: 1px solid #1b5e20; }
+    
+    .file-item {
+        color: #a0a0a0;
+        padding: 4px 8px;
+        font-size: 0.8rem;
+        cursor: pointer;
+        display: block;
+        text-decoration: none;
+    }
+    .file-item:hover { color: #39ff14; background: rgba(57,255,20,0.05); }
+    .active-file { color: #39ff14; border-right: 2px solid #39ff14; background: rgba(57,255,20,0.05); }
+
+    .github-btn {
+        color: #39ff14;
+        text-decoration: none;
+        border: 1px solid #39ff14;
+        padding: 2px 8px;
+        font-size: 0.6rem;
+        border-radius: 3px;
+    }
+    .github-btn:hover { background: #39ff14; color: #000; }
+</style>
+
+<div class="logic-dashboard">
+    <div class="logic-sidebar">
+        <div class="sidebar-header">
+            <input type="text" id="logic-search" placeholder="SEARCH_MODULES..." onkeyup="filterLogic()">
+        </div>
+        <div id="file-list-container" class="file-list-container">
+            </div>
+    </div>
+    
+    <div class="logic-viewer">
+        <div id="file-info-bar">
+            <span id="current-path">// SYSTEM_READY</span>
+            <a id="gh-link" href="#" target="_blank" class="github-btn" style="display:none;">VIEW_ON_GITHUB</a>
+        </div>
+        <div id="code-area">
+            <pre><code id="code-output" class="language-verilog">/* Select a module from the explorer to begin analysis... */</code></pre>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-verilog.min.js"></script>
+
+<script>
+    const logicIdx = '{{ "/assets/data/logic_index.json" | relative_url }}';
+
+    fetch(logicIdx)
+    .then(res => res.json())
+    .then(data => {
+        const listBody = document.getElementById('file-list-container');
+        const grouped = data.reduce((acc, item) => {
+            if (!acc[item.repo]) acc[item.repo] = [];
+            acc[item.repo].push(item);
+            return acc;
+        }, {});
+
+        Object.keys(grouped).sort().forEach(repo => {
+            const section = document.createElement('div');
+            section.className = 'repo-section';
+            section.innerHTML = `
+                <button class="repo-btn" onclick="toggleFolder(this)">
+                    <span>📁 ${repo}</span>
+                    <span style="opacity:0.3">${grouped[repo].length}</span>
+                </button>
+                <div class="file-sublist"></div>
+            `;
+
+            const sublist = section.querySelector('.file-sublist');
+            grouped[repo].forEach(file => {
+                const item = document.createElement('a');
+                item.className = 'file-item';
+                item.innerHTML = `📄 ${file.module}`;
+                item.onclick = (e) => {
+                    e.preventDefault();
+                    document.querySelectorAll('.file-item').forEach(i => i.classList.remove('active-file'));
+                    item.classList.add('active-file');
+                    loadRTL(file);
+                };
+                sublist.appendChild(item);
+            });
+            listBody.appendChild(section);
+        });
+    });
+
+    function toggleFolder(btn) {
+        const sub = btn.nextElementSibling;
+        sub.style.display = sub.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function filterLogic() {
+        const q = document.getElementById('logic-search').value.toLowerCase();
+        document.querySelectorAll('.file-item').forEach(item => {
+            item.style.display = item.innerText.toLowerCase().includes(q) ? 'block' : 'none';
+        });
+        // Auto-expand folders if searching
+        if(q.length > 0) {
+            document.querySelectorAll('.file-sublist').forEach(s => s.style.display = 'block');
+        }
+    }
+
+    function loadRTL(file) {
+        document.getElementById('current-path').innerText = `// PATH: ${file.path}`;
+        const ghLink = document.getElementById('gh-link');
+        ghLink.style.display = 'inline-block';
+        ghLink.href = file.raw_url.replace('raw.githubusercontent.com', 'github.com').replace('/main/', '/blob/main/');
+
+        fetch(file.raw_url)
+        .then(res => res.text())
+        .then(text => {
+            const out = document.getElementById('code-output');
+            out.textContent = text;
+            Prism.highlightElement(out);
+        });
+    }
+</script>

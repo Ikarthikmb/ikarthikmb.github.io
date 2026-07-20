@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qarbyte.v // LOCAL_FS</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        :root { --bg: #050a0e; --green: #39ff14; --dim: #1b5e20; --gray: #a0a0a0; }
+        body { background: var(--bg); color: white; font-family: 'JetBrains Mono', monospace; padding: 40px; }
+        .container { max-width: 900px; margin: 0 auto; }
+        
+        /* Terminal Aesthetics */
+        .prompt { color: var(--green); margin-bottom: 20px; font-size: 0.8rem; }
+        h1 { border-bottom: 1px solid #1a1f24; padding-bottom: 10px; margin-bottom: 30px; }
+        input { background: transparent; border: 1px solid var(--dim); color: var(--green); width: 100%; padding: 10px; font-family: inherit; margin-bottom: 30px; outline: none;}
+
+        /* Module Cards */
+        .card { border: 1px solid #1a1f24; border-left: 3px solid var(--green); padding: 20px; margin-bottom: 20px; background: rgba(255,255,255,0.01); transition: 0.2s; }
+        .card:hover { background: rgba(57,255,20,0.03); border-color: var(--dim); }
+        .meta { display: flex; gap: 30px; font-size: 0.7rem; color: var(--gray); margin-bottom: 15px; border-bottom: 1px solid rgba(57,255,20,0.05); padding-bottom: 10px;}
+        .meta b { color: var(--green); text-transform: uppercase; }
+        .title { font-size: 1.2rem; font-weight: bold; cursor: pointer; display: block; margin-bottom: 10px; color: #fff; }
+        .title:hover { color: var(--green); }
+        
+        /* Modal Reader */
+        #modal { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background: rgba(5,10,14,0.98); overflow-y:auto; padding: 50px; box-sizing: border-box; z-index: 1000;}
+        .modal-body { max-width: 800px; margin: 0 auto; line-height: 1.6; }
+        .close-cmd { color: var(--green); cursor: pointer; display: block; margin-bottom: 20px; text-align: right; font-weight: bold;}
+        
+        /* Markdown Content Styling */
+        .markdown-body img { max-width: 100%; height: auto; border: 1px solid #333; margin: 15px 0; background: #fff; }
+        .markdown-body pre { background: #161b22; padding: 15px; border-radius: 5px; overflow-x: auto; color: #ff7b72; border: 1px solid #30363d; }
+        .markdown-body a { color: var(--green); }
+        .markdown-body h1, .markdown-body h2 { border-bottom: 1px solid #30363d; padding-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="prompt">root@qarbyte:~$ ./load_local_index.sh</div>
+    <h1>Silicon_OS <span style="color:var(--green)">v2.0</span></h1>
+    <input type="text" id="search" placeholder="Search modules (verilog, alu, etc)..." onkeyup="render()">
+    <div id="display"></div>
+</div>
+
+<div id="modal">
+    <div class="modal-body">
+        <span class="close-cmd" onclick="closeModal()">[ close_file ]</span>
+        <div id="content" class="markdown-body"></div>
+    </div>
+</div>
+
+<script>
+    let db = [];
+
+    // Path must start with / to be absolute from root
+    fetch('/assets/data/github_raw_data.json') 
+    .then(res => res.json())
+    .then(data => {
+        db = data;
+        render();
+    })
+    .catch(err => {
+        document.getElementById('display').innerHTML = `<p style="color:red;">[ERROR]: ${err.message}</p>`;
+    });
+
+    // Helper to extract the first # Header from Markdown
+    function getMarkdownTitle(content, defaultName) {
+        const match = content.match(/^#\s+(.*)$/m);
+        return match ? match[1] : defaultName;
+    }
+
+    function render() {
+        const query = document.getElementById('search').value.toLowerCase();
+        const target = document.getElementById('display');
+        target.innerHTML = '';
+
+        db.filter(item => 
+            item.repo.toLowerCase().includes(query) || 
+            item.path.toLowerCase().includes(query) ||
+            item.content.toLowerCase().includes(query)
+        ).forEach((item, idx) => {
+            const displayTitle = getMarkdownTitle(item.content, item.repo);
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <div class="meta">
+                    <span><b>Source:</b> ${item.repo}</span>
+                    <span><b>Path:</b> ${item.path}</span>
+                    <span><b>Size:</b> ${item.size}b</span>
+                </div>
+                <div class="title" onclick="view(${idx})">${displayTitle}</div>
+                <div style="color:#888; font-size:0.85rem">${item.content.substring(0, 150).replace(/[#*`]/g, '').trim()}...</div>
+            `;
+            target.appendChild(card);
+        });
+    }
+
+    function view(index) {
+    const item = db[index];
+    const renderer = new marked.Renderer();
+
+    // 1. FIX IMAGES: Redirect relative paths to GitHub Raw
+    renderer.image = function(href, title, text) {
+        if (href.startsWith('http')) return `<img src="${href}" alt="${text}">`;
+        
+        // Construct the GitHub Raw URL
+        const rawBase = `https://raw.githubusercontent.com/Ikarthikmb/${item.repo}/${item.branch || 'main'}/`;
+        const folderPath = item.path.split('/').slice(0, -1).join('/');
+        const fullHref = folderPath ? `${rawBase}${folderPath}/${href}` : `${rawBase}${href}`;
+        
+        return `<img src="${fullHref}" alt="${text}" style="max-width:100%; border:1px solid #333; margin:10px 0;">`;
+    };
+
+    // 2. FIX LINKS: Redirect relative file links to the GitHub Web UI
+    renderer.link = function(href, title, text) {
+        if (href.startsWith('http') || href.startsWith('#')) {
+            return `<a href="${href}" target="_blank" title="${title || ''}">${text}</a>`;
+        }
+        
+        // Construct the GitHub Blob URL (for viewing files)
+        const webBase = `https://github.com/Ikarthikmb/${item.repo}/blob/${item.branch || 'main'}/`;
+        const folderPath = item.path.split('/').slice(0, -1).join('/');
+        const fullHref = folderPath ? `${webBase}${folderPath}/${href}` : `${webBase}${href}`;
+        
+        return `<a href="${fullHref}" target="_blank" rel="noopener noreferrer">${text}</a>`;
+    };
+
+    // Parse the content with our custom rules
+    const htmlContent = marked.parse(item.content, { renderer: renderer });
+    
+    document.getElementById('content').innerHTML = htmlContent;
+    document.getElementById('modal').style.display = 'block';
+    document.body.style.overflow = 'hidden'; 
+}
+
+    function closeModal() { 
+        document.getElementById('modal').style.display = 'none'; 
+        document.body.style.overflow = 'auto';
+    }
+</script>
+
+</body>
+</html>

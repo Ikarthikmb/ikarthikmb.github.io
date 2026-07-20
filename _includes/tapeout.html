@@ -24,24 +24,16 @@
 </div>
 
 <style>
-  :root {
-    --neon-green: #4df33f;
-    --terminal-white: #ffffff;
-    --muted-gray: #a0a0a0;
-  }
-
   .tapeout-grid {
     display: grid;
-    /* Keeps 3-4 items per row */
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 40px;
-    margin: 40px 0;
+    gap: 32px;
+    margin: 1.5rem 0;
   }
 
   .tapeout-entry {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
   }
 
   .tapeout-link-wrapper {
@@ -50,66 +42,53 @@
   }
 
   .tapeout-visual {
-    background-color: #000000;
+    background-color: #0d1117;
     margin-bottom: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    aspect-ratio: 1 / 1; 
-    border-radius: 4px;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
     overflow: hidden;
     padding: 10px;
+    border: 1px solid #d8dee4;
   }
 
   .gds-invert {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    /* Inverts light background to dark and keeps layer colors sensible */
-    filter: invert(1) hue-rotate(180deg) contrast(1.1);
   }
 
   .hw-title {
-    color: var(--terminal-white);
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    color: #1f2328;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
     margin: 0;
     transition: color 0.2s ease;
   }
 
   .hw-stats {
-    color: var(--muted-gray);
-    font-family: monospace;
-    font-size: 0.75rem;
+    color: #57606a;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.72rem;
     margin: 6px 0 10px 0;
     line-height: 1.4;
-    transition: color 0.2s ease;
   }
 
-  .hw-dim {
-    opacity: 0.8;
-  }
+  .hw-dim { opacity: 0.8; }
 
-  .hw-links {
-    display: flex;
-    gap: 15px;
-  }
+  .hw-links { display: flex; gap: 15px; }
 
   .hw-src {
-    color: var(--neon-green);
+    color: #1a7f37;
     text-decoration: none;
-    font-family: monospace;
-    font-size: 0.85rem;
-    font-weight: bold;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 
-  /* Global Hover logic: text turns green on hover */
-  .tapeout-entry:hover .hw-title,
-  .tapeout-entry:hover .hw-stats {
-    color: var(--neon-green);
-  }
+  .tapeout-entry:hover .hw-title { color: #1a7f37; }
 
-  .hw-src:hover {
-    text-decoration: underline;
-  }
+  .hw-src:hover { text-decoration: underline; }
 </style>

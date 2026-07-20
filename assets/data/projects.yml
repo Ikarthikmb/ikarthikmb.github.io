@@ -1,0 +1,74 @@
+- title: "ACORN Authenticated Encryption Cipher"
+  description: "Verilog implementation of the ACORN128 authenticated encryption cipher — a hardware security primitive built from the state machine up."
+  link: "https://github.com/Ikarthikmb/ACORN128b2025/tree/state_in_top"
+  tags: ["RTL", "Cryptography"]
+  featured: true
+
+- title: "16-bit Neuron Unit with ReLU Activation"
+  description: "A building block for hardware neural networks — 16-bit MAC datapath with a ReLU activation function in RTL."
+  link: "https://github.com/Ikarthikmb/rtl_designs/blob/main/9_neuron_unit/README.md"
+  tags: ["RTL", "Machine Learning"]
+  featured: true
+
+- title: "Verilog Fundamentals — Gate to RTL"
+  description: "A working set of Verilog exercises spanning basic gates, adders, muxes, a UART receiver, and a high-performance ALU."
+  link: "https://github.com/Ikarthikmb/VerilogFod"
+  tags: ["RTL", "Verification"]
+  featured: true
+
+- title: "Cilantro RISC-V Processor"
+  description: "A minimalistic RISC-V core, built up module by module. In progress."
+  link: "https://github.com/Ikarthikmb/rtl_designs"
+  tags: ["RTL"]
+
+- title: "MIPS Processor"
+  description: "A classic 5-stage MIPS pipeline implemented in RTL. In progress."
+  link: "https://github.com/Ikarthikmb/rtl_designs/tree/main/8_mips_processor"
+  tags: ["RTL"]
+
+- title: "Simon 32/64 Lightweight Cipher"
+  description: "Hardware implementation of the Simon block cipher, designed for constrained embedded environments."
+  link: "https://github.com/Ikarthikmb/rtl_designs/blob/main/12_simon3264/rtl/top.v"
+  tags: ["RTL", "Cryptography"]
+
+- title: "Universal Shift Register"
+  description: "A parameterized shift register supporting serial and parallel load/shift modes, with testbench."
+  link: "https://github.com/Ikarthikmb/rtl_designs/blob/main/11_universal_shift_register/universal_shift_register.v"
+  tags: ["RTL", "Verification"]
+
+- title: "Wallace Tree Multiplier — Schematic"
+  description: "Schematic-level Wallace tree multiplier built in eSim, using half/full adders to sum partial products in stages."
+  link: "https://github.com/Ikarthikmb/wallace-tree"
+  tags: ["PCB", "Schematic"]
+
+- title: "eSim Circuit Library"
+  description: "A library of foundational circuits in eSim — logic gates, adders, a 555 timer, and Wallace tree multipliers from 2- to 8-bit."
+  link: "https://github.com/Ikarthikmb/eSim-Workspace"
+  tags: ["PCB", "Schematic"]
+  featured: true
+
+- title: "BACEE — Battery-Powered Arduino Clock"
+  description: "Custom PCB for an Arduino-based clock with extended EEPROM, designed and built from schematic to board."
+  link: "https://github.com/Ikarthikmb/Circuit-Designs/tree/master/5_Project_BACEE"
+  tags: ["PCB"]
+
+- title: "Gardener Groot"
+  description: "A Raspberry Pi–based plant monitor that logs soil, light, and environmental data and acts on it."
+  link: "https://github.com/Ikarthikmb/gardener-groot"
+  tags: ["Embedded", "Raspberry Pi"]
+
+- title: "Arduino & NodeMCU Experiments"
+  description: "Home automation and access-point/server projects on Arduino and NodeMCU — from a blinking LED to a self-hosted config server."
+  link: "https://github.com/Ikarthikmb/Hardware-Programming/blob/master/Arduino-repo/README.md"
+  tags: ["Embedded"]
+
+- title: "Machine Learning Notebooks"
+  description: "Applied ML notebooks covering regression, classification, and a house-price prediction project end to end."
+  link: "https://github.com/Ikarthikmb/Machine-Learning-Notebook"
+  tags: ["Python", "Machine Learning"]
+  featured: true
+
+- title: "OpenRAM SRAM Configuration (sky130)"
+  description: "Configuration and generation flow for a 4kB SRAM macro on the sky130 PDK using OpenRAM."
+  link: "https://github.com/Ikarthikmb/OpenRAM_Tech"
+  tags: ["RTL", "ASIC"]

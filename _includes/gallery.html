@@ -115,13 +115,13 @@
 <style>
   .silicon-gallery {
     display: flex; flex-direction: column; gap: 12px;
-    background: #0f172a; padding: 15px; border-radius: 4px;
-    border: 1px solid #1e293b; margin-bottom: 2rem;
+    background: #f6f8fa; padding: 15px; border-radius: 8px;
+    border: 1px solid #d8dee4; margin-bottom: 2rem;
   }
 
   .display-unit {
     position: relative; width: 100%; aspect-ratio: 16 / 9;
-    background: #020617; overflow: hidden; border: 1px solid #1e293b;
+    background: #1f2328; overflow: hidden; border-radius: 6px;
   }
 
   #main-image {
@@ -129,52 +129,47 @@
     opacity: 0; transition: opacity 0.4s ease-in-out;
   }
 
-  /* Smooth loading line at the top of the data overlay */
   .progress-track {
-    position: absolute; bottom: 42px; /* Sits right on top of the overlay */
-    left: 0; width: 100%; height: 1px;
-    background: rgba(0, 255, 65, 0.05); z-index: 20;
+    position: absolute; bottom: 38px;
+    left: 0; width: 100%; height: 2px;
+    background: rgba(255, 255, 255, 0.08); z-index: 20;
   }
 
   .progress-fill {
-    height: 100%; background: #00ff41; width: 0%;
-    box-shadow: 0 0 8px #00ff41;
+    height: 100%; background: #1a7f37; width: 0%;
   }
 
   .data-overlay {
     position: absolute; bottom: 0; left: 0; width: 100%;
-    padding: 8px 15px; background: rgba(2, 6, 23, 0.9);
-    border-top: 1px solid #1e293b; z-index: 15;
+    padding: 8px 15px; background: rgba(0, 0, 0, 0.55);
+    z-index: 15;
   }
 
   .simple-caption {
-    font-family: 'JetBrains Mono', monospace;
-    color: #f8fafc; font-size: 0.75rem;
+    font-family: 'Inter', sans-serif;
+    color: #fff; font-size: 0.85rem; font-weight: 500;
   }
 
-  .sys-info {
-    font-size: 0.5rem; color: #475569;
-    font-family: 'JetBrains Mono', monospace; margin-top: 2px;
-  }
+  .sys-info { display: none; }
 
   .wafer-grid {
     display: flex; gap: 8px; padding: 5px;
-    background: #020617; overflow-x: auto;
+    overflow-x: auto;
   }
 
   .wafer-cell {
-    width: 45px; height: 45px; flex-shrink: 0;
-    border: 1px solid #1e293b; cursor: pointer;
+    width: 48px; height: 48px; flex-shrink: 0;
+    border: 1px solid #d8dee4; border-radius: 4px; cursor: pointer;
   }
 
-  .wafer-cell.active { border-color: #00ff41; }
+  .wafer-cell.active { border-color: #1a7f37; }
 
   .wafer-thumb {
     width: 100%; height: 100%; object-fit: cover;
-    opacity: 0.3; filter: grayscale(1); transition: 0.3s;
+    opacity: 0.5; transition: 0.3s;
   }
 
-  .wafer-cell.active .wafer-thumb { opacity: 1; filter: grayscale(0); }
+  .wafer-cell.active .wafer-thumb { opacity: 1; }
 
   .nav-cluster {
     display: flex; justify-content: space-between; align-items: center;
@@ -182,10 +177,10 @@
   }
 
   .node-btn {
-    background: transparent; border: 1px solid #1e293b;
-    color: #475569; padding: 4px 10px; font-size: 0.6rem; cursor: pointer;
+    background: transparent; border: 1px solid #d8dee4; border-radius: 4px;
+    color: #57606a; padding: 4px 10px; font-size: 0.7rem; cursor: pointer;
   }
 
-  .node-btn:hover { color: #00ff41; border-color: #00ff41; }
-  .node-index { color: #00ff41; font-size: 0.75rem; opacity: 0.8; }
+  .node-btn:hover { color: #1a7f37; border-color: #1a7f37; }
+  .node-index { color: #57606a; font-size: 0.75rem; }
 </style>

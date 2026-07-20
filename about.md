@@ -25,4 +25,21 @@ My engineering journey began with hands-on experience in protocols like PCIe, I2
 - **PCB Design Workshop Instructor**, Design Studio at Purdue University [March 29th, October 25th, 2024]  
   Conducted a hands-on workshop covering **PCB fundamentals**, including a live session on drawing schematics and trace routing using **KiCad**. Participants then soldered components onto their own PCB boards.
 
-Feel free to explore my [portfolio]({{site.projects}}), [blog]({{site.blog}}), and let's connect
+### Technical Papers & Research
+
+| Year | Technical Deep-Dive | Format |
+|:-----|:-------------------|:-------|
+| 2025 | **Wireless Channel Modelling at Propagation Scenarios** | [[PDF]](/pdfviewer.html?file=assets/papers/WirelessChannelModelIndoor2025.pdf) |
+| 2024 | **Two-Level Branch Predictor Design** | [[PDF]](/pdfviewer.html?file=assets/papers/TwoLevelBranchPredictor2024.pdf) |
+| 2024 | **Base-Base Conversion Tool (MATLAB)** | [[PDF]](/pdfviewer.html?file=assets/papers/BaseToBaseConverter2024.pdf) |
+| 2023 | **IP Geolocation using Traceroute** | [[PDF]](/pdfviewer.html?file=assets/papers/IPGeolocation2023.pdf) |
+| 2023 | **Kalman Filter for State Estimation** | [[PDF]](/pdfviewer.html?file=assets/papers/KalmanFilter2023.pdf) |
+| 2019 | **Design of UART Receiver Protocol** | [[PDF]](/pdfviewer.html?file=assets/papers/UARTProtocol2019.pdf) |
+| 2019 | **House Sale Prediction via Linear Regression** | [[PDF]](/pdfviewer.html?file=assets/papers/LinearRegressionML2019.pdf) |
+| 2018 | **Green Chips - The Tech That Made World Smaller** | [[PDF]](/pdfviewer.html?file=assets/papers/GreenChips2018.pdf) |
+
+### Highlights
+
+{% include gallery.html %}
+
+Feel free to explore my [projects](/projects/), [tutorials](/tutorials/), [logs](/logs/), and let's connect.

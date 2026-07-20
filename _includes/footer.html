@@ -1,70 +1,75 @@
 <footer class="site-footer h-card">
-  <div class="trace-line"></div>
-
   <div class="wrapper">
-    <div class="footer-interface">
+    <div class="footer-grid">
 
-      <div class="interface-col">
-        <span class="header-label">>> SYSTEM_DIAGNOSTICS</span>
-        <div class="console-output">
-          <span class="line">HOST: {{ site.url | remove: 'https://' | remove: 'http://' | default: 'localhost:4000' }}</span>
-          <span class="line">KERNEL: Jekyll v{{ jekyll.version }}</span>
-          <span class="line">STATUS: <span class="status-green">OPERATIONAL</span></span>
-          <span class="line copyright">&copy; {{ 'now' | date: "%Y" }} qarbyte.</span>
-          <span class="line" style="margin-top: 10px; color: #00ff41;">root@qarbyte:~$ man qarbyte</span>
-          <span class="line">{{site.description}}</span>
-        </div>
+      <div class="footer-col">
+        <span class="footer-name p-name">{{ site.author.name }}</span>
+        <p class="footer-desc">{{ site.description }}</p>
       </div>
 
-      <div class="interface-col">
-        <span class="header-label">>> MEMORY_MAP</span>
-        <ul class="text-list nav-list">
-          <li><a href="{{ '/' | relative_url }}">0x00 /root</a></li>
-          <li><a href="{{ '/projects/' | relative_url }}">0x01 /projects</a></li>
-          <li><a href="{{ '/logs/' | relative_url }}">0x02 /logs</a></li>
-          <li><a href="{{ '/silicon/' | relative_url }}">0x03 /silicon</a></li>
+      <div class="footer-col">
+        <span class="footer-label">Site</span>
+        <ul class="footer-links">
+          <li><a href="{{ '/' | relative_url }}">Home</a></li>
+          <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+          <li><a href="{{ '/tutorials/' | relative_url }}">Tutorials</a></li>
+          <li><a href="{{ '/logs/' | relative_url }}">Logs</a></li>
+          <li><a href="{{ '/about/' | relative_url }}">Author</a></li>
         </ul>
       </div>
 
-      <div class="interface-col">
-        <span class="header-label">>> ACTIVE_DRIVERS</span>
+      <div class="footer-col">
+        <span class="footer-label">Elsewhere</span>
         {%- include social.html -%}
       </div>
 
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}</span>
     </div>
   </div>
 </footer>
 
 <style>
   .site-footer {
-    background-color: #050505;
-    padding: 3rem 0;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.85rem;
-    color: #555;
+    border-top: 1px solid #d8dee4;
+    background-color: #f6f8fa;
+    padding: 2.5rem 0 1.5rem;
+    font-size: 0.9rem;
+    color: #57606a;
   }
-  .footer-interface {
+  .footer-grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1.2fr;
+    grid-template-columns: 1.4fr 1fr 1fr;
     gap: 40px;
   }
-  .header-label { color: #00ff41; font-weight: bold; display: block; margin-bottom: 15px; }
-  .text-list { list-style: none; padding: 0; margin: 0; }
-  .text-list li { margin-bottom: 8px; }
-  .text-list a { text-decoration: none; color: #888; display: flex; align-items: center; gap: 10px; }
-  
-  /* Active Driver specific styling */
-  .driver-id { color: #444; font-size: 0.75rem; }
-  .driver-name { flex-grow: 1; }
-  .status-light { color: #222; font-size: 0.7rem; }
-  
-  .driver-list a:hover .driver-name { color: #00ff41; }
-  .driver-list a:hover .status-light { color: #00ff41; text-shadow: 0 0 5px #00ff41; }
+  .footer-name { display: block; font-weight: 700; color: #1f2328; margin-bottom: 8px; }
+  .footer-desc { margin: 0; line-height: 1.6; max-width: 40ch; }
 
-  /* Email Command */
-  .exec-cmd { margin-top: 15px; border-top: 1px dashed #222; padding-top: 10px; }
-  .cmd-prompt { color: #00ff41; }
-  .cmd-run { color: #ccc; }
+  .footer-label {
+    display: block;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #8c959f;
+    margin-bottom: 12px;
+  }
 
-  @media (max-width: 768px) { .footer-interface { grid-template-columns: 1fr; } }
+  .footer-links { list-style: none; padding: 0; margin: 0; }
+  .footer-links li { margin-bottom: 8px; }
+  .footer-links a { color: #57606a; text-decoration: none; }
+  .footer-links a:hover { color: #1a7f37; text-decoration: none; }
+
+  .footer-bottom {
+    margin-top: 2.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #d8dee4;
+    font-size: 0.8rem;
+    color: #8c959f;
+  }
+
+  @media (max-width: 768px) {
+    .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+  }
 </style>

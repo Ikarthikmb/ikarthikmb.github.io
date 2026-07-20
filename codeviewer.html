@@ -134,10 +134,9 @@ title: Code Viewer
 </script>
 
 <style>
-  /* Base Theme - Slate & Green */
   body {
-    background-color: #020617; /* Slate 950 */
-    color: #e2e8f0;
+    background-color: #ffffff;
+    color: #1f2328;
     font-family: 'Inter', -apple-system, sans-serif;
     padding: 2rem 1rem;
     max-width: 1000px;
@@ -164,63 +163,57 @@ title: Code Viewer
 
   .btn-outline {
     background: transparent;
-    border: 1px solid #334155;
-    color: #94a3b8;
+    border: 1px solid #d8dee4;
+    color: #57606a;
   }
 
   .btn-outline:hover {
-    border-color: #22c55e;
-    color: #22c55e;
+    border-color: #1a7f37;
+    color: #1a7f37;
   }
 
   .btn-primary {
-    background: #22c55e; /* Dev Green */
-    color: #020617;
+    background: #1a7f37;
+    color: #fff;
     border: none;
   }
 
   .btn-primary:hover {
-    background: #4ade80;
-    box-shadow: 0 0 15px rgba(34, 197, 94, 0.4);
+    background: #116329;
   }
 
   .file-info h1 {
     font-size: 1.8rem;
-    color: #f8fafc;
+    color: #1f2328;
     margin: 0;
   }
 
   #file-link {
-    font-family: 'Fira Code', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.8rem;
-    color: #64748b;
+    color: #57606a;
     margin-bottom: 2rem;
   }
 
-  #file-link a { color: #22c55e; text-decoration: none; }
+  #file-link a { color: #1a7f37; text-decoration: none; }
 
-  /* The Terminal / Code Window Styling */
+  /* The Code Window */
   .code-window {
-    background: #0f172a;
-    border: 1px solid #1e293b;
-    border-radius: 12px;
+    background: #0d1117;
+    border: 1px solid #d8dee4;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
   }
 
   .window-header {
-    background: #1e293b;
+    background: #161b22;
     padding: 12px 16px;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid #21262d;
   }
 
-  .dots {
-    display: flex;
-    gap: 8px;
-  }
-
+  .dots { display: flex; gap: 8px; }
   .dots span { width: 12px; height: 12px; border-radius: 50%; }
   .r { background: #ff5f56; }
   .y { background: #ffbd2e; }
@@ -228,35 +221,35 @@ title: Code Viewer
 
   .window-title {
     margin-left: 20px;
-    font-family: 'Fira Code', monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size: 0.75rem;
-    color: #94a3b8;
+    color: #7d8590;
   }
 
   /* Prism Customization */
   pre[class*="language-"] {
-    background: #0f172a !important;
+    background: #0d1117 !important;
     margin: 0 !important;
     padding: 1.5rem !important;
-    font-family: 'Fira Code', monospace !important;
+    font-family: 'JetBrains Mono', monospace !important;
     font-size: 0.9rem !important;
     line-height: 1.6;
   }
 
   .line-numbers .line-numbers-rows {
-    border-right: 1px solid #1e293b !important;
-    background: #0f172a !important;
+    border-right: 1px solid #21262d !important;
+    background: #0d1117 !important;
   }
 
   /* Markdown Body Styling */
   .markdown-body {
-    background: #0f172a;
+    background: #f6f8fa;
     padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid #1e293b;
+    border-radius: 10px;
+    border: 1px solid #d8dee4;
     line-height: 1.7;
   }
 
-  .markdown-body h1, .markdown-body h2 { border-bottom: 1px solid #1e293b; padding-bottom: 0.3rem; }
-  .markdown-body code { background: #334155; padding: 2px 5px; border-radius: 4px; }
+  .markdown-body h1, .markdown-body h2 { border-bottom: 1px solid #d8dee4; padding-bottom: 0.3rem; }
+  .markdown-body code { background: #eaeef2; padding: 2px 5px; border-radius: 4px; }
 </style>

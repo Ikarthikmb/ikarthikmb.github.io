@@ -1,46 +1,63 @@
 /* =========================================
    1. FONTS
+   Inter for UI/body text, JetBrains Mono reserved
+   for code and small tag/meta labels only.
+   Loaded via a <link> in _includes/custom-head.html rather
+   than @import here - older Ruby Sass (used by the
+   github-pages gem) chokes on the semicolons inside the
+   Google Fonts query string when @import'd from SCSS.
    ========================================= */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap');
 
 /* =========================================
-   2. COLOR PALETTE (The "Silicon" Theme)
+   2. PALETTE - white, professional, one green accent.
+   These are plain (non-!default) assignments on purpose:
+   the "portfolio" skin sets these color variables first
+   with !default, so a later !default here would be a no-op.
+   A plain assignment always wins regardless of import order.
    ========================================= */
-$slate-950: #020617; /* Deepest background */
-$slate-900: #0f172a; /* Card headers / Code blocks */
-$slate-800: #1e293b; /* Borders */
-$slate-300: #cbd5e1; /* Main text */
-$dev-green: #00ff41; /* Accents */
+$ink:        #1f2328; /* primary text */
+$ink-muted:  #57606a; /* secondary text */
+$ink-faint:  #8c959f; /* tertiary / placeholder text */
+$paper:      #ffffff; /* page background */
+$panel:      #f6f8fa; /* card / code background */
+$hairline:   #d8dee4; /* borders */
+$hairline-strong: #afb8c1;
+
+$green:       #1a7f37; /* accent */
+$green-dark:  #116329; /* accent hover / pressed */
+$green-tint:  #ddf4e4; /* accent background wash */
+
+$brand-color:        $green;
+$brand-color-light:  $green-tint;
+$brand-color-dark:   $green-dark;
+
+$site-title-color:   $ink;
+$text-color:         $ink;
+$background-color:   $paper;
+$code-background-color: $panel;
+
+$link-base-color:    $green;
+$link-visited-color: $green;
+$link-hover-color:   $green-dark;
+
+$border-color-01:    $hairline;
+$border-color-02:    $hairline;
+$border-color-03:    $green; /* header top accent stripe + menu icon */
+
+$table-text-color:      $ink;
+$table-zebra-color:      $panel;
+$table-header-bg-color:  $panel;
+$table-header-border:    $hairline-strong;
+$table-border-color:     $hairline;
 
 /* =========================================
-   3. JEKYLL MINIMA OVERRIDES
+   3. TYPOGRAPHY
    ========================================= */
-/* These variables force the default theme to go Dark Mode */
+$base-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$code-font-family: "JetBrains Mono", "Fira Code", monospace;
 
-$brand-color:       $dev-green !default;
-$brand-color-light: lighten($dev-green, 10%) !default;
-$brand-color-dark:  darken($dev-green, 10%) !default;
+$base-font-size:   17px;
+$base-line-height: 1.65;
+$spacing-unit:     30px;
 
-$text-color:        $slate-300 !default;
-$background-color:  $slate-950 !default;
-$code-background-color: $slate-900 !default;
-
-$border-color-01:   $slate-800 !default;
-$border-color-02:   $slate-800 !default;
-$border-color-03:   $slate-800 !default;
-
-$link-base-color:   $dev-green !default;
-$link-visited-color: darken($dev-green, 15%) !default;
-$link-hover-color:  lighten($dev-green, 10%) !default;
-
-/* =========================================
-   4. TYPOGRAPHY
-   ========================================= */
-$base-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !default;
-$code-font-family: "JetBrains Mono", "Fira Code", monospace !default;
-
-$base-font-size:   16px !default;
-$base-line-height: 1.6 !default;
-$spacing-unit:     30px !default;
-
-$content-width:    800px !default;
+$content-width:    880px;

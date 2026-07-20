@@ -19,7 +19,7 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
-  skin: slate
+  skin: portfolio
 
   # generate social links in footer
   social_links:
@@ -60,9 +60,10 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
- - silicon.md
  - projects.md
+ - wiki.md
  - logs.md
+ - about.md
 
 # Build settings
 theme: minima
@@ -72,22 +73,25 @@ plugins:
  - jekyll-seo-tag
 
 collections:
-  silicon:
-    output: true
   projects:
     output: true
   logs:
     output: true
+  wiki:
+    output: true
+    permalink: /tutorials/:path/
 
 navigation:
-    - title: "Index"
+    - title: "Home"
       url: "/"
-    - title: "Silicon"
-      url: "/silicon/"
-    - title: "projects"
+    - title: "Projects"
       url: "/projects/"
-    - title: "logs"
+    - title: "Tutorials"
+      url: "/tutorials/"
+    - title: "Logs"
       url: "/logs/"
+    - title: "Author"
+      url: "/about/"
 
 defaults:
   - scope:
@@ -100,10 +104,15 @@ defaults:
       type: logs
     values:
       layout: post
+  - scope:
+      path: ""
+      type: wiki
+    values:
+      layout: post
+      collection_label: "Tutorial"
 
 layouts_dir: _layouts
 
 comments_repo: ikarthikmb/ikarthikmb.github.io
 
-include:
-  - _papers
+exclude: [venv, fetch_github_data.py, package-lock.json]

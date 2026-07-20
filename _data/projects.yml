@@ -1,0 +1,17 @@
+- title: "I2C Controller"
+  description: "SKY130 ASIC tapeout of an I2C controller, synthesized, verified, and fabricated through the OpenLANE RTL-to-GDS flow."
+  link: "https://github.com/Ikarthikmb/i2c_ctrl2202"
+  tags: ["ASIC", "SKY130", "Verilog"]
+  featured: true
+
+- title: "8-bit Dadda Multiplier"
+  description: "SKY130 ASIC implementation of an 8-bit Dadda tree multiplier, synthesized and verified end-to-end with OpenLANE."
+  link: "https://github.com/Ikarthikmb/dvsd_wt8216m"
+  tags: ["ASIC", "SKY130", "Verilog"]
+  featured: true
+
+- title: "AI Solar Monitor"
+  description: "SKY130 ASIC tapeout for an AI-assisted solar panel monitoring chip, verified through the OpenLANE flow."
+  link: "https://github.com/Ikarthikmb/ai_solar_panel_monitor"
+  tags: ["ASIC", "SKY130", "AI"]
+  featured: true

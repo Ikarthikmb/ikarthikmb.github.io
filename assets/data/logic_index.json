@@ -1,0 +1,1829 @@
+[
+    {
+        "module": "acorn128_top.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/acorn128_top.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/acorn128_top.v",
+        "size": 4257
+    },
+    {
+        "module": "associated_process.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/associated_process.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/associated_process.v",
+        "size": 1749
+    },
+    {
+        "module": "ch_fn.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/ch_fn.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/ch_fn.v",
+        "size": 95
+    },
+    {
+        "module": "encryption.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/encryption.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/encryption.v",
+        "size": 2212
+    },
+    {
+        "module": "fbk128.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/fbk128.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/fbk128.v",
+        "size": 326
+    },
+    {
+        "module": "finalization.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/finalization.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/finalization.v",
+        "size": 1568
+    },
+    {
+        "module": "initialization.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/initialization.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/initialization.v",
+        "size": 1749
+    },
+    {
+        "module": "initialization_tb.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/initialization_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/initialization_tb.v",
+        "size": 904
+    },
+    {
+        "module": "ksb_fsb_tb.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/ksb_fsb_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/ksb_fsb_tb.v",
+        "size": 807
+    },
+    {
+        "module": "ksg128.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/ksg128.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/ksg128.v",
+        "size": 357
+    },
+    {
+        "module": "maj_fn.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/maj_fn.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/maj_fn.v",
+        "size": 107
+    },
+    {
+        "module": "state_update128.v",
+        "repo": "ACORN128b2025",
+        "path": "rtl/state_update128.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/rtl/state_update128.v",
+        "size": 1297
+    },
+    {
+        "module": "acorn128_tb.v",
+        "repo": "ACORN128b2025",
+        "path": "sim/acorn128_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ACORN128b2025/main/sim/acorn128_tb.v",
+        "size": 6268
+    },
+    {
+        "module": "io_ports_tb.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/dv/io_ports/io_ports_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/dv/io_ports/io_ports_tb.v",
+        "size": 12165
+    },
+    {
+        "module": "la_test1_tb.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/dv/la_test1/la_test1_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/dv/la_test1/la_test1_tb.v",
+        "size": 11493
+    },
+    {
+        "module": "la_test2_tb.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/dv/la_test2/la_test2_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/dv/la_test2/la_test2_tb.v",
+        "size": 11467
+    },
+    {
+        "module": "mprj_stimulus_tb.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/dv/mprj_stimulus/mprj_stimulus_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/dv/mprj_stimulus/mprj_stimulus_tb.v",
+        "size": 12208
+    },
+    {
+        "module": "wb_port_tb.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/dv/wb_port/wb_port_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/dv/wb_port/wb_port_tb.v",
+        "size": 11635
+    },
+    {
+        "module": "user_proj_example.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/gl/user_proj_example.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/gl/user_proj_example.v",
+        "size": 52155345
+    },
+    {
+        "module": "user_project_wrapper.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/gl/user_project_wrapper.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/gl/user_project_wrapper.v",
+        "size": 11412
+    },
+    {
+        "module": "defines.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/rtl/defines.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/rtl/defines.v",
+        "size": 2235
+    },
+    {
+        "module": "uprj_netlists.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/rtl/uprj_netlists.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/rtl/uprj_netlists.v",
+        "size": 1069
+    },
+    {
+        "module": "user_defines.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/rtl/user_defines.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/rtl/user_defines.v",
+        "size": 4211
+    },
+    {
+        "module": "user_proj_example.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/rtl/user_proj_example.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/rtl/user_proj_example.v",
+        "size": 4287
+    },
+    {
+        "module": "user_project_wrapper.v",
+        "repo": "ai_accelerator",
+        "path": "verilog/rtl/user_project_wrapper.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_accelerator/main/verilog/rtl/user_project_wrapper.v",
+        "size": 3427
+    },
+    {
+        "module": "io_ports_tb.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/dv/io_ports/io_ports_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/dv/io_ports/io_ports_tb.v",
+        "size": 12165
+    },
+    {
+        "module": "la_test1_tb.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/dv/la_test1/la_test1_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/dv/la_test1/la_test1_tb.v",
+        "size": 11493
+    },
+    {
+        "module": "la_test2_tb.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/dv/la_test2/la_test2_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/dv/la_test2/la_test2_tb.v",
+        "size": 11467
+    },
+    {
+        "module": "mprj_stimulus_tb.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/dv/mprj_stimulus/mprj_stimulus_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/dv/mprj_stimulus/mprj_stimulus_tb.v",
+        "size": 12208
+    },
+    {
+        "module": "wb_port_tb.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/dv/wb_port/wb_port_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/dv/wb_port/wb_port_tb.v",
+        "size": 11635
+    },
+    {
+        "module": "solar_panel_monitor_tb.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/gl/solar_panel_monitor_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/gl/solar_panel_monitor_tb.v",
+        "size": 3596
+    },
+    {
+        "module": "user_proj_example.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/gl/user_proj_example.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/gl/user_proj_example.v",
+        "size": 52155345
+    },
+    {
+        "module": "user_proj_solar.nl.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/gl/user_proj_solar.nl.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/gl/user_proj_solar.nl.v",
+        "size": 6919081
+    },
+    {
+        "module": "user_proj_solar.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/gl/user_proj_solar.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/gl/user_proj_solar.v",
+        "size": 15626722
+    },
+    {
+        "module": "user_project_wrapper.nl.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/gl/user_project_wrapper.nl.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/gl/user_project_wrapper.nl.v",
+        "size": 1585
+    },
+    {
+        "module": "user_project_wrapper.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/gl/user_project_wrapper.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/gl/user_project_wrapper.v",
+        "size": 1788
+    },
+    {
+        "module": "adc.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/adc.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/adc.v",
+        "size": 897
+    },
+    {
+        "module": "ai_solar_panel_monitor.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/ai_solar_panel_monitor.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/ai_solar_panel_monitor.v",
+        "size": 2086
+    },
+    {
+        "module": "defines.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/defines.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/defines.v",
+        "size": 2235
+    },
+    {
+        "module": "display.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/display.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/display.v",
+        "size": 1220
+    },
+    {
+        "module": "microcontroller.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/microcontroller.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/microcontroller.v",
+        "size": 886
+    },
+    {
+        "module": "uprj_netlists.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/uprj_netlists.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/uprj_netlists.v",
+        "size": 1069
+    },
+    {
+        "module": "user_defines.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/user_defines.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/user_defines.v",
+        "size": 4499
+    },
+    {
+        "module": "user_proj_example.bkp.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/user_proj_example.bkp.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/user_proj_example.bkp.v",
+        "size": 4287
+    },
+    {
+        "module": "user_proj_example.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/user_proj_example.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/user_proj_example.v",
+        "size": 3313
+    },
+    {
+        "module": "user_proj_solar.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/user_proj_solar.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/user_proj_solar.v",
+        "size": 3687
+    },
+    {
+        "module": "user_project_wrapper.v",
+        "repo": "ai_solar_panel_monitor",
+        "path": "verilog/rtl/user_project_wrapper.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/ai_solar_panel_monitor/main/verilog/rtl/user_project_wrapper.v",
+        "size": 3030
+    },
+    {
+        "module": "dvsd_8216m3.v",
+        "repo": "dvsd_wt8216m",
+        "path": "postlayout/dvsd_8216m3.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/postlayout/dvsd_8216m3.v",
+        "size": 113574
+    },
+    {
+        "module": "dvsd_8216m3_tb.v",
+        "repo": "dvsd_wt8216m",
+        "path": "postlayout/dvsd_8216m3_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/postlayout/dvsd_8216m3_tb.v",
+        "size": 1153
+    },
+    {
+        "module": "primitives.v",
+        "repo": "dvsd_wt8216m",
+        "path": "postlayout/primitives.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/postlayout/primitives.v",
+        "size": 50512
+    },
+    {
+        "module": "sky130_fd_sc_hd.v",
+        "repo": "dvsd_wt8216m",
+        "path": "postlayout/sky130_fd_sc_hd.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/postlayout/sky130_fd_sc_hd.v",
+        "size": 2327999
+    },
+    {
+        "module": "and1b.v",
+        "repo": "dvsd_wt8216m",
+        "path": "prelayout/and1b.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/prelayout/and1b.v",
+        "size": 240
+    },
+    {
+        "module": "compressor3to2.v",
+        "repo": "dvsd_wt8216m",
+        "path": "prelayout/compressor3to2.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/prelayout/compressor3to2.v",
+        "size": 370
+    },
+    {
+        "module": "dvsd_8216m11.v",
+        "repo": "dvsd_wt8216m",
+        "path": "prelayout/dvsd_8216m11.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/prelayout/dvsd_8216m11.v",
+        "size": 379
+    },
+    {
+        "module": "dvsd_8216m3.v",
+        "repo": "dvsd_wt8216m",
+        "path": "prelayout/dvsd_8216m3.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/prelayout/dvsd_8216m3.v",
+        "size": 10555
+    },
+    {
+        "module": "dvsd_8216m9.v",
+        "repo": "dvsd_wt8216m",
+        "path": "prelayout/dvsd_8216m9.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/prelayout/dvsd_8216m9.v",
+        "size": 667
+    },
+    {
+        "module": "halfadder.v",
+        "repo": "dvsd_wt8216m",
+        "path": "prelayout/halfadder.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/prelayout/halfadder.v",
+        "size": 284
+    },
+    {
+        "module": "dvsd_8216m3.lvs.powered.v",
+        "repo": "dvsd_wt8216m",
+        "path": "runs/results/lvs/dvsd_8216m3.lvs.powered.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/runs/results/lvs/dvsd_8216m3.lvs.powered.v",
+        "size": 113514
+    },
+    {
+        "module": "dvsd_8216m3.synthesis.v",
+        "repo": "dvsd_wt8216m",
+        "path": "runs/results/synthesis/dvsd_8216m3.synthesis.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/runs/results/synthesis/dvsd_8216m3.synthesis.v",
+        "size": 32536
+    },
+    {
+        "module": "dvsd_8216m3.synthesis_cts.v",
+        "repo": "dvsd_wt8216m",
+        "path": "runs/results/synthesis/dvsd_8216m3.synthesis_cts.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/runs/results/synthesis/dvsd_8216m3.synthesis_cts.v",
+        "size": 63081
+    },
+    {
+        "module": "dvsd_8216m3.synthesis_optimized.v",
+        "repo": "dvsd_wt8216m",
+        "path": "runs/results/synthesis/dvsd_8216m3.synthesis_optimized.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/runs/results/synthesis/dvsd_8216m3.synthesis_optimized.v",
+        "size": 63081
+    },
+    {
+        "module": "dvsd_8216m3.synthesis_preroute.v",
+        "repo": "dvsd_wt8216m",
+        "path": "runs/results/synthesis/dvsd_8216m3.synthesis_preroute.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/runs/results/synthesis/dvsd_8216m3.synthesis_preroute.v",
+        "size": 113514
+    },
+    {
+        "module": "dvsd_8216m11_tb.v",
+        "repo": "dvsd_wt8216m",
+        "path": "tb/dvsd_8216m11_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/tb/dvsd_8216m11_tb.v",
+        "size": 1110
+    },
+    {
+        "module": "dvsd_8216m3_tb.v",
+        "repo": "dvsd_wt8216m",
+        "path": "tb/dvsd_8216m3_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/tb/dvsd_8216m3_tb.v",
+        "size": 1109
+    },
+    {
+        "module": "dvsd_8216m9_tb.v",
+        "repo": "dvsd_wt8216m",
+        "path": "tb/dvsd_8216m9_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/dvsd_wt8216m/main/tb/dvsd_8216m9_tb.v",
+        "size": 743
+    },
+    {
+        "module": "i2c_ctrl2202.v",
+        "repo": "i2c_ctrl2202",
+        "path": "openlane/i2c_ctrl2202/src/i2c_ctrl2202.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/openlane/i2c_ctrl2202/src/i2c_ctrl2202.v",
+        "size": 4811
+    },
+    {
+        "module": "sky130_ef_io.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
+        "size": 35104
+    },
+    {
+        "module": "sky130_fd_io.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
+        "size": 556578
+    },
+    {
+        "module": "primitives.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v",
+        "size": 58798
+    },
+    {
+        "module": "sky130_fd_sc_hd.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v",
+        "size": 2327941
+    },
+    {
+        "module": "primitives.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.ref/sky130_fd_sc_hvl/verilog/primitives.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.ref/sky130_fd_sc_hvl/verilog/primitives.v",
+        "size": 35802
+    },
+    {
+        "module": "sky130_fd_sc_hvl.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.ref/sky130_fd_sc_hvl/verilog/sky130_fd_sc_hvl.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.ref/sky130_fd_sc_hvl/verilog/sky130_fd_sc_hvl.v",
+        "size": 608012
+    },
+    {
+        "module": "sky130_sram_1kbyte_1rw1r_32x256_8.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_32x256_8.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_32x256_8.v",
+        "size": 3161
+    },
+    {
+        "module": "sky130_sram_1kbyte_1rw1r_8x1024_8.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_8x1024_8.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_8x1024_8.v",
+        "size": 2909
+    },
+    {
+        "module": "sky130_sram_2kbyte_1rw1r_32x512_8.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.ref/sky130_sram_macros/verilog/sky130_sram_2kbyte_1rw1r_32x512_8.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.ref/sky130_sram_macros/verilog/sky130_sram_2kbyte_1rw1r_32x512_8.v",
+        "size": 3161
+    },
+    {
+        "module": "sram_1rw1r_32_256_8_sky130.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.ref/sky130_sram_macros/verilog/sram_1rw1r_32_256_8_sky130.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.ref/sky130_sram_macros/verilog/sram_1rw1r_32_256_8_sky130.v",
+        "size": 2839
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/csa_map.v",
+        "size": 8064
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/fa_map.v",
+        "size": 390
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v",
+        "size": 415
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux2_map.v",
+        "size": 184
+    },
+    {
+        "module": "mux4_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux4_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/mux4_map.v",
+        "size": 268
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/rca_map.v",
+        "size": 2060
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v",
+        "size": 139
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/csa_map.v",
+        "size": 8070
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/fa_map.v",
+        "size": 392
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/latch_map.v",
+        "size": 419
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/mux2_map.v",
+        "size": 186
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/rca_map.v",
+        "size": 2062
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hdll/tribuff_map.v",
+        "size": 141
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/csa_map.v",
+        "size": 8064
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/fa_map.v",
+        "size": 390
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/latch_map.v",
+        "size": 415
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/mux2_map.v",
+        "size": 184
+    },
+    {
+        "module": "mux4_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/mux4_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/mux4_map.v",
+        "size": 268
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/rca_map.v",
+        "size": 2060
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hs/tribuff_map.v",
+        "size": 139
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/csa_map.v",
+        "size": 8067
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/fa_map.v",
+        "size": 391
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/latch_map.v",
+        "size": 207
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/mux2_map.v",
+        "size": 185
+    },
+    {
+        "module": "mux4_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/mux4_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/mux4_map.v",
+        "size": 269
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/rca_map.v",
+        "size": 2061
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hvl/tribuff_map.v",
+        "size": 140
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/csa_map.v",
+        "size": 8064
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/fa_map.v",
+        "size": 390
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/latch_map.v",
+        "size": 415
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/mux2_map.v",
+        "size": 184
+    },
+    {
+        "module": "mux4_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/mux4_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/mux4_map.v",
+        "size": 268
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/rca_map.v",
+        "size": 2060
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ls/tribuff_map.v",
+        "size": 139
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/csa_map.v",
+        "size": 8064
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/fa_map.v",
+        "size": 390
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/latch_map.v",
+        "size": 415
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/mux2_map.v",
+        "size": 184
+    },
+    {
+        "module": "mux4_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/mux4_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/mux4_map.v",
+        "size": 268
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/rca_map.v",
+        "size": 2062
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_ms/tribuff_map.v",
+        "size": 139
+    },
+    {
+        "module": "decred_controller.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/xschem/decred_hash_macro/decred_controller.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/xschem/decred_hash_macro/decred_controller.v",
+        "size": 6279
+    },
+    {
+        "module": "decred_hash_macro.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/xschem/decred_hash_macro/decred_hash_macro.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/xschem/decred_hash_macro/decred_hash_macro.v",
+        "size": 40691
+    },
+    {
+        "module": "user_project_wrapper.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/xschem/decred_hash_macro/user_project_wrapper.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/xschem/decred_hash_macro/user_project_wrapper.v",
+        "size": 5166
+    },
+    {
+        "module": "audiodac.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/xschem/xschem_verilog_import/audiodac.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/xschem/xschem_verilog_import/audiodac.v",
+        "size": 546127
+    },
+    {
+        "module": "counter.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/xschem/xschem_verilog_import/counter.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/xschem/xschem_verilog_import/counter.v",
+        "size": 13171
+    },
+    {
+        "module": "spm.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130A/libs.tech/xschem/xschem_verilog_import/spm.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130A/libs.tech/xschem/xschem_verilog_import/spm.v",
+        "size": 148277
+    },
+    {
+        "module": "sky130_ef_io.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v",
+        "size": 35104
+    },
+    {
+        "module": "sky130_fd_io.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v",
+        "size": 556578
+    },
+    {
+        "module": "primitives.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.ref/sky130_fd_sc_hd/verilog/primitives.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.ref/sky130_fd_sc_hd/verilog/primitives.v",
+        "size": 58798
+    },
+    {
+        "module": "sky130_fd_sc_hd.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.ref/sky130_fd_sc_hd/verilog/sky130_fd_sc_hd.v",
+        "size": 2327941
+    },
+    {
+        "module": "primitives.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.ref/sky130_fd_sc_hvl/verilog/primitives.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.ref/sky130_fd_sc_hvl/verilog/primitives.v",
+        "size": 35802
+    },
+    {
+        "module": "sky130_fd_sc_hvl.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.ref/sky130_fd_sc_hvl/verilog/sky130_fd_sc_hvl.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.ref/sky130_fd_sc_hvl/verilog/sky130_fd_sc_hvl.v",
+        "size": 608012
+    },
+    {
+        "module": "sky130_sram_1kbyte_1rw1r_32x256_8.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_32x256_8.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_32x256_8.v",
+        "size": 174
+    },
+    {
+        "module": "sky130_sram_1kbyte_1rw1r_8x1024_8.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_8x1024_8.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.ref/sky130_sram_macros/verilog/sky130_sram_1kbyte_1rw1r_8x1024_8.v",
+        "size": 174
+    },
+    {
+        "module": "sky130_sram_2kbyte_1rw1r_32x512_8.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.ref/sky130_sram_macros/verilog/sky130_sram_2kbyte_1rw1r_32x512_8.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.ref/sky130_sram_macros/verilog/sky130_sram_2kbyte_1rw1r_32x512_8.v",
+        "size": 174
+    },
+    {
+        "module": "sram_1rw1r_32_256_8_sky130.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.ref/sky130_sram_macros/verilog/sram_1rw1r_32_256_8_sky130.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.ref/sky130_sram_macros/verilog/sram_1rw1r_32_256_8_sky130.v",
+        "size": 160
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/csa_map.v",
+        "size": 8064
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/fa_map.v",
+        "size": 390
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/latch_map.v",
+        "size": 415
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/mux2_map.v",
+        "size": 184
+    },
+    {
+        "module": "mux4_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/mux4_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/mux4_map.v",
+        "size": 268
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/rca_map.v",
+        "size": 2060
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hd/tribuff_map.v",
+        "size": 139
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/csa_map.v",
+        "size": 8070
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/fa_map.v",
+        "size": 392
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/latch_map.v",
+        "size": 419
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/mux2_map.v",
+        "size": 186
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/rca_map.v",
+        "size": 2062
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hdll/tribuff_map.v",
+        "size": 141
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/csa_map.v",
+        "size": 8064
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/fa_map.v",
+        "size": 390
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/latch_map.v",
+        "size": 415
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/mux2_map.v",
+        "size": 184
+    },
+    {
+        "module": "mux4_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/mux4_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/mux4_map.v",
+        "size": 268
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/rca_map.v",
+        "size": 2060
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hs/tribuff_map.v",
+        "size": 139
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/csa_map.v",
+        "size": 8067
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/fa_map.v",
+        "size": 391
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/latch_map.v",
+        "size": 207
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/mux2_map.v",
+        "size": 185
+    },
+    {
+        "module": "mux4_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/mux4_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/mux4_map.v",
+        "size": 269
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/rca_map.v",
+        "size": 2061
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_hvl/tribuff_map.v",
+        "size": 140
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/csa_map.v",
+        "size": 8064
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/fa_map.v",
+        "size": 390
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/latch_map.v",
+        "size": 415
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/mux2_map.v",
+        "size": 184
+    },
+    {
+        "module": "mux4_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/mux4_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/mux4_map.v",
+        "size": 268
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/rca_map.v",
+        "size": 2060
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ls/tribuff_map.v",
+        "size": 139
+    },
+    {
+        "module": "csa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/csa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/csa_map.v",
+        "size": 8064
+    },
+    {
+        "module": "fa_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/fa_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/fa_map.v",
+        "size": 390
+    },
+    {
+        "module": "latch_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/latch_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/latch_map.v",
+        "size": 415
+    },
+    {
+        "module": "mux2_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/mux2_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/mux2_map.v",
+        "size": 184
+    },
+    {
+        "module": "mux4_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/mux4_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/mux4_map.v",
+        "size": 268
+    },
+    {
+        "module": "rca_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/rca_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/rca_map.v",
+        "size": 2062
+    },
+    {
+        "module": "tribuff_map.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/tribuff_map.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/openlane/sky130_fd_sc_ms/tribuff_map.v",
+        "size": 139
+    },
+    {
+        "module": "decred_controller.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/xschem/decred_hash_macro/decred_controller.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/xschem/decred_hash_macro/decred_controller.v",
+        "size": 6279
+    },
+    {
+        "module": "decred_hash_macro.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/xschem/decred_hash_macro/decred_hash_macro.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/xschem/decred_hash_macro/decred_hash_macro.v",
+        "size": 40691
+    },
+    {
+        "module": "user_project_wrapper.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/xschem/decred_hash_macro/user_project_wrapper.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/xschem/decred_hash_macro/user_project_wrapper.v",
+        "size": 5166
+    },
+    {
+        "module": "audiodac.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/xschem/xschem_verilog_import/audiodac.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/xschem/xschem_verilog_import/audiodac.v",
+        "size": 546127
+    },
+    {
+        "module": "counter.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/xschem/xschem_verilog_import/counter.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/xschem/xschem_verilog_import/counter.v",
+        "size": 13171
+    },
+    {
+        "module": "spm.v",
+        "repo": "i2c_ctrl2202",
+        "path": "pdks/sky130B/libs.tech/xschem/xschem_verilog_import/spm.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/pdks/sky130B/libs.tech/xschem/xschem_verilog_import/spm.v",
+        "size": 148277
+    },
+    {
+        "module": "user_project_wrapper.filtered.v",
+        "repo": "i2c_ctrl2202",
+        "path": "precheck_results/20_MAR_2022___10_58_19/outputs/user_project_wrapper.filtered.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/precheck_results/20_MAR_2022___10_58_19/outputs/user_project_wrapper.filtered.v",
+        "size": 12440
+    },
+    {
+        "module": "user_project_wrapper.filtered.v",
+        "repo": "i2c_ctrl2202",
+        "path": "precheck_results/22_MAR_2022___06_18_39/outputs/user_project_wrapper.filtered.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/precheck_results/22_MAR_2022___06_18_39/outputs/user_project_wrapper.filtered.v",
+        "size": 12440
+    },
+    {
+        "module": "user_project_wrapper.filtered.v",
+        "repo": "i2c_ctrl2202",
+        "path": "precheck_results/22_MAR_2022___08_45_12/outputs/user_project_wrapper.filtered.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/precheck_results/22_MAR_2022___08_45_12/outputs/user_project_wrapper.filtered.v",
+        "size": 12440
+    },
+    {
+        "module": "io_ports_tb.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/dv/io_ports/io_ports_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/dv/io_ports/io_ports_tb.v",
+        "size": 3749
+    },
+    {
+        "module": "la_test1_tb.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/dv/la_test1/la_test1_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/dv/la_test1/la_test1_tb.v",
+        "size": 3080
+    },
+    {
+        "module": "la_test2_tb.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/dv/la_test2/la_test2_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/dv/la_test2/la_test2_tb.v",
+        "size": 2880
+    },
+    {
+        "module": "mprj_stimulus_tb.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/dv/mprj_stimulus/mprj_stimulus_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/dv/mprj_stimulus/mprj_stimulus_tb.v",
+        "size": 3735
+    },
+    {
+        "module": "wb_port_tb.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/dv/wb_port/wb_port_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/dv/wb_port/wb_port_tb.v",
+        "size": 3221
+    },
+    {
+        "module": "i2c_ctrl2202.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/gl/i2c_ctrl2202.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/gl/i2c_ctrl2202.v",
+        "size": 5413579
+    },
+    {
+        "module": "user_proj_example.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/gl/user_proj_example.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/gl/user_proj_example.v",
+        "size": 5468316
+    },
+    {
+        "module": "user_project_wrapper.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/gl/user_project_wrapper.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/gl/user_project_wrapper.v",
+        "size": 12440
+    },
+    {
+        "module": "i2c_ctrl2202.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/rtl/i2c_ctrl2202.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/rtl/i2c_ctrl2202.v",
+        "size": 3825
+    },
+    {
+        "module": "uprj_netlists.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/rtl/uprj_netlists.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/rtl/uprj_netlists.v",
+        "size": 1076
+    },
+    {
+        "module": "user_proj_example.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/rtl/user_proj_example.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/rtl/user_proj_example.v",
+        "size": 4867
+    },
+    {
+        "module": "user_project_wrapper.v",
+        "repo": "i2c_ctrl2202",
+        "path": "verilog/rtl/user_project_wrapper.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/i2c_ctrl2202/main/verilog/rtl/user_project_wrapper.v",
+        "size": 3365
+    },
+    {
+        "module": "tb_RippleCarryAdder.v",
+        "repo": "rtl_designs",
+        "path": "10_ripple_carry_adder/tb_RippleCarryAdder.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/10_ripple_carry_adder/tb_RippleCarryAdder.v",
+        "size": 549
+    },
+    {
+        "module": "universal_shift_register.v",
+        "repo": "rtl_designs",
+        "path": "11_universal_shift_register/universal_shift_register.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/11_universal_shift_register/universal_shift_register.v",
+        "size": 496
+    },
+    {
+        "module": "universal_shift_register_tb.v",
+        "repo": "rtl_designs",
+        "path": "11_universal_shift_register/universal_shift_register_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/11_universal_shift_register/universal_shift_register_tb.v",
+        "size": 716
+    },
+    {
+        "module": "tb_simon32x64.v",
+        "repo": "rtl_designs",
+        "path": "12_simon3264/rtl/tb_simon32x64.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/12_simon3264/rtl/tb_simon32x64.v",
+        "size": 34
+    },
+    {
+        "module": "top.v",
+        "repo": "rtl_designs",
+        "path": "12_simon3264/rtl/top.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/12_simon3264/rtl/top.v",
+        "size": 1459
+    },
+    {
+        "module": "fnn.v",
+        "repo": "rtl_designs",
+        "path": "14_neural_networks_j24/fnn/fnn.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/14_neural_networks_j24/fnn/fnn.v",
+        "size": 1613
+    },
+    {
+        "module": "tb_fnn.v",
+        "repo": "rtl_designs",
+        "path": "14_neural_networks_j24/fnn/tb_fnn.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/14_neural_networks_j24/fnn/tb_fnn.v",
+        "size": 1342
+    },
+    {
+        "module": "alu.v",
+        "repo": "rtl_designs",
+        "path": "15_high_perform_alu/rtl/alu.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/15_high_perform_alu/rtl/alu.v",
+        "size": 1887
+    },
+    {
+        "module": "gates.v",
+        "repo": "rtl_designs",
+        "path": "1_fundamental_gates/gates.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/1_fundamental_gates/gates.v",
+        "size": 2610
+    },
+    {
+        "module": "tb_gates.v",
+        "repo": "rtl_designs",
+        "path": "1_fundamental_gates/tb_gates.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/1_fundamental_gates/tb_gates.v",
+        "size": 1475
+    },
+    {
+        "module": "gray2bin.sv",
+        "repo": "rtl_designs",
+        "path": "2_gray2bin/gray2bin.sv",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/2_gray2bin/gray2bin.sv",
+        "size": 384
+    },
+    {
+        "module": "adder2bit.v",
+        "repo": "rtl_designs",
+        "path": "3_adder/adder2bit.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/3_adder/adder2bit.v",
+        "size": 355
+    },
+    {
+        "module": "synth_adder2bit.v",
+        "repo": "rtl_designs",
+        "path": "3_adder/synth_adder2bit.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/3_adder/synth_adder2bit.v",
+        "size": 742
+    },
+    {
+        "module": "bin2gray.v",
+        "repo": "rtl_designs",
+        "path": "4_bin2gray/bin2gray.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/4_bin2gray/bin2gray.v",
+        "size": 570
+    },
+    {
+        "module": "pwm_top.v",
+        "repo": "rtl_designs",
+        "path": "5_pwm_generator/pwm_top.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/5_pwm_generator/pwm_top.v",
+        "size": 715
+    },
+    {
+        "module": "tb_pwm.v",
+        "repo": "rtl_designs",
+        "path": "5_pwm_generator/tb_pwm.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/5_pwm_generator/tb_pwm.v",
+        "size": 1581
+    },
+    {
+        "module": "nco.v",
+        "repo": "rtl_designs",
+        "path": "6_numerically_controlled_oscillator/nco.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/6_numerically_controlled_oscillator/nco.v",
+        "size": 899
+    },
+    {
+        "module": "nco_tb.v",
+        "repo": "rtl_designs",
+        "path": "6_numerically_controlled_oscillator/nco_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/6_numerically_controlled_oscillator/nco_tb.v",
+        "size": 727
+    },
+    {
+        "module": "cilantro_rv_top.v",
+        "repo": "rtl_designs",
+        "path": "7_cilantro_riscv_bassed_processor/rtl/cilantro_rv_top.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/7_cilantro_riscv_bassed_processor/rtl/cilantro_rv_top.v",
+        "size": 2800
+    },
+    {
+        "module": "rv_alu.v",
+        "repo": "rtl_designs",
+        "path": "7_cilantro_riscv_bassed_processor/rtl/rv_alu.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/7_cilantro_riscv_bassed_processor/rtl/rv_alu.v",
+        "size": 769
+    },
+    {
+        "module": "rv_control_unit.v",
+        "repo": "rtl_designs",
+        "path": "7_cilantro_riscv_bassed_processor/rtl/rv_control_unit.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/7_cilantro_riscv_bassed_processor/rtl/rv_control_unit.v",
+        "size": 1389
+    },
+    {
+        "module": "rv_data_memory.v",
+        "repo": "rtl_designs",
+        "path": "7_cilantro_riscv_bassed_processor/rtl/rv_data_memory.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/7_cilantro_riscv_bassed_processor/rtl/rv_data_memory.v",
+        "size": 379
+    },
+    {
+        "module": "rv_imm_gen.v",
+        "repo": "rtl_designs",
+        "path": "7_cilantro_riscv_bassed_processor/rtl/rv_imm_gen.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/7_cilantro_riscv_bassed_processor/rtl/rv_imm_gen.v",
+        "size": 844
+    },
+    {
+        "module": "rv_instr_mem.v",
+        "repo": "rtl_designs",
+        "path": "7_cilantro_riscv_bassed_processor/rtl/rv_instr_mem.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/7_cilantro_riscv_bassed_processor/rtl/rv_instr_mem.v",
+        "size": 264
+    },
+    {
+        "module": "rv_pc.v",
+        "repo": "rtl_designs",
+        "path": "7_cilantro_riscv_bassed_processor/rtl/rv_pc.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/7_cilantro_riscv_bassed_processor/rtl/rv_pc.v",
+        "size": 198
+    },
+    {
+        "module": "rv_reg_file.v",
+        "repo": "rtl_designs",
+        "path": "7_cilantro_riscv_bassed_processor/rtl/rv_reg_file.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/7_cilantro_riscv_bassed_processor/rtl/rv_reg_file.v",
+        "size": 1288
+    },
+    {
+        "module": "tb_cilantro_rv_top.v",
+        "repo": "rtl_designs",
+        "path": "7_cilantro_riscv_bassed_processor/tb/tb_cilantro_rv_top.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/7_cilantro_riscv_bassed_processor/tb/tb_cilantro_rv_top.v",
+        "size": 1235
+    },
+    {
+        "module": "mips_bard.v",
+        "repo": "rtl_designs",
+        "path": "8_mips_processor/mips_bard.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/8_mips_processor/mips_bard.v",
+        "size": 972
+    },
+    {
+        "module": "tb_mips_bard.v",
+        "repo": "rtl_designs",
+        "path": "8_mips_processor/tb_mips_bard.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/8_mips_processor/tb_mips_bard.v",
+        "size": 1192
+    },
+    {
+        "module": "neuron_unit.v",
+        "repo": "rtl_designs",
+        "path": "9_neuron_unit/neuron_unit.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/9_neuron_unit/neuron_unit.v",
+        "size": 1279
+    },
+    {
+        "module": "neuronunit_tb.v",
+        "repo": "rtl_designs",
+        "path": "9_neuron_unit/neuronunit_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/9_neuron_unit/neuronunit_tb.v",
+        "size": 3268
+    },
+    {
+        "module": "relu.v",
+        "repo": "rtl_designs",
+        "path": "9_neuron_unit/relu.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/9_neuron_unit/relu.v",
+        "size": 558
+    },
+    {
+        "module": "weighted_summation.v",
+        "repo": "rtl_designs",
+        "path": "9_neuron_unit/weighted_summation.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/rtl_designs/main/9_neuron_unit/weighted_summation.v",
+        "size": 385
+    },
+    {
+        "module": "clock1.v",
+        "repo": "VerilogClocks",
+        "path": "1_clock/clock1.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/1_clock/clock1.v",
+        "size": 111
+    },
+    {
+        "module": "tb_clock1.v",
+        "repo": "VerilogClocks",
+        "path": "1_clock/tb_clock1.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/1_clock/tb_clock1.v",
+        "size": 323
+    },
+    {
+        "module": "clock2.v",
+        "repo": "VerilogClocks",
+        "path": "2_clock/clock2.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/2_clock/clock2.v",
+        "size": 105
+    },
+    {
+        "module": "tb_clock2.v",
+        "repo": "VerilogClocks",
+        "path": "2_clock/tb_clock2.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/2_clock/tb_clock2.v",
+        "size": 323
+    },
+    {
+        "module": "clock3.v",
+        "repo": "VerilogClocks",
+        "path": "3_clock/clock3.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/3_clock/clock3.v",
+        "size": 155
+    },
+    {
+        "module": "tb_clock3.v",
+        "repo": "VerilogClocks",
+        "path": "3_clock/tb_clock3.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/3_clock/tb_clock3.v",
+        "size": 323
+    },
+    {
+        "module": "clock4.v",
+        "repo": "VerilogClocks",
+        "path": "4_clock/clock4.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/4_clock/clock4.v",
+        "size": 199
+    },
+    {
+        "module": "tb_clock4.v",
+        "repo": "VerilogClocks",
+        "path": "4_clock/tb_clock4.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/4_clock/tb_clock4.v",
+        "size": 323
+    },
+    {
+        "module": "clock5.v",
+        "repo": "VerilogClocks",
+        "path": "5_clock/clock5.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/5_clock/clock5.v",
+        "size": 167
+    },
+    {
+        "module": "tb_clock5.v",
+        "repo": "VerilogClocks",
+        "path": "5_clock/tb_clock5.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/5_clock/tb_clock5.v",
+        "size": 323
+    },
+    {
+        "module": "clock6.v",
+        "repo": "VerilogClocks",
+        "path": "6_clock/clock6.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/6_clock/clock6.v",
+        "size": 160
+    },
+    {
+        "module": "tb_clock6.v",
+        "repo": "VerilogClocks",
+        "path": "6_clock/tb_clock6.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogClocks/main/6_clock/tb_clock6.v",
+        "size": 275
+    },
+    {
+        "module": "binary_adder_tree.v",
+        "repo": "VerilogFod",
+        "path": "binary_adder_tree.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/binary_adder_tree.v",
+        "size": 537
+    },
+    {
+        "module": "pattern_recognition.v",
+        "repo": "VerilogFod",
+        "path": "bitsolver/pattern_recognition/pattern_recognition.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/bitsolver/pattern_recognition/pattern_recognition.v",
+        "size": 1041
+    },
+    {
+        "module": "data_types.v",
+        "repo": "VerilogFod",
+        "path": "data_types/data_types.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/data_types/data_types.v",
+        "size": 4760
+    },
+    {
+        "module": "example01.v",
+        "repo": "VerilogFod",
+        "path": "example01.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/example01.v",
+        "size": 341
+    },
+    {
+        "module": "functions.v",
+        "repo": "VerilogFod",
+        "path": "functions.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/functions.v",
+        "size": 280
+    },
+    {
+        "module": "basic_gates.v",
+        "repo": "VerilogFod",
+        "path": "gates/basic_gates.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/gates/basic_gates.v",
+        "size": 914
+    },
+    {
+        "module": "tb_basic_gates.v",
+        "repo": "VerilogFod",
+        "path": "gates/tb_basic_gates.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/gates/tb_basic_gates.v",
+        "size": 646
+    },
+    {
+        "module": "half_adder.v",
+        "repo": "VerilogFod",
+        "path": "half_adder.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/half_adder.v",
+        "size": 627
+    },
+    {
+        "module": "half_adder_tb.v",
+        "repo": "VerilogFod",
+        "path": "half_adder_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/half_adder_tb.v",
+        "size": 730
+    },
+    {
+        "module": "hello1.v",
+        "repo": "VerilogFod",
+        "path": "hello1.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/hello1.v",
+        "size": 70
+    },
+    {
+        "module": "inverter.v",
+        "repo": "VerilogFod",
+        "path": "inverter/inverter.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/inverter/inverter.v",
+        "size": 178
+    },
+    {
+        "module": "inverter_tb.v",
+        "repo": "VerilogFod",
+        "path": "inverter/inverter_tb.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/inverter/inverter_tb.v",
+        "size": 411
+    },
+    {
+        "module": "led_blink.v",
+        "repo": "VerilogFod",
+        "path": "led_blink.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/led_blink.v",
+        "size": 3117
+    },
+    {
+        "module": "1to2_line_decoder.v",
+        "repo": "VerilogFod",
+        "path": "line_decoder/1to2_line_decoder.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/line_decoder/1to2_line_decoder.v",
+        "size": 733
+    },
+    {
+        "module": "line_decoder_2to4.v",
+        "repo": "VerilogFod",
+        "path": "line_decoder/line_decoder_2to4.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/line_decoder/line_decoder_2to4.v",
+        "size": 970
+    },
+    {
+        "module": "single_port_ram.v",
+        "repo": "VerilogFod",
+        "path": "single_port_ram.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/single_port_ram.v",
+        "size": 547
+    },
+    {
+        "module": "siso.v",
+        "repo": "VerilogFod",
+        "path": "siso/siso.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/siso/siso.v",
+        "size": 517
+    },
+    {
+        "module": "tb_siso.v",
+        "repo": "VerilogFod",
+        "path": "siso/tb_siso.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/siso/tb_siso.v",
+        "size": 1041
+    },
+    {
+        "module": "tb_tff.v",
+        "repo": "VerilogFod",
+        "path": "t_flipflop/tb_tff.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/t_flipflop/tb_tff.v",
+        "size": 648
+    },
+    {
+        "module": "tff.v",
+        "repo": "VerilogFod",
+        "path": "t_flipflop/tff.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/t_flipflop/tff.v",
+        "size": 604
+    },
+    {
+        "module": "uart_rx.v",
+        "repo": "VerilogFod",
+        "path": "uart_rx.v",
+        "raw_url": "https://raw.githubusercontent.com/Ikarthikmb/VerilogFod/main/uart_rx.v",
+        "size": 2464
+    }
+]
